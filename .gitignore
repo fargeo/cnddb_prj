@@ -1,0 +1,13 @@
+*.pyc
+.yarnrc
+*.sublime*
+.DS_Store
+arches.log
+*.djcache
+cnddb_prj/media/packages
+cnddb_prj/logs/*.log
+cnddb_prj/uploadedfiles
+cnddb_prj/system_settings/System_Settings.json
+cnddb_prj/settings_local.py
+cnddb_prj/tileserver/cache
+cnddb_prj/node_modules
