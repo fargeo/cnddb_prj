@@ -4,6 +4,7 @@
 .DS_Store
 arches.log
 *.djcache
+cnddb/
 cnddb_prj/media/packages
 cnddb_prj/logs/*.log
 cnddb_prj/uploadedfiles
