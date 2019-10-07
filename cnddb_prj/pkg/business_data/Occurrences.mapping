@@ -1,0 +1,216 @@
+{
+    "resource_model_id": "d46178a6-d986-11e9-8dc5-acde48001122",
+    "resource_model_name": "Occurrences",
+    "nodes": [
+        {
+            "arches_nodeid": "d461a2c0-d986-11e9-8322-acde48001122",
+            "arches_node_name": "ACCURACY",
+            "file_field_name": "ACCURACY",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619d2e-d986-11e9-9a57-acde48001122",
+            "arches_node_name": "AREA",
+            "file_field_name": "AREA",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461b802-d986-11e9-b53c-acde48001122",
+            "arches_node_name": "AVLCODE",
+            "file_field_name": "AVLCODE",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461c04a-d986-11e9-9751-acde48001122",
+            "arches_node_name": "ECOLOGICAL",
+            "file_field_name": "ECOLOGICAL",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461a497-d986-11e9-8015-acde48001122",
+            "arches_node_name": "ELEVATION",
+            "file_field_name": "ELEVATION",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461b1a3-d986-11e9-af67-acde48001122",
+            "arches_node_name": "ELMDATE",
+            "file_field_name": "elmdate_f",
+            "data_type": "edtf",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461b0b5-d986-11e9-a701-acde48001122",
+            "arches_node_name": "EOCOUNT",
+            "file_field_name": "EOCOUNT",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461b9cc-d986-11e9-81d7-acde48001122",
+            "arches_node_name": "EONDX",
+            "file_field_name": "eondx_f",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461a68a-d986-11e9-adf0-acde48001122",
+            "arches_node_name": "GENERAL",
+            "file_field_name": "GENERAL",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461ad11-d986-11e9-a45d-acde48001122",
+            "arches_node_name": "geom",
+            "file_field_name": "geom",
+            "data_type": "geojson-feature-collection",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619ffd-d986-11e9-bd1f-acde48001122",
+            "arches_node_name": "KEYCOUNTY",
+            "file_field_name": "KEYCOUNTY",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461ac21-d986-11e9-86a4-acde48001122",
+            "arches_node_name": "KEYQUAD",
+            "file_field_name": "KEYQUAD",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461985e-d986-11e9-be94-acde48001122",
+            "arches_node_name": "KQUADNAME",
+            "file_field_name": "KQUADNAME",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619f0c-d986-11e9-a419-acde48001122",
+            "arches_node_name": "LASTUPDATE",
+            "file_field_name": "lastup_f", 
+            "data_type": "edtf",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4618775-d986-11e9-b40b-acde48001122",
+            "arches_node_name": "LOCATION",
+            "file_field_name": "LOCATION",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461ab30-d986-11e9-91a2-acde48001122",
+            "arches_node_name": "LOCDETAILS",
+            "file_field_name": "LOCDETAILS",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461a785-d986-11e9-8b34-acde48001122",
+            "arches_node_name": "MAPNDX",
+            "file_field_name": "MAPNDX",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461aa4c-d986-11e9-83df-acde48001122",
+            "arches_node_name": "OCCNUMBER",
+            "file_field_name": "OCCNUMBER",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619a51-d986-11e9-9288-acde48001122",
+            "arches_node_name": "OCCRANK",
+            "file_field_name": "OCCRANK",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619605-d986-11e9-b1fc-acde48001122",
+            "arches_node_name": "OCCTYPE",
+            "file_field_name": "OCCTYPE",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619e1c-d986-11e9-8dbc-acde48001122",
+            "arches_node_name": "OWNERMGT",
+            "file_field_name": "OWNERMGT",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619963-d986-11e9-9a81-acde48001122",
+            "arches_node_name": "PARTS",
+            "file_field_name": "PARTS",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461b440-d986-11e9-85bb-acde48001122",
+            "arches_node_name": "PERIMETER",
+            "file_field_name": "PERIMETER",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619c33-d986-11e9-90c7-acde48001122",
+            "arches_node_name": "PLSS",
+            "file_field_name": "PLSS",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d4619b42-d986-11e9-a73c-acde48001122",
+            "arches_node_name": "PRESENCE",
+            "file_field_name": "PRESENCE",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461b8e8-d986-11e9-9e83-acde48001122",
+            "arches_node_name": "SENSITIVE",
+            "file_field_name": "sensitive_f",
+            "data_type": "boolean",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461aede-d986-11e9-a46c-acde48001122",
+            "arches_node_name": "SITEDATE",
+            "file_field_name": "sitedate_f",
+            "data_type": "edtf",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461c142-d986-11e9-b058-acde48001122",
+            "arches_node_name": "SYMBOLOGY",
+            "file_field_name": "SYMBOLOGY",
+            "data_type": "number",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461a59c-d986-11e9-89a7-acde48001122",
+            "arches_node_name": "THREAT",
+            "file_field_name": "THREAT",
+            "data_type": "string",
+            "export": false
+        },
+        {
+            "arches_nodeid": "d461bf5c-d986-11e9-af6f-acde48001122",
+            "arches_node_name": "THREATLIST",
+            "file_field_name": "THREATLIST",
+            "data_type": "string",
+            "export": false
+        }
+    ]
+}
