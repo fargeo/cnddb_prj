@@ -96,7 +96,7 @@
         {
             "arches_nodeid": "d4619f0c-d986-11e9-a419-acde48001122",
             "arches_node_name": "LASTUPDATE",
-            "file_field_name": "lastup_f", 
+            "file_field_name": "lastup_f",
             "data_type": "edtf",
             "export": false
         },
@@ -189,6 +189,13 @@
             "arches_node_name": "SITEDATE",
             "file_field_name": "sitedate_f",
             "data_type": "edtf",
+            "export": false
+        },
+        {
+            "arches_nodeid": "fcfc3c3a-e95b-11e9-a8c8-02094525ff3d",
+            "arches_node_name": "SPECIES",
+            "file_field_name": "speciesid",
+            "data_type": "resource-instance",
             "export": false
         },
         {
