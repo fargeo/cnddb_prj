@@ -24,7 +24,7 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 SECRET_KEY = 'lr(mwkd0@eumvsvlc&223yf0)+6b+3r#(+6xljab8i_esi6sb0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ROOT_URLCONF = 'cnddb_prj.urls'
 
