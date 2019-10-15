@@ -38,7 +38,7 @@ class PLSSAssigning(BaseFunction):
             data = resp.json()
 
             try:
-                plssid = data['features'][0]['attributes']['PLSSID']
+                plssid = data['features'][0]['attributes']['TWNSHPLAB']
             except KeyError as e:
                 plssid = "not available at this location"
 
