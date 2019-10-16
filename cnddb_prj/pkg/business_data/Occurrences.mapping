@@ -118,7 +118,7 @@
             "arches_nodeid": "d461a785-d986-11e9-8b34-acde48001122",
             "arches_node_name": "MAPNDX",
             "file_field_name": "MAPNDX",
-            "data_type": "number",
+            "data_type": "string",
             "export": false
         },
         {
