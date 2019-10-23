@@ -1,0 +1,39 @@
+{
+    "version": 8,
+    "name": "CDFW Facilities",
+    "sources": {
+        "CDFW Facilities": {
+            "type": "geojson",
+            "data": "https://map.dfg.ca.gov/arcgis/rest/services/Base/Land_Ownership/MapServer/0/query?outFields=*&where=1%3D1&f=geojson&outSR=4326"
+        }
+    },
+    "layers": [
+    {
+        "id": "CDFW Facilities_circle",
+        "type": "circle",
+        "source": "CDFW Facilities",
+        "minzoom":3,
+        "paint": {
+            "circle-radius": {
+                "base": 1.75,
+                "stops": [[12, 2], [22, 180]]
+            },
+            "circle-color": "#00FF00"
+        }
+    },
+    {
+        "id": "CDFW Facilities_label",
+        "type": "symbol",
+        "source": "CDFW Facilities",
+        "minzoom":10,
+        "layout": {
+            "text-field": "{NAME}",
+            "text-size": 14
+        },
+        "paint": {
+            "text-color": "rgba(70,70,70,0.5)",
+            "text-halo-color": "rgb(255,255,255)",
+            "text-halo-width": 1
+        }
+    }]
+}
