@@ -18,7 +18,24 @@
                 "base": 1.75,
                 "stops": [[12, 2], [22, 180]]
             },
-            "circle-color": "#00FF00"
+            "circle-color": [
+                "match",["get", "FAC_TYPE"],
+                "Air Services", "rgba(166,206,227,0.5)",
+                "Boat Services", "rgba(31,120,180,0.5)",
+                "State Headquarters", "rgba(178,223,138,0.5)",
+                "Regional Headquarters", "rgba(51,160,44,0.5)",
+                "Division Branch", "rgba(251,154,153,0.5)",
+                "Field Office", "rgba(227,26,28,0.5)",
+                "Wildlife Conservation Board", "rgba(253,191,111,0.5)",
+                "Fish Facility", "rgba(255,127,0,0.5)",
+                "Fish Hatchery", "rgba(202,178,214,0.5)",
+                "Laboratory", "rgba(106,61,154,0.5)",
+                "Miscellaneous", "rgba(255,255,153,0.5)",
+                "Screen Shop", "rgba(177,89,40,0.5)",
+                "Training/Academy", "rgba(1,102,94,0.5)",
+                "Storage", "rgba(140,81,10,0.5)",
+                "Warehouse", "rgba(197,27,125,0.5)",
+                "rgba(190, 190, 190, 0.5)"]
         }
     },
     {
