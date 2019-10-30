@@ -1,0 +1,1089 @@
+{
+    "graph": [
+        {
+            "author": " ", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "a7f5d6d4-e632-11e9-826b-02094525ff3d", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "Taxonomy", 
+                    "nodegroup_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "6ff7edc4-e634-11e9-826b-02094525ff3d", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "Rank", 
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "261e9fae-e634-11e9-826b-02094525ff3d", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "LIsting", 
+                    "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "3c5f667c-e634-11e9-826b-02094525ff3d", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "Element", 
+                    "nodegroup_id": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "b7272d74-e632-11e9-826b-02094525ff3d", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "Status", 
+                    "nodegroup_id": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "d6d51cd0-e632-11e9-826b-02094525ff3d", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": false, 
+                    "name": "Name", 
+                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "d6d51cd0-e632-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Latin Name", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "97176135-eeb9-11e9-a8c8-02094525ff3d", 
+                    "label": "Latin Name", 
+                    "node_id": "1137c36c-e633-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "b7272d74-e632-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Other Status", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "c6ca5889-e636-11e9-826b-02094525ff3d", 
+                    "label": "Other Status", 
+                    "node_id": "cd9b1e88-e632-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "6ff7edc4-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "State Rank", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "b4058f7d-e636-11e9-826b-02094525ff3d", 
+                    "label": "State Rank", 
+                    "node_id": "8f2730fe-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "3c5f667c-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Element Code", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "5b4e6b33-e637-11e9-826b-02094525ff3d", 
+                    "label": "Element Code", 
+                    "node_id": "46416102-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "3c5f667c-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Element Type", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "5b4e6b35-e637-11e9-826b-02094525ff3d", 
+                    "label": "Element Type", 
+                    "node_id": "4d0d7638-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "261e9fae-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "California Listing", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "b7832eaf-e636-11e9-826b-02094525ff3d", 
+                    "label": "California Listing", 
+                    "node_id": "2ac9646a-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "6ff7edc4-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Rare Plant Rank", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "b4058f7f-e636-11e9-826b-02094525ff3d", 
+                    "label": "Rare Plant Rank", 
+                    "node_id": "746fdcd4-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "6ff7edc4-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Global Rank", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "b4058f81-e636-11e9-826b-02094525ff3d", 
+                    "label": "Global Rank", 
+                    "node_id": "86a37b7c-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": 2, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "261e9fae-e634-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Federal Listing", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "b7832ead-e636-11e9-826b-02094525ff3d", 
+                    "label": "Federal Listing", 
+                    "node_id": "2fb7c62e-e634-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "b7272d74-e632-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "CDFW Status", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "c6ca5887-e636-11e9-826b-02094525ff3d", 
+                    "label": "CDFW Status", 
+                    "node_id": "c2431bee-e632-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "a7f5d6d4-e632-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Taxonomic Group", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "bbddbbb7-e636-11e9-826b-02094525ff3d", 
+                    "label": "Taxonomic Group", 
+                    "node_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "d6d51cd0-e632-11e9-826b-02094525ff3d", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Common Name", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "bfd38ad5-e636-11e9-826b-02094525ff3d", 
+                    "label": "Common Name", 
+                    "node_id": "1720fa50-e633-11e9-826b-02094525ff3d", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }
+            ], 
+            "color": null, 
+            "config": {}, 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "86a37b7d-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "86a37b7c-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "46416103-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "46416102-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "3c5f667d-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "3c5f667a-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "2ac9646b-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "2ac9646a-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "8f2730ff-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "8f2730fe-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "1720fa51-e633-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "1720fa50-e633-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "a7f5d6d5-e632-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "d6d51cd1-e632-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "d6d51cce-e632-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "b7272d75-e632-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "b7272d72-e632-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "c2431bef-e632-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "c2431bee-e632-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "746fdcd5-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "746fdcd4-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "261e9faf-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "261e9fac-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "2fb7c62f-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "2fb7c62e-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "edgeid": "4d0d7639-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "4d0d7638-e634-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "1137c36d-e633-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "1137c36c-e633-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "cd9b1e89-e632-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "cd9b1e88-e632-11e9-826b-02094525ff3d"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "edgeid": "6ff7edc5-e634-11e9-826b-02094525ff3d", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "name": null, 
+                    "ontologyproperty": null, 
+                    "rangenode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d"
+                }
+            ], 
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                            "string_template": "<Species Name>"
+                        }, 
+                        "map_popup": {
+                            "nodegroup_id": "", 
+                            "string_template": ""
+                        }, 
+                        "name": {
+                            "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                            "string_template": "<Common Name>"
+                        }, 
+                        "triggering_nodegroups": []
+                    }, 
+                    "function_id": "60000000-0000-0000-0000-000000000001", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "id": "2123fc61-e66e-11e9-95cf-02094525ff3d"
+                }
+            ], 
+            "graphid": "940bcf79-e632-11e9-826b-02094525ff3d", 
+            "iconclass": "fa fa-bug", 
+            "is_editable": false, 
+            "isactive": true, 
+            "isresource": true, 
+            "jsonldcontext": null, 
+            "name": "Species", 
+            "nodegroups": [
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "parentnodegroup_id": null
+                }, 
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "parentnodegroup_id": null
+                }, 
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "parentnodegroup_id": null
+                }, 
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "parentnodegroup_id": null
+                }, 
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "parentnodegroup_id": null
+                }, 
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "a7f5d6d2-e632-11e9-826b-02094525ff3d", 
+                    "parentnodegroup_id": null
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "4af9a22d-e867-4760-87fa-14f5062f5a38", 
+                                "selected": false, 
+                                "text": "SX - Presumed Extirpated"
+                            }, 
+                            {
+                                "id": "2de2dd0b-44fa-451a-9f50-91d539298364", 
+                                "selected": false, 
+                                "text": "SH - Possibly Extirpated"
+                            }, 
+                            {
+                                "id": "01b630b9-0032-41a2-9b30-2c9eba3862cf", 
+                                "selected": false, 
+                                "text": "S1 - Critically Imperiled"
+                            }, 
+                            {
+                                "id": "72504786-b81d-4311-bd26-cd695f93f55d", 
+                                "selected": false, 
+                                "text": "S2 - Imperiled"
+                            }, 
+                            {
+                                "id": "83dcb0a9-6046-4236-b3ce-f5ee61238e34", 
+                                "selected": false, 
+                                "text": "S3 - Vulnerable"
+                            }, 
+                            {
+                                "id": "9e27ab04-ed25-4aea-9bbf-dc0f53209dc6", 
+                                "selected": false, 
+                                "text": "S4 - Apparently Secure"
+                            }, 
+                            {
+                                "id": "46748d44-103d-4b44-a809-e8831aa37a3f", 
+                                "selected": false, 
+                                "text": "S5 - Secure"
+                            }, 
+                            {
+                                "id": "ff6ce43f-e01c-40d0-8e65-1333ade3a641", 
+                                "selected": false, 
+                                "text": "SNR - Unranked"
+                            }, 
+                            {
+                                "id": "cc70a0ca-412a-4572-9c41-aa43099cd980", 
+                                "selected": false, 
+                                "text": "SU - Unrankable"
+                            }, 
+                            {
+                                "id": "6f32ea18-da97-4397-b5d9-11a3dace44c2", 
+                                "selected": false, 
+                                "text": "? - Qualifier: Inexact or Uncertain"
+                            }
+                        ]
+                    }, 
+                    "datatype": "domain-value", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "State Rank", 
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "8f2730fe-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Status", 
+                    "nodegroup_id": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 3
+                }, 
+                {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "1d0a95e5-9534-478f-adeb-d8cacfb2c978", 
+                                "selected": false, 
+                                "text": "1A"
+                            }, 
+                            {
+                                "id": "44842afa-ee45-40e8-afa2-e02f7bbf49af", 
+                                "selected": false, 
+                                "text": "1B.1"
+                            }, 
+                            {
+                                "id": "f17c9a65-8877-41a7-9ead-0e965f796a8e", 
+                                "selected": false, 
+                                "text": "1B.2"
+                            }, 
+                            {
+                                "id": "ee044c65-37f4-4412-91e5-4c13c8c49492", 
+                                "selected": false, 
+                                "text": "1B.3"
+                            }, 
+                            {
+                                "id": "484cfc27-7970-4262-a266-78c233d19db0", 
+                                "selected": false, 
+                                "text": "2A"
+                            }, 
+                            {
+                                "id": "9c5e91e3-6a91-4dca-acbb-cb42dfa95b08", 
+                                "selected": false, 
+                                "text": "2B.1"
+                            }, 
+                            {
+                                "id": "1e84d5e7-9a53-4f97-8124-c45a27b21eb1", 
+                                "selected": false, 
+                                "text": "2B.2"
+                            }, 
+                            {
+                                "id": "c8d977bc-40ea-48ea-970e-fe3088e68278", 
+                                "selected": false, 
+                                "text": "2B.3"
+                            }, 
+                            {
+                                "id": "98868adf-b122-49d3-81ae-2d453afe7f38", 
+                                "selected": false, 
+                                "text": "3.1"
+                            }, 
+                            {
+                                "id": "62d9f5a6-3f7a-47ba-8be2-f62adc619192", 
+                                "selected": false, 
+                                "text": "3.2"
+                            }, 
+                            {
+                                "id": "79ce5630-420f-4bfc-afc7-224208fac911", 
+                                "selected": false, 
+                                "text": "3.3"
+                            }, 
+                            {
+                                "id": "3b58bdf6-5bfb-49a8-828a-0ed9312aceaa", 
+                                "selected": false, 
+                                "text": "4.1"
+                            }, 
+                            {
+                                "id": "8a5ac371-d74c-4cc9-b6d4-3fbec9ee1318", 
+                                "selected": false, 
+                                "text": "4.2"
+                            }, 
+                            {
+                                "id": "e02e484c-f9d4-4562-a18d-0e392288be2d", 
+                                "selected": false, 
+                                "text": "4.3"
+                            }
+                        ]
+                    }, 
+                    "datatype": "domain-value", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Rare Plant Rank", 
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "746fdcd4-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Rank", 
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 5
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Element Code", 
+                    "nodegroup_id": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "46416102-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Element", 
+                    "nodegroup_id": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 1
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": null
+                    }, 
+                    "datatype": "concept", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Taxonomy", 
+                    "nodegroup_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "a7f5d6d2-e632-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Common Name", 
+                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "1720fa50-e633-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "68fb6712-2107-4436-ba72-3960fab90ba0", 
+                                "selected": false, 
+                                "text": "Endangered"
+                            }, 
+                            {
+                                "id": "84f165a6-84dc-49d6-8ee7-af3243051555", 
+                                "selected": false, 
+                                "text": "Threatened"
+                            }, 
+                            {
+                                "id": "58137361-09ea-4fdf-9c68-1324f3e326a1", 
+                                "selected": false, 
+                                "text": "Rare"
+                            }, 
+                            {
+                                "id": "7e892993-aa08-4301-a7ad-a07c777fd6b9", 
+                                "selected": false, 
+                                "text": "None"
+                            }, 
+                            {
+                                "id": "65d063f5-ad0c-4d9f-9bda-fdc9f2f19ebe", 
+                                "selected": false, 
+                                "text": "Delisted"
+                            }, 
+                            {
+                                "id": "3779a175-9158-4fbd-b0a2-2593ff8d1363", 
+                                "selected": false, 
+                                "text": "Candidate Endangered"
+                            }, 
+                            {
+                                "id": "37c7bd02-c05b-4bd1-8a96-acb3c24ffbcf", 
+                                "selected": false, 
+                                "text": "Candidate Threatened"
+                            }
+                        ]
+                    }, 
+                    "datatype": "domain-value", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "CDFW Status", 
+                    "nodegroup_id": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "c2431bee-e632-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Name", 
+                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": null
+                    }, 
+                    "datatype": "concept", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Other Status", 
+                    "nodegroup_id": "b7272d72-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "cd9b1e88-e632-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Federal Listing", 
+                    "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "2fb7c62e-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "California Listing", 
+                    "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "2ac9646a-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Listing", 
+                    "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "261e9fac-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 2
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Species Name", 
+                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d", 
+                    "nodeid": "1137c36c-e633-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "b7b30956-4c57-4858-bbaf-07b69e936988", 
+                                "selected": false, 
+                                "text": "GX - Extinct/Presumed Extinct"
+                            }, 
+                            {
+                                "id": "b7bedbd1-355f-45f2-8b69-dc97b7a98b56", 
+                                "selected": false, 
+                                "text": "GH - Possibly Extinct"
+                            }, 
+                            {
+                                "id": "536694d6-c7bb-485f-8608-950259734e7c", 
+                                "selected": false, 
+                                "text": "G1 - Critically Imperiled"
+                            }, 
+                            {
+                                "id": "a34bfebe-ad9b-4d75-8664-7627161de1cb", 
+                                "selected": false, 
+                                "text": "G2 - Imperiled"
+                            }, 
+                            {
+                                "id": "60cddfd6-1785-4a7d-b549-7618c8e48d28", 
+                                "selected": false, 
+                                "text": "G3 - Vulnerable"
+                            }, 
+                            {
+                                "id": "ac7fe5f2-9f19-46c7-a40c-7fb1383d668e", 
+                                "selected": false, 
+                                "text": "G4 - Apparently Secure"
+                            }, 
+                            {
+                                "id": "9f66e671-00a6-48ca-bab2-94627727a65d", 
+                                "selected": false, 
+                                "text": "G5 - Secure"
+                            }, 
+                            {
+                                "id": "06896fa9-d1a1-4adf-a477-a037a0a5a7d7", 
+                                "selected": false, 
+                                "text": "GNR - Unranked"
+                            }, 
+                            {
+                                "id": "0c0bc809-597e-49ad-8cc1-ebee6f435e8a", 
+                                "selected": false, 
+                                "text": "GU - Unrankable"
+                            }, 
+                            {
+                                "id": "8a1e73bf-cdf3-4934-b82f-47e845e28eb2", 
+                                "selected": false, 
+                                "text": "? - Qualifier: Inexact Numeric Rank"
+                            }, 
+                            {
+                                "id": "c6007324-f6c6-4bd0-b5c4-8cbec053d035", 
+                                "selected": false, 
+                                "text": "Q - Qualifier: Questionable Taxonomy"
+                            }, 
+                            {
+                                "id": "57964b69-d11f-475d-991f-ec6fa597e2c3", 
+                                "selected": false, 
+                                "text": "C - Qualifier: Captive or Cultivated Only"
+                            }
+                        ]
+                    }, 
+                    "datatype": "domain-value", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Global Rank", 
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "86a37b7c-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Element Type", 
+                    "nodegroup_id": "3c5f667a-e634-11e9-826b-02094525ff3d", 
+                    "nodeid": "4d0d7638-e634-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": null, 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Species", 
+                    "nodegroup_id": null, 
+                    "nodeid": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                    "ontologyclass": null, 
+                    "parentproperty": "", 
+                    "sortorder": 0
+                }
+            ], 
+            "ontology_id": null, 
+            "relatable_resource_model_ids": [
+                "d46178a6-d986-11e9-8dc5-acde48001122"
+            ], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": null, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d", 
+                "is_collector": false, 
+                "isrequired": false, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Species", 
+                "nodegroup_id": null, 
+                "nodeid": "940bcf78-e632-11e9-826b-02094525ff3d", 
+                "ontologyclass": null, 
+                "sortorder": 0
+            }, 
+            "slug": null, 
+            "subtitle": "Names of species that are eligible for CNDDB", 
+            "template_id": "50000000-0000-0000-0000-000000000001", 
+            "version": ""
+        }
+    ], 
+    "metadata": {
+        "db": "PostgreSQL 9.6.15 on x86_64-pc-linux-gnu (Ubuntu 9.6.15-1.pgdg18.04+1), compiled by gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0, 64-bit", 
+        "git hash": "eb1c3ec74 2019-10-02 13:58:24 -0700", 
+        "os": "Linux", 
+        "os version": "4.15.0-1052-aws"
+    }
+}
