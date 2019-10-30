@@ -39,7 +39,7 @@ class PLSSAssigning(BaseFunction):
 
             try:
                 plssid = data['features'][0]['attributes']['TWNSHPLAB']
-            except KeyError as e:
+            except (KeyError, IndexError) as e:
                 plssid = "not available at this location"
 
             return plssid
@@ -82,7 +82,6 @@ class PLSSAssigning(BaseFunction):
             tile.data[plss_node] = get_plss(centroidPoint.x, centroidPoint.y)
 
         # Save Tile to cement Parent Tile to subsequent bng_output_nodegroup.
-        tile.save()
         return
 
     def delete(self,tile,request):
