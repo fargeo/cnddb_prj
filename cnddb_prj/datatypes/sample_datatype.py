@@ -22,7 +22,7 @@ class SampleDataType(BaseDataType):
         errors = []
         try:
             value.upper()
-        except:
+        except Exception as e:
             errors.append({'type': 'ERROR', 'message': 'datatype: {0} value: {1} {2} {3} - {4}. {5}'.format(self.datatype_model.datatype, value, row_number, source, 'this is not a string', 'This data was not imported.')})
         return errors
 
@@ -50,5 +50,5 @@ class SampleDataType(BaseDataType):
                     query.filter(Exists(field="tiles.data.%s" % (str(node.pk))))
                 else:
                     query.must(match_query)
-        except KeyError, e:
+        except KeyError as e:
             pass
