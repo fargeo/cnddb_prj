@@ -1797,7 +1797,7 @@ define([
                 self.map.on('moveend', self.updateConfigs);
             }
 
-            if (self.defaultValueType() && self.defaultValueType() != '' || self.defaultValueType() > 0) {
+            if (self.defaultValueType() && self.defaultValueType() > 10) {
                 if (self.defaultValueType() == 1){
                     self.value(self.defaultValue());
                 }
@@ -1934,7 +1934,7 @@ define([
                     });
                 }
             };
-            this.defaultValueType.subscribe(this.loadDefaultValue);
+            // this.defaultValueType.subscribe(this.loadDefaultValue);
         }
 
         this.mapStyle.layers = this.addInitialLayers();
