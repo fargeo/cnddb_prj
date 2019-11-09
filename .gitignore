@@ -12,4 +12,3 @@ cnddb_prj/system_settings/System_Settings.json
 cnddb_prj/settings_local.py
 cnddb_prj/tileserver/cache
 cnddb_prj/node_modules
-cnddb_prj/pkg/business_data/Occurrences.csv
