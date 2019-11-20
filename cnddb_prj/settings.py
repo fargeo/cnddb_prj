@@ -139,6 +139,8 @@ APP_TITLE = 'Arches | Heritage Data Management'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = '2019'
 
+AUTO_REFRESH_GEOM_VIEW = False
+
 try:
     from package_settings import *
 except ImportError:
