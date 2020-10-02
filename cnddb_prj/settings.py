@@ -142,11 +142,11 @@ COPYRIGHT_YEAR = '2019'
 AUTO_REFRESH_GEOM_VIEW = False
 
 try:
-    from package_settings import *
+    from .package_settings import *
 except ImportError:
     pass
 
 try:
-    from settings_local import *
+    from .settings_local import *
 except ImportError:
     pass

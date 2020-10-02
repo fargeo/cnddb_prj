@@ -1,0 +1,219 @@
+{
+    "resource_model_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+    "resource_model_name": "Observation",
+    "nodes": [
+        {
+            "arches_nodeid": "53f7f0e0-0343-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Animal Age Class",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "61c2542c-0343-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Animal Behavior",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "7d97f953-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Animal Detection Method",
+            "file_field_name": "AnimalDetectionMethod*",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "598e81f4-0343-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Animal Site Use",
+            "file_field_name": "",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "85095a72-0341-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Citation",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Comments",
+            "file_field_name": "Comments",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Comments",
+            "file_field_name": "Other",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "bffb3b10-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Disturbances",
+            "file_field_name": "Disturbances",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "a9cb687e-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Habitat",
+            "file_field_name": "Disturbances",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "f53c0fac-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Landowner",
+            "file_field_name": "Landowner",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "b94ac2ae-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Land Use",
+            "file_field_name": "LandUse",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "440a7796-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Location Coordinate Accuracy",
+            "file_field_name": "CoordAccuracy",
+            "data_type": "number",
+            "export": true
+        },
+        {
+            "arches_nodeid": "500ed1e1-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Location Coordinate Accuracy Unit",
+            "file_field_name": "",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "fc55d878-033f-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Location Coordinate Source",
+            "file_field_name": "CoordSource*",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "e9f6767e-033f-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Location Description",
+            "file_field_name": "LocationDescription",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "df79c02a-033f-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Location Geometry",
+            "file_field_name": "WKT",
+            "data_type": "geojson-feature-collection",
+            "export": true
+        },
+        {
+            "arches_nodeid": "6debc66a-033f-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Number Observed",
+            "file_field_name": "NumberObserved*",
+            "data_type": "number",
+            "export": true
+        },
+        {
+            "arches_nodeid": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Observed",
+            "file_field_name": "SpFound(Y/N)",
+            "data_type": "boolean",
+            "export": true
+        },
+        {
+            "arches_nodeid": "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Observer",
+            "file_field_name": "ObserverName*",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "ab0c2c12-0365-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Observer Contact Info",
+            "file_field_name": "ObserverContact*",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "b77ffa9a-0366-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Observer Organization/Affiliation",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "9cae69ce-0341-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Other Reference Type",
+            "file_field_name": "",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "a8fd32e6-0341-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Other Reference Value",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "4d68191d-0343-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Phenology",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "76b6d986-0341-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Referenced File",
+            "file_field_name": "",
+            "data_type": "file-list",
+            "export": true
+        },
+        {
+            "arches_nodeid": "b08729f0-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Site Quality",
+            "file_field_name": "SiteQuality",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "a8e3dc00-0342-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Species Common Name",
+            "file_field_name": "ComName",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "8693cfcc-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Survey Effort",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "c8b1ce90-0340-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Threats",
+            "file_field_name": "Threats",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        }
+    ]
+}
