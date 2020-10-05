@@ -37,50 +37,6 @@
                 },
                 {
                     "active": true,
-                    "cardid": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
-                    "component_id": "2f9054d8-de57-45cd-8a9c-58bbb1619030",
-                    "config": {
-                        "groupedCardIds": [
-                            "d5c45142-04fb-11eb-9978-02e99e44e93e",
-                            "051904ba-033f-11eb-9978-02e99e44e93e"
-                        ],
-                        "sortedWidgetIds": [
-                            "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
-                            "ab0c2c12-0365-11eb-9978-02e99e44e93e",
-                            "b77ffa9a-0366-11eb-9978-02e99e44e93e",
-                            "051904b8-033f-11eb-9978-02e99e44e93e",
-                            "d5c45140-04fb-11eb-9978-02e99e44e93e"
-                        ]
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
-                            "constraintid": "5f284e48-04dd-48ab-9c46-5cc380dc59fc",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
-                            "constraintid": "99481738-d45a-4ba7-9f14-2d6dc5ab30e8",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": "Name of the person (or persons) who performed the survey or the person primarily responsible for the data.",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Observer",
-                    "nodegroup_id": "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
-                    "sortorder": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -141,6 +97,50 @@
                     "name": "Method",
                     "nodegroup_id": "79dc498a-0340-11eb-9978-02e99e44e93e",
                     "sortorder": 5,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": {
+                        "groupedCardIds": [
+                            "d5c45142-04fb-11eb-9978-02e99e44e93e",
+                            "051904ba-033f-11eb-9978-02e99e44e93e"
+                        ],
+                        "sortedWidgetIds": [
+                            "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
+                            "ab0c2c12-0365-11eb-9978-02e99e44e93e",
+                            "b77ffa9a-0366-11eb-9978-02e99e44e93e",
+                            "051904b8-033f-11eb-9978-02e99e44e93e",
+                            "d5c45140-04fb-11eb-9978-02e99e44e93e"
+                        ]
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
+                            "constraintid": "5f284e48-04dd-48ab-9c46-5cc380dc59fc",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
+                            "constraintid": "99481738-d45a-4ba7-9f14-2d6dc5ab30e8",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "Name of the person (or persons) who performed the survey or the person primarily responsible for the data.",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Observer",
+                    "nodegroup_id": "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -338,6 +338,49 @@
             ],
             "cards_x_nodes_x_widgets": [
                 {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Landowner",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "fe0dae9b-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Landowner",
+                    "node_id": "f53c0fac-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": null,
+                        "label": "Observed"
+                    },
+                    "id": "39af73f8-033f-11eb-9978-02e99e44e93e",
+                    "label": "Observed",
+                    "node_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                },
+                {
+                    "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Observer",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "b89d8d25-04fc-11eb-9978-02e99e44e93e",
+                    "label": "Observer",
+                    "node_id": "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
                     "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
@@ -370,33 +413,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Landowner",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "fe0dae9b-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Landowner",
-                    "node_id": "f53c0fac-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": null,
-                        "label": "Observed"
-                    },
-                    "id": "39af73f8-033f-11eb-9978-02e99e44e93e",
-                    "label": "Observed",
-                    "node_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000006"
-                },
-                {
                     "card_id": "d5c45142-04fb-11eb-9978-02e99e44e93e",
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
@@ -413,22 +429,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "dc0bc5a8-033e-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Observer",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "b89d8d25-04fc-11eb-9978-02e99e44e93e",
-                    "label": "Observer",
-                    "node_id": "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
@@ -1297,6 +1297,51 @@
                     "sortorder": 0
                 },
                 {
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD"
+                    },
+                    "datatype": "date",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Date of Observation",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "052fbcac-04fd-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 1
+                },
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "940bcf79-e632-11e9-826b-02094525ff3d",
+                                "name": "Species"
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Species",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 2
+                },
+                {
                     "config": null,
                     "datatype": "semantic",
                     "description": null,
@@ -1459,31 +1504,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": {
-                        "graphs": [
-                            {
-                                "graphid": "940bcf79-e632-11e9-826b-02094525ff3d",
-                                "name": "Species"
-                            }
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Species",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
                     "config": null,
                     "datatype": "string",
                     "description": "Description of the effort which went into the survey (number of person-hours, protocol followed, etc.)",
@@ -1515,26 +1535,6 @@
                     "name": "Number Observed",
                     "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "6debc66a-033f-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD"
-                    },
-                    "datatype": "date",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Date of Observation",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "052fbcac-04fd-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1625,24 +1625,6 @@
                     "name": "Other Reference Value",
                     "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
                     "nodeid": "a8fd32e6-0341-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Observer",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -2114,6 +2096,24 @@
                     "name": "Landowner",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "f53c0fac-0340-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Observer",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
