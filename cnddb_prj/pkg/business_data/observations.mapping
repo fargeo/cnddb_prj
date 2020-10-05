@@ -19,7 +19,7 @@
         {
             "arches_nodeid": "7d97f953-0340-11eb-9978-02e99e44e93e",
             "arches_node_name": "Animal Detection Method",
-            "file_field_name": "AnimalDetectionMethod*",
+            "file_field_name": "",
             "data_type": "domain-value",
             "concept_export_value": "label",
             "export": true
@@ -35,7 +35,7 @@
         {
             "arches_nodeid": "85095a72-0341-11eb-9978-02e99e44e93e",
             "arches_node_name": "Citation",
-            "file_field_name": "",
+            "file_field_name": "Other",
             "data_type": "string",
             "export": true
         },
@@ -47,10 +47,10 @@
             "export": true
         },
         {
-            "arches_nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
-            "arches_node_name": "Comments",
-            "file_field_name": "Other",
-            "data_type": "string",
+            "arches_nodeid": "052fbcac-04fd-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Date of Observation",
+            "file_field_name": "ObservationDate*",
+            "data_type": "date",
             "export": true
         },
         {
@@ -64,7 +64,7 @@
         {
             "arches_nodeid": "a9cb687e-0340-11eb-9978-02e99e44e93e",
             "arches_node_name": "Habitat",
-            "file_field_name": "Disturbances",
+            "file_field_name": "Habitat",
             "data_type": "string",
             "export": true
         },
@@ -85,24 +85,16 @@
             "export": true
         },
         {
-            "arches_nodeid": "440a7796-0340-11eb-9978-02e99e44e93e",
+            "arches_nodeid": "084ba470-050a-11eb-9978-02e99e44e93e",
             "arches_node_name": "Location Coordinate Accuracy",
             "file_field_name": "CoordAccuracy",
-            "data_type": "number",
-            "export": true
-        },
-        {
-            "arches_nodeid": "500ed1e1-0340-11eb-9978-02e99e44e93e",
-            "arches_node_name": "Location Coordinate Accuracy Unit",
-            "file_field_name": "",
-            "data_type": "domain-value",
-            "concept_export_value": "label",
+            "data_type": "string",
             "export": true
         },
         {
             "arches_nodeid": "fc55d878-033f-11eb-9978-02e99e44e93e",
             "arches_node_name": "Location Coordinate Source",
-            "file_field_name": "CoordSource*",
+            "file_field_name": "",
             "data_type": "domain-value",
             "concept_export_value": "label",
             "export": true
@@ -136,23 +128,23 @@
             "export": true
         },
         {
-            "arches_nodeid": "dc0bc5a6-033e-11eb-9978-02e99e44e93e",
+            "arches_nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
             "arches_node_name": "Observer",
             "file_field_name": "ObserverName*",
             "data_type": "string",
             "export": true
         },
         {
-            "arches_nodeid": "ab0c2c12-0365-11eb-9978-02e99e44e93e",
-            "arches_node_name": "Observer Contact Info",
-            "file_field_name": "ObserverContact*",
+            "arches_nodeid": "21f08600-04fd-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Observer Affiliation",
+            "file_field_name": "",
             "data_type": "string",
             "export": true
         },
         {
-            "arches_nodeid": "b77ffa9a-0366-11eb-9978-02e99e44e93e",
-            "arches_node_name": "Observer Organization/Affiliation",
-            "file_field_name": "",
+            "arches_nodeid": "12bd77bb-04fd-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Observer Contact Info",
+            "file_field_name": "ObserverContact*",
             "data_type": "string",
             "export": true
         },
@@ -194,16 +186,16 @@
             "export": true
         },
         {
-            "arches_nodeid": "a8e3dc00-0342-11eb-9978-02e99e44e93e",
-            "arches_node_name": "Species Common Name",
-            "file_field_name": "ComName",
-            "data_type": "string",
+            "arches_nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
+            "arches_node_name": "Species",
+            "file_field_name": "arches_species_id",
+            "data_type": "resource-instance",
             "export": true
         },
         {
             "arches_nodeid": "8693cfcc-0340-11eb-9978-02e99e44e93e",
             "arches_node_name": "Survey Effort",
-            "file_field_name": "",
+            "file_field_name": "SurveyEffort*",
             "data_type": "string",
             "export": true
         },
