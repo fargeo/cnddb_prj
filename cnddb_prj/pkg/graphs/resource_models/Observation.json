@@ -588,6 +588,15 @@
                 {
                     "description": null,
                     "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
+                    "edgeid": "53f7f0e1-0343-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "53f7f0e0-0343-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
                     "edgeid": "61c2542d-0343-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "name": null,
@@ -812,15 +821,6 @@
                 },
                 {
                     "description": null,
-                    "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
-                    "edgeid": "53f7f0e1-0343-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "53f7f0e0-0343-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
                     "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
                     "edgeid": "b08729f1-0340-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -947,7 +947,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "id": "b44a0388-0809-11eb-a2e2-73ab08a728ea"
+                    "id": "71807098-08c9-11eb-a7a2-acde48001122"
                 }
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -1002,6 +1002,24 @@
                 }
             ],
             "nodes": [
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Observer",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
                 {
                     "config": null,
                     "datatype": "string",
@@ -1128,47 +1146,6 @@
                     "name": "Location Coordinate Accuracy",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "084ba470-050a-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "addToMap": true,
-                        "advancedStyle": "",
-                        "advancedStyling": false,
-                        "clusterDistance": 20,
-                        "clusterMaxZoom": 5,
-                        "clusterMinPoints": 3,
-                        "fillColor": "rgba(79,180,237,1)",
-                        "haloRadius": 1,
-                        "haloWeight": 4,
-                        "layerActivated": true,
-                        "layerIcon": "",
-                        "layerLegend": "",
-                        "layerName": "Observations",
-                        "lineColor": "rgba(79,180,237,1)",
-                        "lineHaloColor": "rgba(79,180,237,1)",
-                        "outlineColor": "rgba(79,180,237,1)",
-                        "outlineWeight": 2,
-                        "pointColor": "rgba(234,79,237,1)",
-                        "pointHaloColor": "rgba(234,79,237,1)",
-                        "radius": 5,
-                        "simplification": 0.3,
-                        "weight": 2
-                    },
-                    "datatype": "geojson-feature-collection",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Location Geometry",
-                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "df79c02a-033f-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1823,24 +1800,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Observer",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
                     "config": {
                         "options": [
                             {
@@ -1898,6 +1857,47 @@
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
+                },
+                {
+                    "config": {
+                        "addToMap": true,
+                        "advancedStyle": "",
+                        "advancedStyling": false,
+                        "clusterDistance": 20,
+                        "clusterMaxZoom": 5,
+                        "clusterMinPoints": 3,
+                        "fillColor": "rgba(79,180,237,1)",
+                        "haloRadius": "7",
+                        "haloWeight": 4,
+                        "layerActivated": true,
+                        "layerIcon": "",
+                        "layerLegend": "",
+                        "layerName": "Observations",
+                        "lineColor": "rgba(79,180,237,1)",
+                        "lineHaloColor": "rgba(79,180,237,1)",
+                        "outlineColor": "rgba(79,180,237,1)",
+                        "outlineWeight": 2,
+                        "pointColor": "rgba(246,250,70,0.79)",
+                        "pointHaloColor": "rgba(46,44,46,0.85)",
+                        "radius": 5,
+                        "simplification": 0.3,
+                        "weight": 2
+                    },
+                    "datatype": "geojson-feature-collection",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Location Geometry",
+                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "df79c02a-033f-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
                 }
             ],
             "ontology_id": null,
@@ -1927,9 +1927,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.2 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9), 64-bit",
-        "git hash": "60b4ff43f 2020-10-06 13:00:29 -0700",
-        "os": "Linux",
-        "os version": "5.4.0-1025-aws"
+        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
+        "git hash": "171bf3d14 2020-10-01 14:22:57 -0700",
+        "os": "Darwin",
+        "os version": "19.6.0"
     }
 }
