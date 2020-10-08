@@ -1159,7 +1159,7 @@ ansi-styles@~1.0.0:
 
 arches@archesproject/arches#master:
   version "5.1.0"
-  resolved "https://codeload.github.com/archesproject/arches/tar.gz/171bf3d147e7db346934c673ac6aa2ddca5bdf74"
+  resolved "https://codeload.github.com/archesproject/arches/tar.gz/d46b4884ff13e13d426a13b65dc88dac1d46cc54"
   dependencies:
     "@mapbox/geojson-extent" "0.3.2"
     "@mapbox/geojsonhint" "^3.0.0"
@@ -2512,9 +2512,9 @@ moment-timezone@^0.5.31:
     moment ">= 2.9.0"
 
 "moment@>= 2.6.0", "moment@>= 2.9.0", moment@>=2.10.5, moment@^2.10:
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.0.tgz#fcbef955844d91deb55438613ddcec56e86a3425"
-  integrity sha512-z6IJ5HXYiuxvFTI6eiQ9dm77uE0gyy1yXNApVHqTcnIKfY9tIwEjlzsZ6u1LQXvVgKeTnv9Xm7NDvJ7lso3MtA==
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
 monotone-convex-hull-2d@^1.0.1:
   version "1.0.1"
