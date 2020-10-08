@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 '''
 ARCHES - a program developed to inventory and manage immovable cultural heritage.
 Copyright (C) 2013 J. Paul Getty Trust and World Monuments Fund
@@ -17,12 +19,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
 
-#!/usr/bin/env python
 import os
 import sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cnddb_prj.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cnddb.settings")
 
     from django.core.management import execute_from_command_line
 

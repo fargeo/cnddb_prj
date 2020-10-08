@@ -1,0 +1,6 @@
+{
+    "name": "cnddb",
+    "dependencies": {
+        "arches": "archesproject/arches#master"
+    }
+}

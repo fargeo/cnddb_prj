@@ -1,7 +1,7 @@
-The occurrence instance records csv file is over 300MB.
+# Welcome to the Arches Project!
 
-Because of this, it could not be pushed to github without compression.
+Arches is a new, open-source, web-based, geospatial information system for cultural heritage inventory and management. Arches is purpose-built for the international cultural heritage field, and it is designed to record all types of immovable heritage, including archaeological sites, buildings and other historic structures, landscapes, and heritage ensembles or districts.
 
-If you do not need the full occurrence data set, a partial data set is available in the package.
+Please see the [project page](http://archesproject.org/) for more information on the Arches project.
 
-However, if you want to load the complete dataset, you can unzip `pkg//business_data/Occurrences.zip` and overwrite the current Occurrences.csv. 
+The Arches Installation Guide and Arches User Guide are available [here](http://archesproject.org/documentation/).
