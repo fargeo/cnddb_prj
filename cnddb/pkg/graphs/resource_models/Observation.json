@@ -29,7 +29,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Info",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
@@ -93,7 +93,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Comments",
                     "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 5,
@@ -125,7 +125,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Location",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 2,
@@ -157,7 +157,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Method",
                     "nodegroup_id": "79dc498a-0340-11eb-9978-02e99e44e93e",
                     "sortorder": 3,
@@ -189,7 +189,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "References",
                     "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 6,
@@ -221,7 +221,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Observed",
                     "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 1,
@@ -438,7 +438,7 @@
                     "config": {
                         "defaultValue": "",
                         "format": "",
-                        "label": "Location Coordinate Accuracy",
+                        "label": "Location Coordinate Accuracy number",
                         "max": "",
                         "min": "",
                         "placeholder": "Enter number",
@@ -585,6 +585,15 @@
             "deploymentfile": null,
             "description": "Recorded instance of species observation or attempt at observation.",
             "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "c8b1ce91-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "c8b1ce90-0340-11eb-9978-02e99e44e93e"
+                },
                 {
                     "description": null,
                     "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
@@ -812,15 +821,6 @@
                 },
                 {
                     "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "c8b1ce91-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "c8b1ce90-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
                     "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "edgeid": "fc55d879-033f-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -947,12 +947,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "id": "6e16789b-09c7-11eb-a2e2-73ab08a728ea"
+                    "id": "8b2b8666-0f33-11eb-87a9-acde48001122"
                 }
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
             "iconclass": "fa fa-binoculars",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1002,6 +1002,31 @@
                 }
             ],
             "nodes": [
+                {
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "940bcf79-e632-11e9-826b-02094525ff3d",
+                                "name": "Species"
+                            }
+                        ]
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Species",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
                 {
                     "config": null,
                     "datatype": "string",
@@ -1329,31 +1354,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": {
-                        "graphs": [
-                            {
-                                "graphid": "940bcf79-e632-11e9-826b-02094525ff3d",
-                                "name": "Species"
-                            }
-                        ]
-                    },
-                    "datatype": "resource-instance",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Species",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
                     "config": null,
                     "datatype": "semantic",
                     "description": "Other types of supporting information. May include references to study site numbers, links to separate reports or photographs, etc.",
@@ -1382,7 +1382,7 @@
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Location Coordinate Accuracy",
+                    "name": "Location Coordinate Accuracy number",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "440a7796-0340-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
@@ -1612,7 +1612,7 @@
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Habitat",
+                    "name": "Habitat Name",
                     "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
                     "nodeid": "a9cb687e-0340-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
@@ -2016,9 +2016,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.2 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9), 64-bit",
-        "git hash": "10d0fc7c1 2020-10-08 17:31:35 -0700",
-        "os": "Linux",
-        "os version": "5.4.0-1025-aws"
+        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
+        "git hash": "882e5d8d6 2020-10-15 13:23:16 -0700",
+        "os": "Darwin",
+        "os version": "19.6.0"
     }
 }
