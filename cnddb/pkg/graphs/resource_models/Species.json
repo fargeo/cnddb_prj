@@ -5,44 +5,6 @@
             "cards": [
                 {
                     "active": true,
-                    "cardid": "a7f5d6d4-e632-11e9-826b-02094525ff3d",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Taxonomy",
-                    "nodegroup_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "6ff7edc4-e634-11e9-826b-02094525ff3d",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Rank",
-                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d",
-                    "sortorder": null,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "261e9fae-e634-11e9-826b-02094525ff3d",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -57,7 +19,7 @@
                     "is_editable": true,
                     "name": "LIsting",
                     "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d",
-                    "sortorder": null,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -76,7 +38,52 @@
                     "is_editable": true,
                     "name": "Element",
                     "nodegroup_id": "3c5f667a-e634-11e9-826b-02094525ff3d",
-                    "sortorder": null,
+                    "sortorder": 4,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "d6d51cd0-e632-11e9-826b-02094525ff3d",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Identification",
+                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d",
+                    "sortorder": 0,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "a7f5d6d4-e632-11e9-826b-02094525ff3d",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "a7f5d6d4-e632-11e9-826b-02094525ff3d",
+                            "constraintid": "96c6160f-1397-4f19-8f23-9816e49e93af",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Taxonomy",
+                    "nodegroup_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d",
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -95,12 +102,12 @@
                     "is_editable": true,
                     "name": "Status",
                     "nodegroup_id": "b7272d72-e632-11e9-826b-02094525ff3d",
-                    "sortorder": null,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
                     "active": true,
-                    "cardid": "d6d51cd0-e632-11e9-826b-02094525ff3d",
+                    "cardid": "6ff7edc4-e634-11e9-826b-02094525ff3d",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
                     "constraints": [],
@@ -111,46 +118,14 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
-                    "name": "Name",
-                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d",
-                    "sortorder": null,
+                    "is_editable": true,
+                    "name": "Rank",
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d",
+                    "sortorder": 2,
                     "visible": true
                 }
             ],
             "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "d6d51cd0-e632-11e9-826b-02094525ff3d",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Latin Name",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "97176135-eeb9-11e9-a8c8-02094525ff3d",
-                    "label": "Latin Name",
-                    "node_id": "1137c36c-e633-11e9-826b-02094525ff3d",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "b7272d74-e632-11e9-826b-02094525ff3d",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Other Status",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "c6ca5889-e636-11e9-826b-02094525ff3d",
-                    "label": "Other Status",
-                    "node_id": "cd9b1e88-e632-11e9-826b-02094525ff3d",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
                 {
                     "card_id": "6ff7edc4-e634-11e9-826b-02094525ff3d",
                     "config": {
@@ -164,54 +139,6 @@
                     "label": "State Rank",
                     "node_id": "8f2730fe-e634-11e9-826b-02094525ff3d",
                     "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "3c5f667c-e634-11e9-826b-02094525ff3d",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Element Code",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "5b4e6b33-e637-11e9-826b-02094525ff3d",
-                    "label": "Element Code",
-                    "node_id": "46416102-e634-11e9-826b-02094525ff3d",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "3c5f667c-e634-11e9-826b-02094525ff3d",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Element Type",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "5b4e6b35-e637-11e9-826b-02094525ff3d",
-                    "label": "Element Type",
-                    "node_id": "4d0d7638-e634-11e9-826b-02094525ff3d",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "261e9fae-e634-11e9-826b-02094525ff3d",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "California Listing",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "b7832eaf-e636-11e9-826b-02094525ff3d",
-                    "label": "California Listing",
-                    "node_id": "2ac9646a-e634-11e9-826b-02094525ff3d",
-                    "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -251,6 +178,22 @@
                     "card_id": "261e9fae-e634-11e9-826b-02094525ff3d",
                     "config": {
                         "defaultValue": "",
+                        "label": "California Listing",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "b7832eaf-e636-11e9-826b-02094525ff3d",
+                    "label": "California Listing",
+                    "node_id": "2ac9646a-e634-11e9-826b-02094525ff3d",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "261e9fae-e634-11e9-826b-02094525ff3d",
+                    "config": {
+                        "defaultValue": "",
                         "label": "Federal Listing",
                         "maxLength": null,
                         "placeholder": "Enter text",
@@ -259,6 +202,54 @@
                     "id": "b7832ead-e636-11e9-826b-02094525ff3d",
                     "label": "Federal Listing",
                     "node_id": "2fb7c62e-e634-11e9-826b-02094525ff3d",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "3c5f667c-e634-11e9-826b-02094525ff3d",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Element Code",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "5b4e6b33-e637-11e9-826b-02094525ff3d",
+                    "label": "Element Code",
+                    "node_id": "46416102-e634-11e9-826b-02094525ff3d",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "3c5f667c-e634-11e9-826b-02094525ff3d",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Element Type",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "5b4e6b35-e637-11e9-826b-02094525ff3d",
+                    "label": "Element Type",
+                    "node_id": "4d0d7638-e634-11e9-826b-02094525ff3d",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "b7272d74-e632-11e9-826b-02094525ff3d",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Other Status",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "c6ca5889-e636-11e9-826b-02094525ff3d",
+                    "label": "Other Status",
+                    "node_id": "cd9b1e88-e632-11e9-826b-02094525ff3d",
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
@@ -280,18 +271,18 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
-                    "card_id": "a7f5d6d4-e632-11e9-826b-02094525ff3d",
+                    "card_id": "d6d51cd0-e632-11e9-826b-02094525ff3d",
                     "config": {
                         "defaultValue": "",
-                        "label": "Taxonomic Group",
+                        "label": "Latin Name",
                         "maxLength": null,
                         "placeholder": "Enter text",
                         "width": "100%"
                     },
-                    "id": "bbddbbb7-e636-11e9-826b-02094525ff3d",
-                    "label": "Taxonomic Group",
-                    "node_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d",
-                    "sortorder": 0,
+                    "id": "97176135-eeb9-11e9-a8c8-02094525ff3d",
+                    "label": "Latin Name",
+                    "node_id": "1137c36c-e633-11e9-826b-02094525ff3d",
+                    "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -310,6 +301,22 @@
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "a7f5d6d4-e632-11e9-826b-02094525ff3d",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Taxonomic Group",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "bbddbbb7-e636-11e9-826b-02094525ff3d",
+                    "label": "Taxonomic Group",
+                    "node_id": "a7f5d6d2-e632-11e9-826b-02094525ff3d",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 }
             ],
             "color": null,
@@ -318,6 +325,60 @@
             "deploymentfile": null,
             "description": "",
             "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d",
+                    "edgeid": "261e9faf-e634-11e9-826b-02094525ff3d",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "261e9fac-e634-11e9-826b-02094525ff3d"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "261e9fac-e634-11e9-826b-02094525ff3d",
+                    "edgeid": "2fb7c62f-e634-11e9-826b-02094525ff3d",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "2fb7c62e-e634-11e9-826b-02094525ff3d"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "3c5f667a-e634-11e9-826b-02094525ff3d",
+                    "edgeid": "4d0d7639-e634-11e9-826b-02094525ff3d",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "4d0d7638-e634-11e9-826b-02094525ff3d"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "d6d51cce-e632-11e9-826b-02094525ff3d",
+                    "edgeid": "1137c36d-e633-11e9-826b-02094525ff3d",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "1137c36c-e633-11e9-826b-02094525ff3d"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b7272d72-e632-11e9-826b-02094525ff3d",
+                    "edgeid": "cd9b1e89-e632-11e9-826b-02094525ff3d",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "cd9b1e88-e632-11e9-826b-02094525ff3d"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d",
+                    "edgeid": "6ff7edc5-e634-11e9-826b-02094525ff3d",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d"
+                },
                 {
                     "description": null,
                     "domainnode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d",
@@ -419,57 +480,12 @@
                 },
                 {
                     "description": null,
-                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d",
-                    "edgeid": "261e9faf-e634-11e9-826b-02094525ff3d",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "261e9fac-e634-11e9-826b-02094525ff3d"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "261e9fac-e634-11e9-826b-02094525ff3d",
-                    "edgeid": "2fb7c62f-e634-11e9-826b-02094525ff3d",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "2fb7c62e-e634-11e9-826b-02094525ff3d"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "3c5f667a-e634-11e9-826b-02094525ff3d",
-                    "edgeid": "4d0d7639-e634-11e9-826b-02094525ff3d",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "4d0d7638-e634-11e9-826b-02094525ff3d"
-                },
-                {
-                    "description": null,
                     "domainnode_id": "d6d51cce-e632-11e9-826b-02094525ff3d",
-                    "edgeid": "1137c36d-e633-11e9-826b-02094525ff3d",
+                    "edgeid": "1c025a42-189a-11eb-96d7-acde48001122",
                     "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
                     "name": null,
                     "ontologyproperty": null,
-                    "rangenode_id": "1137c36c-e633-11e9-826b-02094525ff3d"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "b7272d72-e632-11e9-826b-02094525ff3d",
-                    "edgeid": "cd9b1e89-e632-11e9-826b-02094525ff3d",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "cd9b1e88-e632-11e9-826b-02094525ff3d"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "940bcf78-e632-11e9-826b-02094525ff3d",
-                    "edgeid": "6ff7edc5-e634-11e9-826b-02094525ff3d",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "6ff7edc2-e634-11e9-826b-02094525ff3d"
+                    "rangenode_id": "1c025826-189a-11eb-96d7-acde48001122"
                 }
             ],
             "functions_x_graphs": [
@@ -491,7 +507,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "id": "6e167825-09c7-11eb-a2e2-73ab08a728ea"
+                    "id": "b59b8674-17f0-11eb-8b4e-acde48001122"
                 }
             ],
             "graphid": "940bcf79-e632-11e9-826b-02094525ff3d",
@@ -540,77 +556,6 @@
                 }
             ],
             "nodes": [
-                {
-                    "config": {
-                        "options": [
-                            {
-                                "id": "4af9a22d-e867-4760-87fa-14f5062f5a38",
-                                "selected": false,
-                                "text": "SX - Presumed Extirpated"
-                            },
-                            {
-                                "id": "2de2dd0b-44fa-451a-9f50-91d539298364",
-                                "selected": false,
-                                "text": "SH - Possibly Extirpated"
-                            },
-                            {
-                                "id": "01b630b9-0032-41a2-9b30-2c9eba3862cf",
-                                "selected": false,
-                                "text": "S1 - Critically Imperiled"
-                            },
-                            {
-                                "id": "72504786-b81d-4311-bd26-cd695f93f55d",
-                                "selected": false,
-                                "text": "S2 - Imperiled"
-                            },
-                            {
-                                "id": "83dcb0a9-6046-4236-b3ce-f5ee61238e34",
-                                "selected": false,
-                                "text": "S3 - Vulnerable"
-                            },
-                            {
-                                "id": "9e27ab04-ed25-4aea-9bbf-dc0f53209dc6",
-                                "selected": false,
-                                "text": "S4 - Apparently Secure"
-                            },
-                            {
-                                "id": "46748d44-103d-4b44-a809-e8831aa37a3f",
-                                "selected": false,
-                                "text": "S5 - Secure"
-                            },
-                            {
-                                "id": "ff6ce43f-e01c-40d0-8e65-1333ade3a641",
-                                "selected": false,
-                                "text": "SNR - Unranked"
-                            },
-                            {
-                                "id": "cc70a0ca-412a-4572-9c41-aa43099cd980",
-                                "selected": false,
-                                "text": "SU - Unrankable"
-                            },
-                            {
-                                "id": "6f32ea18-da97-4397-b5d9-11a3dace44c2",
-                                "selected": false,
-                                "text": "? - Qualifier: Inexact or Uncertain"
-                            }
-                        ]
-                    },
-                    "datatype": "domain-value",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": "",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "State Rank",
-                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d",
-                    "nodeid": "8f2730fe-e634-11e9-826b-02094525ff3d",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
                 {
                     "config": null,
                     "datatype": "semantic",
@@ -870,18 +815,111 @@
                 },
                 {
                     "config": null,
-                    "datatype": "semantic",
+                    "datatype": "string",
                     "description": null,
                     "exportable": false,
                     "fieldname": "",
                     "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "is_collector": true,
+                    "is_collector": false,
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Name",
+                    "name": "Federal Listing",
+                    "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d",
+                    "nodeid": "2fb7c62e-e634-11e9-826b-02094525ff3d",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "activateMax": false,
+                        "maxFileSize": null,
+                        "maxFiles": 1
+                    },
+                    "datatype": "file-list",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Species Image",
                     "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d",
-                    "nodeid": "d6d51cce-e632-11e9-826b-02094525ff3d",
+                    "nodeid": "1c025826-189a-11eb-96d7-acde48001122",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "4af9a22d-e867-4760-87fa-14f5062f5a38",
+                                "selected": false,
+                                "text": "SX - Presumed Extirpated"
+                            },
+                            {
+                                "id": "2de2dd0b-44fa-451a-9f50-91d539298364",
+                                "selected": false,
+                                "text": "SH - Possibly Extirpated"
+                            },
+                            {
+                                "id": "01b630b9-0032-41a2-9b30-2c9eba3862cf",
+                                "selected": false,
+                                "text": "S1 - Critically Imperiled"
+                            },
+                            {
+                                "id": "72504786-b81d-4311-bd26-cd695f93f55d",
+                                "selected": false,
+                                "text": "S2 - Imperiled"
+                            },
+                            {
+                                "id": "83dcb0a9-6046-4236-b3ce-f5ee61238e34",
+                                "selected": false,
+                                "text": "S3 - Vulnerable"
+                            },
+                            {
+                                "id": "9e27ab04-ed25-4aea-9bbf-dc0f53209dc6",
+                                "selected": false,
+                                "text": "S4 - Apparently Secure"
+                            },
+                            {
+                                "id": "46748d44-103d-4b44-a809-e8831aa37a3f",
+                                "selected": false,
+                                "text": "S5 - Secure"
+                            },
+                            {
+                                "id": "ff6ce43f-e01c-40d0-8e65-1333ade3a641",
+                                "selected": false,
+                                "text": "SNR - Unranked"
+                            },
+                            {
+                                "id": "cc70a0ca-412a-4572-9c41-aa43099cd980",
+                                "selected": false,
+                                "text": "SU - Unrankable"
+                            },
+                            {
+                                "id": "6f32ea18-da97-4397-b5d9-11a3dace44c2",
+                                "selected": false,
+                                "text": "? - Qualifier: Inexact or Uncertain"
+                            }
+                        ]
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": "",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "State Rank",
+                    "nodegroup_id": "6ff7edc2-e634-11e9-826b-02094525ff3d",
+                    "nodeid": "8f2730fe-e634-11e9-826b-02094525ff3d",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -902,24 +940,6 @@
                     "name": "Other Status",
                     "nodegroup_id": "b7272d72-e632-11e9-826b-02094525ff3d",
                     "nodeid": "cd9b1e88-e632-11e9-826b-02094525ff3d",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": "",
-                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Federal Listing",
-                    "nodegroup_id": "261e9fac-e634-11e9-826b-02094525ff3d",
-                    "nodeid": "2fb7c62e-e634-11e9-826b-02094525ff3d",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1094,6 +1114,24 @@
                     "ontologyclass": null,
                     "parentproperty": "",
                     "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": "",
+                    "graph_id": "940bcf79-e632-11e9-826b-02094525ff3d",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Identification",
+                    "nodegroup_id": "d6d51cce-e632-11e9-826b-02094525ff3d",
+                    "nodeid": "d6d51cce-e632-11e9-826b-02094525ff3d",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
                 }
             ],
             "ontology_id": null,
@@ -1123,9 +1161,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.2 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9), 64-bit",
-        "git hash": "10d0fc7c1 2020-10-08 17:31:35 -0700",
-        "os": "Linux",
-        "os version": "5.4.0-1025-aws"
+        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
+        "git hash": "b2442640c 2020-10-26 16:55:52 -0700",
+        "os": "Darwin",
+        "os version": "19.6.0"
     }
 }

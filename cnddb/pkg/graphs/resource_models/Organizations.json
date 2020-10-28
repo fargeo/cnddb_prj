@@ -11,13 +11,13 @@
                     "constraints": [
                         {
                             "card_id": "c0b8ba8a-17f1-11eb-96d7-acde48001122",
-                            "constraintid": "1c5f7022-ca67-4e4a-bf68-a675667b4a40",
+                            "constraintid": "2878e351-b8df-4ac2-90af-b211a5ec71bc",
                             "nodes": [],
                             "uniquetoallinstances": false
                         },
                         {
                             "card_id": "c0b8ba8a-17f1-11eb-96d7-acde48001122",
-                            "constraintid": "2878e351-b8df-4ac2-90af-b211a5ec71bc",
+                            "constraintid": "1c5f7022-ca67-4e4a-bf68-a675667b4a40",
                             "nodes": [],
                             "uniquetoallinstances": false
                         }
@@ -29,7 +29,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Info",
                     "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
                     "sortorder": null,
@@ -37,6 +37,22 @@
                 }
             ],
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "c0b8ba8a-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Primary Contact",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "29cb369c-17f2-11eb-96d7-acde48001122",
+                    "label": "Primary Contact",
+                    "node_id": "d22ab37c-17f1-11eb-96d7-acde48001122",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
                 {
                     "card_id": "c0b8ba8a-17f1-11eb-96d7-acde48001122",
                     "config": {
@@ -66,22 +82,6 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "c0b8ba8a-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Primary Contact",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "29cb369c-17f2-11eb-96d7-acde48001122",
-                    "label": "Primary Contact",
-                    "node_id": "d22ab37c-17f1-11eb-96d7-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 }
             ],
             "color": null,
@@ -127,10 +127,31 @@
                     "rangenode_id": "da492b60-17f1-11eb-96d7-acde48001122"
                 }
             ],
-            "functions_x_graphs": [],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "",
+                            "string_template": ""
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "",
+                            "string_template": ""
+                        },
+                        "name": {
+                            "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
+                            "string_template": "<Organization Name> | <Organization Type>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
+                    "id": "8d4a5416-186d-11eb-96d7-acde48001122"
+                }
+            ],
             "graphid": "b587324a-17f1-11eb-96d7-acde48001122",
             "iconclass": "fa fa-building",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -184,24 +205,6 @@
                 },
                 {
                     "config": null,
-                    "datatype": "semantic",
-                    "description": "",
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": true,
-                    "name": "Organizations",
-                    "nodegroup_id": null,
-                    "nodeid": "b5872fca-17f1-11eb-96d7-acde48001122",
-                    "ontologyclass": null,
-                    "parentproperty": "",
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
                     "datatype": "string",
                     "description": null,
                     "exportable": false,
@@ -235,6 +238,24 @@
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": true,
+                    "name": "Organizations",
+                    "nodegroup_id": null,
+                    "nodeid": "b5872fca-17f1-11eb-96d7-acde48001122",
+                    "ontologyclass": null,
+                    "parentproperty": "",
+                    "sortorder": 0
                 }
             ],
             "ontology_id": null,
@@ -258,7 +279,7 @@
                 "sortorder": 0
             },
             "slug": null,
-            "subtitle": "",
+            "subtitle": "Organizations authorized to add raw observations to the CNDDB pipeline",
             "template_id": "50000000-0000-0000-0000-000000000001",
             "version": ""
         }
