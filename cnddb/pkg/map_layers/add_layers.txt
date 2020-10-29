@@ -1,0 +1,1 @@
+python manage.py packages -o add_mapbox_layer -j cnddb/pkg/map_layers/mapbox_spec_json/overlays/FWS_Lands.json -n 'FWS Lands'

@@ -1,0 +1,1 @@
+python manage.py packages -o import_business_data -s cnddb/pkg/business_data/observations.csv -ow overwrite --create_concepts append
