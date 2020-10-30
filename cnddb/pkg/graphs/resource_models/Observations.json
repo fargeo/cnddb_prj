@@ -93,7 +93,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Comments",
                     "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 5,
@@ -134,7 +134,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Location",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 6,
@@ -166,7 +166,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Info",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
@@ -198,7 +198,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Observation Details",
                     "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 1,
@@ -230,7 +230,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Method",
                     "nodegroup_id": "79dc498a-0340-11eb-9978-02e99e44e93e",
                     "sortorder": 2,
@@ -423,58 +423,6 @@
                 {
                     "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "config": {
-                        "defaultValue": "",
-                        "label": "Location Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "fe0dae99-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Description",
-                    "node_id": "e9f6767e-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "format": "",
-                        "label": "Location Coordinate Accuracy",
-                        "max": "",
-                        "min": "",
-                        "placeholder": "Enter number",
-                        "precision": "",
-                        "prefix": "",
-                        "step": "",
-                        "suffix": "",
-                        "width": "100%"
-                    },
-                    "id": "fe0dae9f-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Coordinate Accuracy",
-                    "node_id": "440a7796-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 5,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Location Coordinate Accuracy Unit",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "fe0dae95-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Coordinate Accuracy Unit",
-                    "node_id": "500ed1e1-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 6,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
                         "basemap": "streets",
                         "bearing": null,
                         "centerX": 3,
@@ -548,6 +496,58 @@
                     "widget_id": "10000000-0000-0000-0000-000000000015"
                 },
                 {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Location Coordinate Source",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "fe0dae9d-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Coordinate Source",
+                    "node_id": "fc55d878-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Location Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "fe0dae99-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Description",
+                    "node_id": "e9f6767e-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Location Coordinate Accuracy",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "width": "100%"
+                    },
+                    "id": "fe0dae9f-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Coordinate Accuracy",
+                    "node_id": "440a7796-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 5,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
                     "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
@@ -619,13 +619,13 @@
                     "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
-                        "label": "Location Coordinate Source",
+                        "label": "Location Coordinate Accuracy Unit",
                         "placeholder": "Select an option"
                     },
-                    "id": "fe0dae9d-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Coordinate Source",
-                    "node_id": "fc55d878-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 4,
+                    "id": "fe0dae95-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Coordinate Accuracy Unit",
+                    "node_id": "500ed1e1-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 6,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000015"
                 }
@@ -669,6 +669,69 @@
             "deploymentfile": null,
             "description": "Recorded instance of species observation or attempt at observation.",
             "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "f53c0fad-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "f53c0fac-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "e9f6767f-033f-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "e9f6767e-033f-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
+                    "edgeid": "598e81f5-0343-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "598e81f4-0343-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "bffb3b11-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "bffb3b10-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "edgeid": "0da1fe5f-04fd-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
+                    "edgeid": "79dc498d-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "79dc498a-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "6debc66b-033f-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "6debc66a-033f-11eb-9978-02e99e44e93e"
+                },
                 {
                     "description": null,
                     "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
@@ -938,69 +1001,6 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "f53c0fad-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "f53c0fac-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "e9f6767f-033f-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "e9f6767e-033f-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
-                    "edgeid": "598e81f5-0343-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "598e81f4-0343-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "bffb3b11-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "bffb3b10-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "edgeid": "0da1fe5f-04fd-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
-                    "edgeid": "79dc498d-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "79dc498a-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "6debc66b-033f-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "6debc66a-033f-11eb-9978-02e99e44e93e"
                 }
             ],
             "functions_x_graphs": [
@@ -1027,7 +1027,7 @@
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
             "iconclass": "fa fa-binoculars",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1077,24 +1077,6 @@
                 }
             ],
             "nodes": [
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": "For plant observations, state percent that was vegetative, flowering, and/or fruiting",
-                    "exportable": true,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Phenology",
-                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "4d68191d-0343-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
                 {
                     "config": null,
                     "datatype": "string",
@@ -1152,17 +1134,17 @@
                 {
                     "config": null,
                     "datatype": "string",
-                    "description": null,
+                    "description": "For plant observations, state percent that was vegetative, flowering, and/or fruiting",
                     "exportable": true,
-                    "fieldname": null,
+                    "fieldname": "phenology",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "is_collector": false,
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Associated Document Comment",
-                    "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
-                    "nodeid": "f7a9e4a6-1869-11eb-96d7-acde48001122",
+                    "name": "Phenology",
+                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "4d68191d-0343-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1202,24 +1184,6 @@
                     "name": "Observation Details",
                     "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Observer",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1274,24 +1238,6 @@
                     "name": "Location",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": true,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Other Reference Value",
-                    "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
-                    "nodeid": "a8fd32e6-0341-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1364,24 +1310,6 @@
                     "name": "References",
                     "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
                     "nodeid": "5e551ff6-0341-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "number",
-                    "description": "Estimated accuracy of provided coordinates. This may be a value calculated automatically by a GPS unit or an estimated value based upon the confidence of a person interpreting aerial imagery or a map. This field is not required but its use is strongly encouraged as it will help CNDDB staff decide what type of spatial feature to use to represent an occurrence.",
-                    "exportable": true,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Location Coordinate Accuracy number",
-                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "440a7796-0340-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1738,37 +1666,73 @@
                     "sortorder": 0
                 },
                 {
-                    "config": {
-                        "options": [
-                            {
-                                "id": "0aefcc6a-99fc-4f5f-96ee-079c3afc2f22",
-                                "selected": false,
-                                "text": "Feet"
-                            },
-                            {
-                                "id": "256930bc-b627-46c3-99c1-24d3d335c3a3",
-                                "selected": false,
-                                "text": "Meters"
-                            },
-                            {
-                                "id": "f2b30451-20c6-4f19-ba21-f30e477c2305",
-                                "selected": false,
-                                "text": "Degrees"
-                            }
-                        ]
-                    },
-                    "datatype": "domain-value",
+                    "config": null,
+                    "datatype": "string",
                     "description": null,
                     "exportable": true,
-                    "fieldname": null,
+                    "fieldname": "obs_name",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "is_collector": false,
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Location Coordinate Accuracy Unit",
+                    "name": "Observer",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "number",
+                    "description": "Estimated accuracy of provided coordinates. This may be a value calculated automatically by a GPS unit or an estimated value based upon the confidence of a person interpreting aerial imagery or a map. This field is not required but its use is strongly encouraged as it will help CNDDB staff decide what type of spatial feature to use to represent an occurrence.",
+                    "exportable": true,
+                    "fieldname": "coord_acc",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Location Coordinate Accuracy number",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "500ed1e1-0340-11eb-9978-02e99e44e93e",
+                    "nodeid": "440a7796-0340-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": "doc_cmnt",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Associated Document Comment",
+                    "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
+                    "nodeid": "f7a9e4a6-1869-11eb-96d7-acde48001122",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": "ref_value",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Other Reference Value",
+                    "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
+                    "nodeid": "a8fd32e6-0341-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1951,6 +1915,42 @@
                     "sortorder": 0
                 },
                 {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "0aefcc6a-99fc-4f5f-96ee-079c3afc2f22",
+                                "selected": false,
+                                "text": "Feet"
+                            },
+                            {
+                                "id": "256930bc-b627-46c3-99c1-24d3d335c3a3",
+                                "selected": false,
+                                "text": "Meters"
+                            },
+                            {
+                                "id": "f2b30451-20c6-4f19-ba21-f30e477c2305",
+                                "selected": false,
+                                "text": "Degrees"
+                            }
+                        ]
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": "acc_units",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Location Coordinate Accuracy Unit",
+                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "500ed1e1-0340-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
                     "config": null,
                     "datatype": "string",
                     "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
@@ -2084,7 +2084,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "6cf2dcadc 2020-10-28 09:42:09 -0700",
+        "git hash": "0599104c1 2020-10-30 10:54:17 -0700",
         "os": "Darwin",
         "os version": "19.6.0"
     }
