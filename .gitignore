@@ -13,3 +13,4 @@ cnddb/tileserver/cache
 cnddb/node_modules
 cnddb/storage_backends.py
 custom_storages.py
+cnddb/export_deliverables
