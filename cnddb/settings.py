@@ -136,12 +136,12 @@ DATA_UPLOAD_MAX_MEMORY_SIZE = 15728640
 # Unique session cookie ensures that logins are treated separately for each app
 SESSION_COOKIE_NAME = 'cnddb'
 
-# For more info on configuring your cache: https://docs.djangoproject.com/en/2.2/topics/cache/
+#For more info on configuring your cache: https://docs.djangoproject.com/en/2.2/topics/cache/
 CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
-    }
-}
+   'default': {
+       'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+   }
+ }
 
 # Hide nodes and cards in a report that have no data
 HIDE_EMPTY_NODES_IN_REPORT = False
