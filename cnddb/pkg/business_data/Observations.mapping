@@ -203,8 +203,9 @@
         {
             "arches_nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
             "arches_node_name": "Species",
-            "file_field_name": "arches_species_id",
-            "data_type": "resource-instance",
+            "file_field_name": "comname",
+            "data_type": "concept",
+            "concept_export_value": "label",
             "export": true
         },
         {
