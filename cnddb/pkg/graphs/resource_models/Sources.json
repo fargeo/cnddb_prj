@@ -119,7 +119,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Location Information",
                     "nodegroup_id": "f7c974a0-29f4-11eb-8487-aae9fe8789ac",
                     "sortorder": 1,
@@ -160,7 +160,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Document",
                     "nodegroup_id": "7d53b920-17f1-11eb-96d7-acde48001122",
                     "sortorder": 0,
@@ -561,12 +561,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "52954d0c-17f1-11eb-96d7-acde48001122",
-                    "id": "1b6871ae-29e6-11eb-910e-aae9fe8789ac"
+                    "id": "1783b5c6-2a13-11eb-b7fc-aae9fe8789ac"
                 }
             ],
             "graphid": "52954d0c-17f1-11eb-96d7-acde48001122",
             "iconclass": "fa fa-book",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -632,7 +632,7 @@
                     "nodeid": "ed3f051e-186e-11eb-96d7-acde48001122",
                     "ontologyclass": null,
                     "parentproperty": null,
-                    "sortorder": 4
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -796,7 +796,7 @@
                     "nodeid": "11ec8636-29fc-11eb-a8a3-aae9fe8789ac",
                     "ontologyclass": null,
                     "parentproperty": null,
-                    "sortorder": 1
+                    "sortorder": 0
                 },
                 {
                     "config": {
@@ -907,7 +907,7 @@
                     "nodeid": "832ee978-17f1-11eb-96d7-acde48001122",
                     "ontologyclass": null,
                     "parentproperty": null,
-                    "sortorder": 2
+                    "sortorder": 0
                 },
                 {
                     "config": null,
@@ -1044,10 +1044,7 @@
                 }
             ],
             "ontology_id": null,
-            "relatable_resource_model_ids": [
-                "52954d0c-17f1-11eb-96d7-acde48001122",
-                "52954d0c-17f1-11eb-96d7-acde48001122"
-            ],
+            "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {
                 "config": null,
