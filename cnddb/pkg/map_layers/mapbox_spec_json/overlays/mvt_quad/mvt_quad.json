@@ -1,0 +1,48 @@
+{
+    "name": "Quadrangle",
+    "sources": {
+        "postgres": {
+          "type": "vector",
+          "tiles": ["/mvt-quad/{z}/{x}/{y}.pbf"]
+        }
+    },
+    "layers": [
+    {
+      "id": "quad-polygon",
+      "type": "fill",
+      "source": "postgres",
+      "source-layer": "quad24",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(169,169,169,0.02)"
+      }
+    },
+    {
+      "id": "quad-line",
+      "type": "line",
+      "source": "postgres",
+      "source-layer": "quad24",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(169,169,169,0.4)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "quad-label",
+      "type": "symbol",
+      "source": "postgres",
+      "source-layer": "quad24",
+      "minzoom": 9.5,
+      "layout": {
+        "text-field": "{quad24name}",
+        "text-size": 12
+      },
+      "paint": {
+          "text-color": "rgba(70,70,70,0.5)",
+          "text-halo-color": "rgb(255,255,255)",
+          "text-halo-width": 1
+      }
+    }
+  ]
+}
