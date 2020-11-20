@@ -178,6 +178,56 @@
                 {
                     "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
                     "config": {
+                        "acceptedFiles": "",
+                        "label": "Document",
+                        "maxFilesize": "200",
+                        "rerender": true
+                    },
+                    "id": "65b9e650-189a-11eb-96d7-acde48001122",
+                    "label": "Document",
+                    "node_id": "7d53b920-17f1-11eb-96d7-acde48001122",
+                    "sortorder": 5,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                },
+                {
+                    "card_id": "2b25ef1a-29fd-11eb-a8a3-aae9fe8789ac",
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD",
+                        "defaultValue": "",
+                        "label": "Comment Date",
+                        "maxDate": false,
+                        "minDate": false,
+                        "placeholder": "Enter date",
+                        "viewMode": "days"
+                    },
+                    "id": "596a2422-29fd-11eb-a8a3-aae9fe8789ac",
+                    "label": "Comment Date",
+                    "node_id": "3731c720-29fd-11eb-a8a3-aae9fe8789ac",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
+                },
+                {
+                    "card_id": "2b25ef1a-29fd-11eb-a8a3-aae9fe8789ac",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Comments",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "8318808e-29fd-11eb-a8a3-aae9fe8789ac",
+                    "label": "Comments",
+                    "node_id": "2b25c27e-29fd-11eb-a8a3-aae9fe8789ac",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
                         "label": "Source Date",
@@ -210,21 +260,6 @@
                     "sortorder": 3,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "acceptedFiles": "",
-                        "label": "Document",
-                        "maxFilesize": "200",
-                        "rerender": true
-                    },
-                    "id": "65b9e650-189a-11eb-96d7-acde48001122",
-                    "label": "Document",
-                    "node_id": "7d53b920-17f1-11eb-96d7-acde48001122",
-                    "sortorder": 5,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 },
                 {
                     "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
@@ -272,41 +307,6 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "2b25ef1a-29fd-11eb-a8a3-aae9fe8789ac",
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD",
-                        "defaultValue": "",
-                        "label": "Comment Date",
-                        "maxDate": false,
-                        "minDate": false,
-                        "placeholder": "Enter date",
-                        "viewMode": "days"
-                    },
-                    "id": "596a2422-29fd-11eb-a8a3-aae9fe8789ac",
-                    "label": "Comment Date",
-                    "node_id": "3731c720-29fd-11eb-a8a3-aae9fe8789ac",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                },
-                {
-                    "card_id": "2b25ef1a-29fd-11eb-a8a3-aae9fe8789ac",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Comments",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "8318808e-29fd-11eb-a8a3-aae9fe8789ac",
-                    "label": "Comments",
-                    "node_id": "2b25c27e-29fd-11eb-a8a3-aae9fe8789ac",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
                     "card_id": "f7c9c676-29f4-11eb-8487-aae9fe8789ac",
@@ -385,7 +385,40 @@
                 }
             ],
             "color": null,
-            "config": {},
+            "config": {
+                "basemap": "streets",
+                "bearing": 0,
+                "centerX": -122.3979693,
+                "centerY": 37.79,
+                "featureColor": "#FF0000",
+                "featureEditingDisabled": true,
+                "featureLineWidth": 1,
+                "featurePointSize": 3,
+                "geocodePlaceholder": "Search",
+                "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                "geocoderVisible": true,
+                "geometryTypes": [
+                    {
+                        "id": "Point",
+                        "text": "Point"
+                    },
+                    {
+                        "id": "Line",
+                        "text": "Line"
+                    },
+                    {
+                        "id": "Polygon",
+                        "text": "Polygon"
+                    }
+                ],
+                "mapControlsHidden": false,
+                "maxZoom": 20,
+                "minZoom": 0,
+                "overlayConfigs": [],
+                "overlayOpacity": 0,
+                "pitch": 0,
+                "zoom": 10
+            },
             "deploymentdate": null,
             "deploymentfile": null,
             "description": "",
@@ -572,7 +605,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "52954d0c-17f1-11eb-96d7-acde48001122",
-                    "id": "12220bf0-2ad1-11eb-9c7a-acde48001122"
+                    "id": "a72fc58a-2b6b-11eb-8ff4-aae9fe8789ac"
                 }
             ],
             "graphid": "52954d0c-17f1-11eb-96d7-acde48001122",
@@ -701,24 +734,6 @@
                     "nodeid": "dc1a61a2-186e-11eb-96d7-acde48001122",
                     "ontologyclass": null,
                     "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "semantic",
-                    "description": "",
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "52954d0c-17f1-11eb-96d7-acde48001122",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": true,
-                    "name": "Sources",
-                    "nodegroup_id": null,
-                    "nodeid": "52954ac8-17f1-11eb-96d7-acde48001122",
-                    "ontologyclass": null,
-                    "parentproperty": "",
                     "sortorder": 0
                 },
                 {
@@ -852,6 +867,24 @@
                     "nodeid": "2b25c27e-29fd-11eb-a8a3-aae9fe8789ac",
                     "ontologyclass": null,
                     "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "52954d0c-17f1-11eb-96d7-acde48001122",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": true,
+                    "name": "Sources",
+                    "nodegroup_id": null,
+                    "nodeid": "52954ac8-17f1-11eb-96d7-acde48001122",
+                    "ontologyclass": null,
+                    "parentproperty": "",
                     "sortorder": 0
                 },
                 {
@@ -1076,13 +1109,13 @@
             },
             "slug": null,
             "subtitle": "Reports and documents related to observations",
-            "template_id": "50000000-0000-0000-0000-000000000001",
+            "template_id": "50000000-0000-0000-0000-000000000002",
             "version": ""
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit",
-        "git hash": "27407a126 2020-11-18 16:08:28 -0800",
+        "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
+        "git hash": "a72d52bb6 2020-11-20 12:00:50 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
