@@ -1,0 +1,48 @@
+{
+    "name": "County",
+    "sources": {
+        "postgres": {
+            "type": "vector",
+            "tiles": ["/mvt-county/{z}/{x}/{y}.pbf"]
+        }
+    },
+    "layers": [
+    {
+        "id": "county-polygon",
+        "type": "fill",
+        "source": "postgres",
+        "source-layer": "ca_counties",
+        "layout": {},
+        "paint": {
+            "fill-color": "rgba(104,130,158,0.02)"
+        }
+    },
+    {
+      "id": "county-line",
+      "type": "line",
+      "source": "postgres",
+      "source-layer": "ca_counties",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(104,130,158,0.25)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "county-label",
+      "type": "symbol",
+      "source": "postgres",
+      "source-layer": "ca_counties",
+      "minzoom": 6,
+      "layout": {
+        "text-field": "{name}",
+        "text-size": 18
+      },
+      "paint": {
+          "text-color": "rgba(104,130,158,0.4)",
+          "text-halo-color": "rgb(255,255,255)",
+          "text-halo-width": 1
+      }
+    }
+  ]
+}
