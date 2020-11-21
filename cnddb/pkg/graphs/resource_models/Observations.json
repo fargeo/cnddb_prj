@@ -5,79 +5,6 @@
             "cards": [
                 {
                     "active": true,
-                    "cardid": "79dc498c-0340-11eb-9978-02e99e44e93e",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "79dc498c-0340-11eb-9978-02e99e44e93e",
-                            "constraintid": "d8be2f95-7513-45c5-9b0a-5227911297ba",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "79dc498c-0340-11eb-9978-02e99e44e93e",
-                            "constraintid": "cd487ee9-2dcc-48c2-919f-7207674f952b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Method",
-                    "nodegroup_id": "79dc498a-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 2,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
-                    "config": {
-                        "basemap": "streets",
-                        "centerX": -119.24123693485296,
-                        "centerY": 37.23310463226551,
-                        "overlayConfigs": [],
-                        "selectSource": "",
-                        "selectSourceLayer": "",
-                        "selectText": "",
-                        "zoom": 0
-                    },
-                    "constraints": [
-                        {
-                            "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                            "constraintid": "4740ea14-ab24-4097-af5f-99f43f249c24",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                            "constraintid": "38965264-8733-4c9d-96b8-2d1c3521f423",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Location",
-                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 6,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "9b047be8-0340-11eb-9978-02e99e44e93e",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -106,6 +33,38 @@
                     "name": "Habitat",
                     "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
                     "sortorder": 3,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "79dc498c-0340-11eb-9978-02e99e44e93e",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "79dc498c-0340-11eb-9978-02e99e44e93e",
+                            "constraintid": "d8be2f95-7513-45c5-9b0a-5227911297ba",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "79dc498c-0340-11eb-9978-02e99e44e93e",
+                            "constraintid": "cd487ee9-2dcc-48c2-919f-7207674f952b",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Method",
+                    "nodegroup_id": "79dc498a-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -166,42 +125,10 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Comments",
                     "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 5,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                            "constraintid": "d31e2d42-e66a-4d04-9561-c3356ae75f17",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                            "constraintid": "2048b10d-28cd-484a-991e-d4987b87ac07",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": "If this field is not included, the CNDDB will assume that the species was found on any date and at all locations provided. Negative detections (known area of historical occurrence, but presently absent) are also useful. For negative detections, please provide additional details in the SurveyEffort field. ",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Observation Details",
-                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -230,134 +157,87 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Info",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
                     "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
+                    "config": {
+                        "basemap": "streets",
+                        "centerX": -119.24123693485296,
+                        "centerY": 37.23310463226551,
+                        "overlayConfigs": [],
+                        "selectSource": "",
+                        "selectSourceLayer": "",
+                        "selectText": "",
+                        "zoom": 0
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                            "constraintid": "4740ea14-ab24-4097-af5f-99f43f249c24",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                            "constraintid": "38965264-8733-4c9d-96b8-2d1c3521f423",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Location",
+                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 6,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                            "constraintid": "d31e2d42-e66a-4d04-9561-c3356ae75f17",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                            "constraintid": "2048b10d-28cd-484a-991e-d4987b87ac07",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "If this field is not included, the CNDDB will assume that the species was found on any date and at all locations provided. Negative detections (known area of historical occurrence, but presently absent) are also useful. For negative detections, please provide additional details in the SurveyEffort field. ",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Observation Details",
+                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 1,
+                    "visible": true
                 }
             ],
             "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "basemap": "streets",
-                        "bearing": null,
-                        "centerX": 3,
-                        "centerY": 8.5,
-                        "defaultValue": null,
-                        "defaultValueType": null,
-                        "featureColor": "#FF0000",
-                        "featureLineWidth": 1,
-                        "featurePointSize": 3,
-                        "geocodePlaceholder": "Search",
-                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
-                        "geocoderVisible": true,
-                        "geometryTypes": [
-                            {
-                                "id": "Point",
-                                "text": "Point"
-                            },
-                            {
-                                "id": "Line",
-                                "text": "Line"
-                            },
-                            {
-                                "id": "Polygon",
-                                "text": "Polygon"
-                            }
-                        ],
-                        "label": "Location Geometry",
-                        "maxZoom": 20,
-                        "minZoom": null,
-                        "overlayConfigs": [],
-                        "overlayOpacity": null,
-                        "pitch": null,
-                        "rerender": true,
-                        "zoom": null
-                    },
-                    "id": "fe0dae97-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Geometry",
-                    "node_id": "df79c02a-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Location Coordinate Accuracy",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "708cae30-17f2-11eb-96d7-acde48001122",
-                    "label": "Location Coordinate Accuracy",
-                    "node_id": "084ba470-050a-11eb-9978-02e99e44e93e",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Landowner",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "fe0dae9b-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Landowner",
-                    "node_id": "f53c0fac-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Location Coordinate Source",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "fe0dae9d-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Coordinate Source",
-                    "node_id": "fc55d878-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Location Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "fe0dae99-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Description",
-                    "node_id": "e9f6767e-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "5e551ff8-0341-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "label": "Associated Document(s)",
-                        "placeholder": ""
-                    },
-                    "id": "12973822-186a-11eb-96d7-acde48001122",
-                    "label": "Associated Document(s)",
-                    "node_id": "9a79fae2-1868-11eb-96d7-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
-                },
                 {
                     "card_id": "5e551ff8-0341-11eb-9978-02e99e44e93e",
                     "config": {
@@ -454,74 +334,17 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "card_id": "5e551ff8-0341-11eb-9978-02e99e44e93e",
                     "config": {
-                        "defaultValue": null,
-                        "label": "Observed"
+                        "label": "Associated Document(s)",
+                        "placeholder": ""
                     },
-                    "id": "39af73f8-033f-11eb-9978-02e99e44e93e",
-                    "label": "Observed",
-                    "node_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "id": "12973822-186a-11eb-96d7-acde48001122",
+                    "label": "Associated Document(s)",
+                    "node_id": "9a79fae2-1868-11eb-96d7-acde48001122",
                     "sortorder": 0,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000006"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Animal Age Class",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "99f39b8f-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Animal Age Class",
-                    "node_id": "53f7f0e0-0343-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Phenology",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "99f39b93-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Phenology",
-                    "node_id": "4d68191d-0343-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "format": "",
-                        "label": "Number Observed",
-                        "max": "",
-                        "min": "",
-                        "placeholder": "Enter number",
-                        "precision": "",
-                        "prefix": "",
-                        "step": "",
-                        "suffix": "",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "99f39b91-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Number Observed",
-                    "node_id": "6debc66a-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
                 },
                 {
                     "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
@@ -605,6 +428,205 @@
                     "sortorder": 4,
                     "visible": true,
                     "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": null,
+                        "label": "Observed"
+                    },
+                    "id": "39af73f8-033f-11eb-9978-02e99e44e93e",
+                    "label": "Observed",
+                    "node_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Animal Age Class",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "99f39b8f-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Animal Age Class",
+                    "node_id": "53f7f0e0-0343-11eb-9978-02e99e44e93e",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Phenology",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "99f39b93-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Phenology",
+                    "node_id": "4d68191d-0343-11eb-9978-02e99e44e93e",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Number Observed",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "99f39b91-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Number Observed",
+                    "node_id": "6debc66a-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Location Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "fe0dae99-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Description",
+                    "node_id": "e9f6767e-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": null,
+                        "centerX": 3,
+                        "centerY": 8.5,
+                        "defaultValue": null,
+                        "defaultValueType": null,
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            }
+                        ],
+                        "label": "Location Geometry",
+                        "maxZoom": 20,
+                        "minZoom": null,
+                        "overlayConfigs": [],
+                        "overlayOpacity": null,
+                        "pitch": null,
+                        "rerender": true,
+                        "zoom": null
+                    },
+                    "id": "fe0dae97-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Geometry",
+                    "node_id": "df79c02a-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Location Coordinate Accuracy",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "708cae30-17f2-11eb-96d7-acde48001122",
+                    "label": "Location Coordinate Accuracy",
+                    "node_id": "084ba470-050a-11eb-9978-02e99e44e93e",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Location Coordinate Source",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "fe0dae9d-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Coordinate Source",
+                    "node_id": "fc55d878-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Landowner",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "fe0dae9b-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Landowner",
+                    "node_id": "f53c0fac-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "County",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "f10e9376-2b8d-11eb-ba08-aae9fe8789ac",
+                    "label": "County",
+                    "node_id": "27b95e6e-2b85-11eb-ba08-aae9fe8789ac",
+                    "sortorder": 5,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "USGS Quadrangle",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "f10f3286-2b8d-11eb-ba08-aae9fe8789ac",
+                    "label": "USGS Quadrangle",
+                    "node_id": "f6a60ca0-2b84-11eb-ba08-aae9fe8789ac",
+                    "sortorder": 6,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
                 }
             ],
             "color": "rgba(234,79,237,1)",
@@ -646,6 +668,42 @@
             "deploymentfile": null,
             "description": "Recorded instance of species observation or attempt at observation.",
             "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
+                    "edgeid": "21f08601-04fd-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "21f08600-04fd-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "27b96044-2b85-11eb-ba08-aae9fe8789ac",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "27b95e6e-2b85-11eb-ba08-aae9fe8789ac"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "f6a60f3e-2b84-11eb-ba08-aae9fe8789ac",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "f6a60ca0-2b84-11eb-ba08-aae9fe8789ac"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "a9cb687f-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
+                },
                 {
                     "description": null,
                     "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
@@ -699,6 +757,33 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "bffb3b10-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
+                    "edgeid": "5e551ff9-0341-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "5e551ff6-0341-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "362f7f89-0343-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "362f7f88-0343-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
+                    "edgeid": "9b047be9-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "9b047be6-0340-11eb-9978-02e99e44e93e"
                 },
                 {
                     "description": null,
@@ -766,47 +851,11 @@
                 {
                     "description": null,
                     "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
-                    "edgeid": "5e551ff9-0341-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "5e551ff6-0341-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "362f7f89-0343-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "362f7f88-0343-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
-                    "edgeid": "9b047be9-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "9b047be6-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "d41455de-033e-11eb-9978-02e99e44e93e",
                     "edgeid": "2f42a3ff-033f-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
-                    "edgeid": "21f08601-04fd-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "21f08600-04fd-11eb-9978-02e99e44e93e"
                 },
                 {
                     "description": null,
@@ -825,15 +874,6 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "084ba470-050a-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "a9cb687f-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
                 },
                 {
                     "description": null,
@@ -981,12 +1021,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "id": "a7c8304a-2b6b-11eb-8ff4-aae9fe8789ac"
+                    "id": "7c4c92da-2b8e-11eb-a5ca-aae9fe8789ac"
                 }
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
             "iconclass": "fa fa-binoculars",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1037,27 +1077,6 @@
             ],
             "nodes": [
                 {
-                    "config": {
-                        "falseLabel": "N",
-                        "trueLabel": "Y"
-                    },
-                    "datatype": "boolean",
-                    "description": "If this field is not included, the CNDDB will assume that the species was found on any date and at all locations provided. Negative detections (known area of historical occurrence, but presently absent) are also useful. For negative detections, please provide additional details in the SurveyEffort field. ",
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Observation Details",
-                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
                     "config": null,
                     "datatype": "string",
                     "description": "Indicate the number of individuals observed in each age class (adult, juvenile, larvae, egg mass, unknown).",
@@ -1076,6 +1095,27 @@
                     "sortorder": 0
                 },
                 {
+                    "config": {
+                        "graphs": [],
+                        "rdmCollection": "74f23e2d-6fb3-4e0a-a2c6-9e89e56e11a7"
+                    },
+                    "datatype": "concept",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": "species",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Species",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
                     "config": null,
                     "datatype": "number",
                     "description": "The number of individuals observed or detected. May be an estimate, range, or order of magnitude (e.g., 100s, 1000s, 100,000s).",
@@ -1089,6 +1129,27 @@
                     "name": "Number Observed",
                     "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "6debc66a-033f-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "falseLabel": "N",
+                        "trueLabel": "Y"
+                    },
+                    "datatype": "boolean",
+                    "description": "If this field is not included, the CNDDB will assume that the species was found on any date and at all locations provided. Negative detections (known area of historical occurrence, but presently absent) are also useful. For negative detections, please provide additional details in the SurveyEffort field. ",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Observation Details",
+                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1384,6 +1445,62 @@
                     "name": "Other Reference Type",
                     "nodegroup_id": "5e551ff6-0341-11eb-9978-02e99e44e93e",
                     "nodeid": "9cae69ce-0341-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
+                    "exportable": true,
+                    "fieldname": "cmnts",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Comments",
+                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
+                    "nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "rdmCollection": "dadbda43-394e-446f-9dd5-64ba9169bf8a"
+                    },
+                    "datatype": "concept",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": "quad24",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "USGS Quadrangle",
+                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "f6a60ca0-2b84-11eb-ba08-aae9fe8789ac",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": "Text description of location which would allow someone to locate the site. Serves as a double-check that coordinates or GIS features were entered properly. Using improper settings in GIS software or keying in coordinates wrong can easily cause locations to be mapped incorrectly. Suggestions for location descriptions would include \"0.2 mile NW of intersection of Moore Rd & Joiner Pkwy, Lincoln\" or \"T12N R6E S16 SE 1/4 of SW 1/4.\"",
+                    "exportable": true,
+                    "fieldname": "loc_desc",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Location Description",
+                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "e9f6767e-033f-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1760,45 +1877,6 @@
                 },
                 {
                     "config": {
-                        "graphs": [],
-                        "rdmCollection": "74f23e2d-6fb3-4e0a-a2c6-9e89e56e11a7"
-                    },
-                    "datatype": "concept",
-                    "description": null,
-                    "exportable": true,
-                    "fieldname": "species",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Species",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": "Text description of location which would allow someone to locate the site. Serves as a double-check that coordinates or GIS features were entered properly. Using improper settings in GIS software or keying in coordinates wrong can easily cause locations to be mapped incorrectly. Suggestions for location descriptions would include \"0.2 mile NW of intersection of Moore Rd & Joiner Pkwy, Lincoln\" or \"T12N R6E S16 SE 1/4 of SW 1/4.\"",
-                    "exportable": true,
-                    "fieldname": "loc_desc",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Location Description",
-                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "e9f6767e-033f-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": {
                         "options": [
                             {
                                 "id": "aa489e27-7435-415c-8755-35b78246a280",
@@ -1829,24 +1907,6 @@
                     "name": "Landowner",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "f53c0fac-0340-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
-                    "exportable": true,
-                    "fieldname": "cmnts",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Comments",
-                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
-                    "nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1952,6 +2012,27 @@
                     "name": "Location Coordinate Accuracy",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "nodeid": "084ba470-050a-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "options": [],
+                        "rdmCollection": "4b039011-0d4a-4ff7-b626-c7e50c6ca0c0"
+                    },
+                    "datatype": "concept",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": "county",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "County",
+                    "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "27b95e6e-2b85-11eb-ba08-aae9fe8789ac",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
