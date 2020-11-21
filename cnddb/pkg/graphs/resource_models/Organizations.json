@@ -12,7 +12,9 @@
                         {
                             "card_id": "c0b8ba8a-17f1-11eb-96d7-acde48001122",
                             "constraintid": "2878e351-b8df-4ac2-90af-b211a5ec71bc",
-                            "nodes": [],
+                            "nodes": [
+                                "ca23af9e-17f1-11eb-96d7-acde48001122"
+                            ],
                             "uniquetoallinstances": false
                         },
                         {
@@ -94,24 +96,6 @@
             "edges": [
                 {
                     "description": null,
-                    "domainnode_id": "b5872fca-17f1-11eb-96d7-acde48001122",
-                    "edgeid": "c0b90850-17f1-11eb-96d7-acde48001122",
-                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "c0b879e4-17f1-11eb-96d7-acde48001122"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
-                    "edgeid": "ca23b21e-17f1-11eb-96d7-acde48001122",
-                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "ca23af9e-17f1-11eb-96d7-acde48001122"
-                },
-                {
-                    "description": null,
                     "domainnode_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
                     "edgeid": "d22ab5de-17f1-11eb-96d7-acde48001122",
                     "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
@@ -127,6 +111,24 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "da492b60-17f1-11eb-96d7-acde48001122"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b5872fca-17f1-11eb-96d7-acde48001122",
+                    "edgeid": "c0b90850-17f1-11eb-96d7-acde48001122",
+                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "c0b879e4-17f1-11eb-96d7-acde48001122"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
+                    "edgeid": "ca23b21e-17f1-11eb-96d7-acde48001122",
+                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "ca23af9e-17f1-11eb-96d7-acde48001122"
                 }
             ],
             "functions_x_graphs": [
@@ -148,7 +150,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "id": "a7aadfd6-2b6b-11eb-8ff4-aae9fe8789ac"
+                    "id": "7c3106c8-2b8e-11eb-a5ca-aae9fe8789ac"
                 }
             ],
             "graphid": "b587324a-17f1-11eb-96d7-acde48001122",
@@ -181,42 +183,6 @@
                     "name": "Info",
                     "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
                     "nodeid": "c0b879e4-17f1-11eb-96d7-acde48001122",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Primary Contact",
-                    "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
-                    "nodeid": "d22ab37c-17f1-11eb-96d7-acde48001122",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
-                    "datatype": "string",
-                    "description": null,
-                    "exportable": false,
-                    "fieldname": null,
-                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Organization Name",
-                    "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
-                    "nodeid": "ca23af9e-17f1-11eb-96d7-acde48001122",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -281,7 +247,7 @@
                     },
                     "datatype": "domain-value",
                     "description": null,
-                    "exportable": false,
+                    "exportable": true,
                     "fieldname": null,
                     "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
                     "is_collector": false,
@@ -291,6 +257,42 @@
                     "name": "Organization Type",
                     "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
                     "nodeid": "da492b60-17f1-11eb-96d7-acde48001122",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Primary Contact",
+                    "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
+                    "nodeid": "d22ab37c-17f1-11eb-96d7-acde48001122",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Organization Name",
+                    "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
+                    "nodeid": "ca23af9e-17f1-11eb-96d7-acde48001122",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
