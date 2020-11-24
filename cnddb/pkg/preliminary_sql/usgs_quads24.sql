@@ -47,7 +47,7 @@ CREATE TABLE public.quad24 (
 );
 
 
-ALTER TABLE public.quad24 OWNER TO postgres;
+--ALTER TABLE public.quad24 OWNER TO postgres;
 
 --
 -- Name: quad24_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -62,7 +62,7 @@ CREATE SEQUENCE public.quad24_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.quad24_id_seq OWNER TO postgres;
+--ALTER TABLE public.quad24_id_seq OWNER TO postgres;
 
 --
 -- Name: quad24_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
