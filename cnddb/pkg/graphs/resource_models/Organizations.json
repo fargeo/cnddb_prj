@@ -31,7 +31,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Info",
                     "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
                     "sortorder": null,
@@ -144,18 +144,18 @@
                         },
                         "name": {
                             "nodegroup_id": "c0b879e4-17f1-11eb-96d7-acde48001122",
-                            "string_template": "<Organization Name> | <Organization Type>"
+                            "string_template": "<Organization Name> - <Organization Type>"
                         },
                         "triggering_nodegroups": []
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "b587324a-17f1-11eb-96d7-acde48001122",
-                    "id": "b309363e-37eb-11eb-9c9f-acde48001122"
+                    "id": "a2125132-37fd-11eb-b626-acde48001122"
                 }
             ],
             "graphid": "b587324a-17f1-11eb-96d7-acde48001122",
             "iconclass": "fa fa-building",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
