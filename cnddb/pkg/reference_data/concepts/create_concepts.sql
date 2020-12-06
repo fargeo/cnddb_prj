@@ -1,4 +1,86 @@
+insert into concepts
+select
+uuid_generate_v4(),
+id||'species',
+'Concept'
+from species;
 
+insert into values
+select
+uuid_generate_v4(),
+prefname,
+b.conceptid,
+'en',
+'prefLabel'
+from species a, concepts b
+where a.id||'species' = b.legacyoid;
+
+insert into values
+select
+uuid_generate_v4(),
+cname,
+b.conceptid,
+'en',
+'common_name'
+from species a, concepts b
+where a.id||'species' = b.legacyoid;
+
+insert into values
+select
+uuid_generate_v4(),
+sname,
+b.conceptid,
+'en',
+'scientific_name'
+from species a, concepts b
+where a.id||'species' = b.legacyoid;
+
+insert into relations
+select 
+uuid_generate_v4(),
+'04b638af-ed98-4259-b05c-72d69f82f438',
+conceptid,
+'narrower'
+from concepts where legacyoid like '%species';
+
+---
+
+insert into concepts
+select
+uuid_generate_v4(),
+code||'threats',
+'Concept'
+from threats;
+
+insert into values
+select
+uuid_generate_v4(),
+threat_name,
+b.conceptid,
+'en',
+'prefLabel'
+from threats a, concepts b
+where a.code||'threats' = b.legacyoid;
+
+insert into values
+select
+uuid_generate_v4(),
+"definition",
+b.conceptid,
+'en',
+'scopeNote'
+from threats a, concepts b
+where a.code||'threats' = b.legacyoid;
+
+insert into relations
+select 
+uuid_generate_v4(),
+'1e86c786-6ef2-4cdb-a68e-dd5576ebdc8a',
+conceptid,
+'narrower'
+from concepts where legacyoid like '%threats';
+
+-----
 insert into concepts
 select
 uuid_generate_v4(),
