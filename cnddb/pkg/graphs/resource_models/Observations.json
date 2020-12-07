@@ -78,34 +78,34 @@
                 },
                 {
                     "active": true,
-                    "cardid": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "cardid": "40417048-0341-11eb-9978-02e99e44e93e",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
                     "constraints": [
                         {
-                            "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
-                            "constraintid": "b99b334b-f3e9-4593-beb9-bd9f695ce903",
+                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
+                            "constraintid": "03b22388-50cf-4d03-ac17-4db2696364e2",
                             "nodes": [],
                             "uniquetoallinstances": false
                         },
                         {
-                            "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
-                            "constraintid": "fa70e575-35f0-4eed-8e8f-60e53e586516",
+                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
+                            "constraintid": "de8df941-adf1-45c9-80ad-8e4ce41a7267",
                             "nodes": [],
                             "uniquetoallinstances": false
                         }
                     ],
                     "cssclass": null,
-                    "description": null,
+                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "helpenabled": false,
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
                     "is_editable": true,
-                    "name": "Habitat",
-                    "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 4,
+                    "name": "General Comments",
+                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -142,34 +142,34 @@
                 },
                 {
                     "active": true,
-                    "cardid": "40417048-0341-11eb-9978-02e99e44e93e",
+                    "cardid": "9b047be8-0340-11eb-9978-02e99e44e93e",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
                     "constraints": [
                         {
-                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
-                            "constraintid": "03b22388-50cf-4d03-ac17-4db2696364e2",
+                            "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                            "constraintid": "b99b334b-f3e9-4593-beb9-bd9f695ce903",
                             "nodes": [],
                             "uniquetoallinstances": false
                         },
                         {
-                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
-                            "constraintid": "de8df941-adf1-45c9-80ad-8e4ce41a7267",
+                            "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                            "constraintid": "fa70e575-35f0-4eed-8e8f-60e53e586516",
                             "nodes": [],
                             "uniquetoallinstances": false
                         }
                     ],
                     "cssclass": null,
-                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
+                    "description": null,
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "helpenabled": false,
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
                     "is_editable": true,
-                    "name": "Comments",
-                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
-                    "sortorder": 6,
+                    "name": "Habitat",
+                    "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -194,11 +194,11 @@
                     "cssclass": null,
                     "description": "If this field is not included, the CNDDB will assume that the species was found on any date and at all locations provided. Negative detections (known area of historical occurrence, but presently absent) are also useful. For negative detections, please provide additional details in the SurveyEffort field. ",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
+                    "helpenabled": true,
+                    "helptext": "<p>xfbxsdfhsdrgfsdfgsdfgsdfhgsdfhsdfghdsfghj</p>\n",
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Observation Details",
                     "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 2,
@@ -206,20 +206,6 @@
                 }
             ],
             "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Landowner",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "fe0dae9b-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Landowner",
-                    "node_id": "f53c0fac-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
                 {
                     "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "config": {
@@ -264,6 +250,23 @@
                     "label": "Location Coordinate Accuracy",
                     "node_id": "084ba470-050a-11eb-9978-02e99e44e93e",
                     "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Location Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "fe0dae99-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Location Description",
+                    "node_id": "e9f6767e-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -336,23 +339,6 @@
                 {
                     "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "config": {
-                        "defaultValue": "",
-                        "label": "Location Description",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "fe0dae99-04fb-11eb-9978-02e99e44e93e",
-                    "label": "Location Description",
-                    "node_id": "e9f6767e-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
-                    "config": {
                         "basemap": "streets",
                         "bearing": null,
                         "centerX": 3,
@@ -402,6 +388,180 @@
                     "widget_id": "10000000-0000-0000-0000-000000000015"
                 },
                 {
+                    "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Landowner",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "fe0dae9b-04fb-11eb-9978-02e99e44e93e",
+                    "label": "Landowner",
+                    "node_id": "f53c0fac-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "65848870-2f60-11eb-b618-acde48001122",
+                    "config": {
+                        "acceptedFiles": ".jpg, .png, .pdf",
+                        "label": "Images",
+                        "maxFilesize": "200",
+                        "rerender": true
+                    },
+                    "id": "7fd53864-2f60-11eb-b618-acde48001122",
+                    "label": "Images",
+                    "node_id": "65841f5c-2f60-11eb-b618-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                },
+                {
+                    "card_id": "65848870-2f60-11eb-b618-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Image Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "b2373d84-2f60-11eb-b618-acde48001122",
+                    "label": "Image Description",
+                    "node_id": "6949e61c-2f60-11eb-b618-acde48001122",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Habitat Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "4b85be66-37f4-11eb-a206-acde48001122",
+                    "label": "Habitat Description",
+                    "node_id": "a9cb687e-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Land Use",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "4b86bff0-37f4-11eb-a206-acde48001122",
+                    "label": "Land Use",
+                    "node_id": "b94ac2ae-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Site Quality",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "4b87c1b6-37f4-11eb-a206-acde48001122",
+                    "label": "Site Quality",
+                    "node_id": "b08729f0-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Threats",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "4b865308-37f4-11eb-a206-acde48001122",
+                    "label": "Threats",
+                    "node_id": "c8b1ce90-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                },
+                {
+                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Threats/Disturbances Comment",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "4b8726c0-37f4-11eb-a206-acde48001122",
+                    "label": "Threats/Disturbances Comment",
+                    "node_id": "bffb3b10-0340-11eb-9978-02e99e44e93e",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Number Observed",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "99f39b91-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Number Observed",
+                    "node_id": "6debc66a-033f-11eb-9978-02e99e44e93e",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Animal Behavior",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "99f39b98-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Animal Behavior",
+                    "node_id": "61c2542c-0343-11eb-9978-02e99e44e93e",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000016"
+                },
+                {
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Animal Site Use",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "99f39b95-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Animal Site Use",
+                    "node_id": "598e81f4-0343-11eb-9978-02e99e44e93e",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
                     "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
@@ -433,182 +593,54 @@
                     "widget_id": "10000000-0000-0000-0000-000000000015"
                 },
                 {
-                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
-                        "label": "Threats",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4b865308-37f4-11eb-a206-acde48001122",
-                    "label": "Threats",
-                    "node_id": "c8b1ce90-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Land Use",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4b86bff0-37f4-11eb-a206-acde48001122",
-                    "label": "Land Use",
-                    "node_id": "b94ac2ae-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Disturbances",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4b8726c0-37f4-11eb-a206-acde48001122",
-                    "label": "Disturbances",
-                    "node_id": "bffb3b10-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Site Quality",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "4b87c1b6-37f4-11eb-a206-acde48001122",
-                    "label": "Site Quality",
-                    "node_id": "b08729f0-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Habitat Description",
+                        "label": "Survey Effort",
                         "maxLength": null,
                         "placeholder": "Enter text",
                         "uneditable": false,
                         "width": "100%"
                     },
-                    "id": "4b85be66-37f4-11eb-a206-acde48001122",
-                    "label": "Habitat Description",
-                    "node_id": "a9cb687e-0340-11eb-9978-02e99e44e93e",
-                    "sortorder": null,
+                    "id": "c1a08512-37f0-11eb-a206-acde48001122",
+                    "label": "Survey Effort",
+                    "node_id": "a87b7fba-37f0-11eb-a206-acde48001122",
+                    "sortorder": 5,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
-                    "card_id": "65848870-2f60-11eb-b618-acde48001122",
+                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
-                        "label": "Image Description",
+                        "label": "Phenology (for plants only)",
                         "maxLength": null,
-                        "placeholder": "Enter text",
+                        "placeholder": "Only populate for plants",
                         "uneditable": false,
                         "width": "100%"
                     },
-                    "id": "b2373d84-2f60-11eb-b618-acde48001122",
-                    "label": "Image Description",
-                    "node_id": "6949e61c-2f60-11eb-b618-acde48001122",
-                    "sortorder": 1,
+                    "id": "99f39b93-0768-11eb-a2e2-73ab08a728ea",
+                    "label": "Phenology (for plants only)",
+                    "node_id": "4d68191d-0343-11eb-9978-02e99e44e93e",
+                    "sortorder": 6,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "65848870-2f60-11eb-b618-acde48001122",
-                    "config": {
-                        "acceptedFiles": ".jpg, .png, .pdf",
-                        "label": "Images",
-                        "maxFilesize": "200",
-                        "rerender": true
-                    },
-                    "id": "7fd53864-2f60-11eb-b618-acde48001122",
-                    "label": "Images",
-                    "node_id": "65841f5c-2f60-11eb-b618-acde48001122",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
-                        "label": "Comments",
+                        "label": "General Comments",
                         "maxLength": null,
                         "placeholder": "Enter text",
                         "width": "100%"
                     },
                     "id": "45b0ca93-0341-11eb-9978-02e99e44e93e",
-                    "label": "Comments",
+                    "label": "General Comments",
                     "node_id": "40417046-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Phenology",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "99f39b93-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Phenology",
-                    "node_id": "4d68191d-0343-11eb-9978-02e99e44e93e",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "format": "",
-                        "label": "Number Observed",
-                        "max": "",
-                        "min": "",
-                        "placeholder": "Enter number",
-                        "precision": "",
-                        "prefix": "",
-                        "step": "",
-                        "suffix": "",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "99f39b91-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Number Observed",
-                    "node_id": "6debc66a-033f-11eb-9978-02e99e44e93e",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Animal Behavior",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "99f39b98-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Animal Behavior",
-                    "node_id": "61c2542c-0343-11eb-9978-02e99e44e93e",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
@@ -625,38 +657,7 @@
                     "node_id": "53f7f0e0-0343-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Survey Effort",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "c1a08512-37f0-11eb-a206-acde48001122",
-                    "label": "Survey Effort",
-                    "node_id": "a87b7fba-37f0-11eb-a206-acde48001122",
-                    "sortorder": 7,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Animal Site Use",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "99f39b95-0768-11eb-a2e2-73ab08a728ea",
-                    "label": "Animal Site Use",
-                    "node_id": "598e81f4-0343-11eb-9978-02e99e44e93e",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                    "widget_id": "10000000-0000-0000-0000-000000000016"
                 },
                 {
                     "card_id": "2f42a3fe-033f-11eb-9978-02e99e44e93e",
@@ -684,7 +685,7 @@
                     "id": "4fde5062-37f0-11eb-a206-acde48001122",
                     "label": "Animal Detection Method",
                     "node_id": "085d12be-37f0-11eb-a206-acde48001122",
-                    "sortorder": 6,
+                    "sortorder": 4,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000016"
                 }
@@ -730,87 +731,6 @@
             "edges": [
                 {
                     "description": null,
-                    "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
-                    "edgeid": "12bd77bc-04fd-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "12bd77bb-04fd-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "fc55d879-033f-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "fc55d878-033f-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "16d47f9e-0343-11eb-9978-02e99e44e93e",
-                    "edgeid": "4d68191e-0343-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "4d68191d-0343-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "a9cb687f-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "b08729f1-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "b08729f0-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "e9f6767f-033f-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "e9f6767e-033f-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
-                    "edgeid": "598e81f5-0343-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "598e81f4-0343-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "bffb3b11-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "bffb3b10-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "362f7f89-0343-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "362f7f88-0343-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
                     "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "edgeid": "f53c0fad-0340-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -826,24 +746,6 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "21f08600-04fd-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
-                    "edgeid": "27b96044-2b85-11eb-ba08-aae9fe8789ac",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "27b95e6e-2b85-11eb-ba08-aae9fe8789ac"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "edgeid": "fca0475b-04fc-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "fca0475a-04fc-11eb-9978-02e99e44e93e"
                 },
                 {
                     "description": null,
@@ -1033,6 +935,105 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "61c2542c-0343-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "27b96044-2b85-11eb-ba08-aae9fe8789ac",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "27b95e6e-2b85-11eb-ba08-aae9fe8789ac"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "edgeid": "fca0475b-04fc-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "fca0475a-04fc-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
+                    "edgeid": "12bd77bc-04fd-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "12bd77bb-04fd-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "fc55d879-033f-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "fc55d878-033f-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "16d47f9e-0343-11eb-9978-02e99e44e93e",
+                    "edgeid": "4d68191e-0343-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "4d68191d-0343-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "a9cb687f-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "b08729f1-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "b08729f0-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "e9f6767f-033f-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "e9f6767e-033f-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "362f7f88-0343-11eb-9978-02e99e44e93e",
+                    "edgeid": "598e81f5-0343-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "598e81f4-0343-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "bffb3b11-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "bffb3b10-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "edgeid": "362f7f89-0343-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "362f7f88-0343-11eb-9978-02e99e44e93e"
                 }
             ],
             "functions_x_graphs": [
@@ -1401,57 +1402,6 @@
                     "name": "Positive Observation",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "nodeid": "abdaf060-37ef-11eb-a206-acde48001122",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "options": [
-                            {
-                                "id": "edce8ce1-e034-4b28-84db-efc1a78d9b9f",
-                                "selected": false,
-                                "text": "Adult"
-                            },
-                            {
-                                "id": "05163732-fa23-4117-b079-5870495db97a",
-                                "selected": false,
-                                "text": "Juvenile"
-                            },
-                            {
-                                "id": "e80abc6e-5785-47e8-8ff6-0a8e8c5703b8",
-                                "selected": false,
-                                "text": "Larvae"
-                            },
-                            {
-                                "id": "ef8c4d42-f740-4ae4-b286-5c4918b99483",
-                                "selected": false,
-                                "text": "Eggs"
-                            },
-                            {
-                                "id": "075d1011-4630-4957-8747-7a4d52734fe0",
-                                "selected": false,
-                                "text": "Unknown"
-                            },
-                            {
-                                "id": "939acd3e-518d-4672-a4eb-3b34522a57de",
-                                "selected": false,
-                                "text": "Other"
-                            }
-                        ]
-                    },
-                    "datatype": "domain-value-list",
-                    "description": "Indicate the number of individuals observed in each age class (adult, juvenile, larvae, egg mass, unknown).",
-                    "exportable": true,
-                    "fieldname": "a_ageclass",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Animal Age Class",
-                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
-                    "nodeid": "53f7f0e0-0343-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1875,24 +1825,6 @@
                     "sortorder": 0
                 },
                 {
-                    "config": null,
-                    "datatype": "string",
-                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
-                    "exportable": true,
-                    "fieldname": "cmnts",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": true,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Comments",
-                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
-                    "nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
                     "config": {
                         "options": [
                             {
@@ -2083,6 +2015,80 @@
                     "name": "Observer Contact Info",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "nodeid": "12bd77bb-04fd-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": {
+                        "options": [
+                            {
+                                "id": "edce8ce1-e034-4b28-84db-efc1a78d9b9f",
+                                "selected": false,
+                                "text": "Adult"
+                            },
+                            {
+                                "id": "05163732-fa23-4117-b079-5870495db97a",
+                                "selected": false,
+                                "text": "Juvenile"
+                            },
+                            {
+                                "id": "e80abc6e-5785-47e8-8ff6-0a8e8c5703b8",
+                                "selected": false,
+                                "text": "Larvae"
+                            },
+                            {
+                                "id": "ef8c4d42-f740-4ae4-b286-5c4918b99483",
+                                "selected": false,
+                                "text": "Eggs"
+                            },
+                            {
+                                "id": "075d1011-4630-4957-8747-7a4d52734fe0",
+                                "selected": false,
+                                "text": "Unknown"
+                            },
+                            {
+                                "id": "939acd3e-518d-4672-a4eb-3b34522a57de",
+                                "selected": false,
+                                "text": "Other"
+                            },
+                            {
+                                "id": "2055276a-6f4a-4513-935f-a7425b411fb8",
+                                "selected": false,
+                                "text": "Plant Observation"
+                            }
+                        ]
+                    },
+                    "datatype": "domain-value-list",
+                    "description": "Indicate the number of individuals observed in each age class (adult, juvenile, larvae, egg mass, unknown).",
+                    "exportable": true,
+                    "fieldname": "a_ageclass",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": true,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Animal Age Class",
+                    "nodegroup_id": "2f42a3fc-033f-11eb-9978-02e99e44e93e",
+                    "nodeid": "53f7f0e0-0343-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
+                    "exportable": true,
+                    "fieldname": "cmnts",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "General Comments",
+                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
+                    "nodeid": "40417046-0341-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
