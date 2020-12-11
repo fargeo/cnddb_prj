@@ -1,0 +1,15 @@
+{	
+    "name": "USA Topo Map",
+    "sources": {	
+        "usa-topo": {	
+            "tiles": ["https://services.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer/tile/{z}/{y}/{x}"],	
+            "type": "raster",	
+            "tileSize": 256	
+        }	
+    },	
+    "layers": [{	
+        "id": "usa-topo",	
+        "type": "raster",	
+        "source": "usa-topo"	
+    }]	
+}
