@@ -61,7 +61,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Habitat",
                     "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
                     "sortorder": 4,
@@ -95,32 +95,6 @@
                 },
                 {
                     "active": true,
-                    "cardid": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
-                            "constraintid": "6a2a08e7-9fff-42e0-93bd-539a8c03041c",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": "",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Animal Observation",
-                    "nodegroup_id": "fd0dd2a4-3be1-11eb-8a94-acde48001122",
-                    "sortorder": 2,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "11602c2a-3e76-11eb-a64c-acde48001122",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -145,7 +119,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "CNDDB Status",
                     "nodegroup_id": "115fbea2-3e76-11eb-a64c-acde48001122",
                     "sortorder": null,
@@ -177,10 +151,36 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Info",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
+                            "constraintid": "6a2a08e7-9fff-42e0-93bd-539a8c03041c",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Animal Observation",
+                    "nodegroup_id": "fd0dd2a4-3be1-11eb-8a94-acde48001122",
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -209,7 +209,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Comments",
                     "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 5,
@@ -250,7 +250,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Location",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 1,
@@ -555,57 +555,6 @@
                     "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
                     "config": {
                         "defaultValue": "",
-                        "label": "Animal Site Use",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "1fac4e4e-3be2-11eb-8a94-acde48001122",
-                    "label": "Animal Site Use",
-                    "node_id": "fd0dd6b4-3be1-11eb-8a94-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Animal Detection Method",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "1facc766-3be2-11eb-8a94-acde48001122",
-                    "label": "Animal Detection Method",
-                    "node_id": "fd0dd768-3be1-11eb-8a94-acde48001122",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000016"
-                },
-                {
-                    "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "format": "",
-                        "label": "Number of Animals Observed",
-                        "max": "",
-                        "min": "",
-                        "placeholder": "Enter number",
-                        "precision": "",
-                        "prefix": "",
-                        "step": "",
-                        "suffix": "",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "1fadb590-3be2-11eb-8a94-acde48001122",
-                    "label": "Number of Animals Observed",
-                    "node_id": "fd0dd8bc-3be1-11eb-8a94-acde48001122",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
-                },
-                {
-                    "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
-                    "config": {
-                        "defaultValue": "",
                         "label": "Animal Behavior",
                         "placeholder": "Select an option"
                     },
@@ -775,6 +724,57 @@
                     "sortorder": 6,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
+                },
+                {
+                    "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Animal Site Use",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "1fac4e4e-3be2-11eb-8a94-acde48001122",
+                    "label": "Animal Site Use",
+                    "node_id": "fd0dd6b4-3be1-11eb-8a94-acde48001122",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Animal Detection Method",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "1facc766-3be2-11eb-8a94-acde48001122",
+                    "label": "Animal Detection Method",
+                    "node_id": "fd0dd768-3be1-11eb-8a94-acde48001122",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000016"
+                },
+                {
+                    "card_id": "fd0dd4ac-3be1-11eb-8a94-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Number of Animals Observed",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter the number of animals sharing above properties, including age class",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "1fadb590-3be2-11eb-8a94-acde48001122",
+                    "label": "Number of Animals Observed",
+                    "node_id": "fd0dd8bc-3be1-11eb-8a94-acde48001122",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
                 },
                 {
                     "card_id": "b959d86e-033f-11eb-9978-02e99e44e93e",
@@ -1217,7 +1217,7 @@
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
             "iconclass": "fa fa-binoculars",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
