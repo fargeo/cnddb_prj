@@ -435,20 +435,6 @@
                 {
                     "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
                     "config": {
-                        "defaultValue": "379beca6-8b38-46b4-bf4e-96009a93c17e",
-                        "label": "Positive Observation",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "db0cff04-37ef-11eb-a206-acde48001122",
-                    "label": "Positive Observation",
-                    "node_id": "abdaf060-37ef-11eb-a206-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
                         "defaultValue": "",
                         "label": "Survey Effort",
                         "maxLength": null,
@@ -1126,15 +1112,6 @@
                 {
                     "description": null,
                     "domainnode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "edgeid": "abdaf27c-37ef-11eb-a206-acde48001122",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "abdaf060-37ef-11eb-a206-acde48001122"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "edgeid": "cd7dae2e-3be1-11eb-8a94-acde48001122",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
                     "name": null,
@@ -1746,37 +1723,6 @@
                     "name": "CNDDB Status",
                     "nodegroup_id": "115fbea2-3e76-11eb-a64c-acde48001122",
                     "nodeid": "115fbea2-3e76-11eb-a64c-acde48001122",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": {
-                        "options": [
-                            {
-                                "id": "379beca6-8b38-46b4-bf4e-96009a93c17e",
-                                "selected": false,
-                                "text": "Yes"
-                            },
-                            {
-                                "id": "9b73ffc8-5c2d-4dff-8968-0ef6972aa9d3",
-                                "selected": false,
-                                "text": "No"
-                            }
-                        ]
-                    },
-                    "datatype": "domain-value",
-                    "description": null,
-                    "exportable": true,
-                    "fieldname": "observed",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": true,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Positive Observation",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "nodeid": "abdaf060-37ef-11eb-a206-acde48001122",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
