@@ -1,0 +1,10 @@
+python manage.py packages -o export_business_data -f 'json' -g 'd41455df-033e-11eb-9978-02e99e44e93e';
+python manage.py packages -o export_business_data -f 'json' -g 'b587324a-17f1-11eb-96d7-acde48001122';
+python manage.py packages -o export_business_data -f 'json' -g '52954d0c-17f1-11eb-96d7-acde48001122'; 
+
+
+
+python manage.py packages -o import_business_data -s 'cnddb/pkg/business_data/Observations_2020-12-18_09-55-23.json' -ow 'append' 
+python manage.py packages -o import_business_data -s 'cnddb/pkg/business_data/Organizations_2020-12-18_09-55-56.json' -ow 'append' 
+python manage.py packages -o import_business_data -s 'cnddb/pkg/business_data/Sources_2020-12-18_09-56-05.json' -ow 'append'
+ 
