@@ -142,3 +142,31 @@ uuid_generate_v4(),
 conceptid,
 'narrower'
 from concepts where legacyoid like '%quads';
+
+---
+
+insert into concepts
+select
+uuid_generate_v4(),
+id||'orgs',
+'Concept'
+from organizations;
+
+insert into values
+select
+uuid_generate_v4(),
+affiliationname,
+b.conceptid,
+'en',
+'prefLabel'
+from organizations a, concepts b
+where a.id||'orgs' = b.legacyoid;
+
+
+insert into relations
+select 
+uuid_generate_v4(),
+'3dd5e7de-c6db-4935-8eba-295680ef2f1d',
+conceptid,
+'narrower'
+from concepts where legacyoid like '%orgs';
