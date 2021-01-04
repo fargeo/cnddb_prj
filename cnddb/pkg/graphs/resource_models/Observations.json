@@ -5,6 +5,38 @@
             "cards": [
                 {
                     "active": true,
+                    "cardid": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                            "constraintid": "cd9dfe9f-b700-4de7-9836-5937f3935eb8",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                            "constraintid": "1ed9dc2a-186e-4130-a769-882c6b515c91",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "General Info",
+                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
+                    "sortorder": 0,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
                     "config": {
@@ -42,38 +74,6 @@
                     "name": "Location",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 1,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                            "constraintid": "cd9dfe9f-b700-4de7-9836-5937f3935eb8",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                            "constraintid": "1ed9dc2a-186e-4130-a769-882c6b515c91",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "General Info",
-                    "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
-                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -391,37 +391,6 @@
                     "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
                     "config": {
                         "defaultValue": "",
-                        "label": "Date of Observation",
-                        "placeholder": ""
-                    },
-                    "id": "ef725a28-3f2f-11eb-a2e2-73ab08a728ea",
-                    "label": "Date of Observation",
-                    "node_id": "d7628ae4-3f2f-11eb-a2e2-73ab08a728ea",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Observer Contact Info",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "3cee717b-04fd-11eb-9978-02e99e44e93e",
-                    "label": "Observer Contact Info",
-                    "node_id": "12bd77bb-04fd-11eb-9978-02e99e44e93e",
-                    "sortorder": 6,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
                         "label": "Species",
                         "options": [],
                         "placeholder": ""
@@ -432,93 +401,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "format": "",
-                        "label": "Total Number Observed",
-                        "max": "",
-                        "min": "",
-                        "placeholder": "Enter number",
-                        "precision": "",
-                        "prefix": "",
-                        "step": "",
-                        "suffix": "",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "234b261c-3e60-11eb-a64c-acde48001122",
-                    "label": "Total Number Observed",
-                    "node_id": "0cf6c7f4-3e60-11eb-a64c-acde48001122",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Observer",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "3cee7175-04fd-11eb-9978-02e99e44e93e",
-                    "label": "Observer",
-                    "node_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
-                    "sortorder": 5,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Observer Affiliation",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "width": "100%"
-                    },
-                    "id": "3cee717d-04fd-11eb-9978-02e99e44e93e",
-                    "label": "Observer Affiliation",
-                    "node_id": "21f08600-04fd-11eb-9978-02e99e44e93e",
-                    "sortorder": 7,
-                    "visible": true,
-                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "379beca6-8b38-46b4-bf4e-96009a93c17e",
-                        "label": "Positive Observation",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "db0cff04-37ef-11eb-a206-acde48001122",
-                    "label": "Positive Observation",
-                    "node_id": "abdaf060-37ef-11eb-a206-acde48001122",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Survey Effort",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "234a7be0-3e60-11eb-a64c-acde48001122",
-                    "label": "Survey Effort",
-                    "node_id": "cd7dac4e-3be1-11eb-8a94-acde48001122",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
                 {
                     "card_id": "9b047be8-0340-11eb-9978-02e99e44e93e",
@@ -812,6 +694,125 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Total Number Observed",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "234b261c-3e60-11eb-a64c-acde48001122",
+                    "label": "Total Number Observed",
+                    "node_id": "0cf6c7f4-3e60-11eb-a64c-acde48001122",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "379beca6-8b38-46b4-bf4e-96009a93c17e",
+                        "label": "Positive Observation",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "db0cff04-37ef-11eb-a206-acde48001122",
+                    "label": "Positive Observation",
+                    "node_id": "abdaf060-37ef-11eb-a206-acde48001122",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Date of Observation",
+                        "placeholder": ""
+                    },
+                    "id": "ef725a28-3f2f-11eb-a2e2-73ab08a728ea",
+                    "label": "Date of Observation",
+                    "node_id": "d7628ae4-3f2f-11eb-a2e2-73ab08a728ea",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Survey Effort",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "234a7be0-3e60-11eb-a64c-acde48001122",
+                    "label": "Survey Effort",
+                    "node_id": "cd7dac4e-3be1-11eb-8a94-acde48001122",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Observer",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "3cee7175-04fd-11eb-9978-02e99e44e93e",
+                    "label": "Observer",
+                    "node_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
+                    "sortorder": 5,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Observer Contact Info",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "3cee717b-04fd-11eb-9978-02e99e44e93e",
+                    "label": "Observer Contact Info",
+                    "node_id": "12bd77bb-04fd-11eb-9978-02e99e44e93e",
+                    "sortorder": 6,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "f56cd126-04fc-11eb-9978-02e99e44e93e",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Observer Affiliation",
+                        "maxLength": null,
+                        "options": [],
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "3cee717d-04fd-11eb-9978-02e99e44e93e",
+                    "label": "Observer Affiliation",
+                    "node_id": "21f08600-04fd-11eb-9978-02e99e44e93e",
+                    "sortorder": 7,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
                 }
             ],
             "color": "rgba(234,79,237,1)",
@@ -853,6 +854,15 @@
             "deploymentfile": null,
             "description": "Recorded instance of species observation or attempt at observation.",
             "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "347a10fe-3be2-11eb-8a94-acde48001122",
+                    "edgeid": "347a1702-3be2-11eb-8a94-acde48001122",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "347a1388-3be2-11eb-8a94-acde48001122"
+                },
                 {
                     "description": null,
                     "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
@@ -1005,15 +1015,6 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "e9f6767e-033f-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "347a10fe-3be2-11eb-8a94-acde48001122",
-                    "edgeid": "347a1702-3be2-11eb-8a94-acde48001122",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "347a1388-3be2-11eb-8a94-acde48001122"
                 },
                 {
                     "description": null,
@@ -1215,7 +1216,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "id": "9e2d0f86-4d87-11eb-b392-aae9fe8789ac"
+                    "id": "a80231cc-4eb2-11eb-907f-aae9fe8789ac"
                 }
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -1388,6 +1389,24 @@
                     "name": "Species",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "nodeid": "fca0475a-04fc-11eb-9978-02e99e44e93e",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": "State the disturbances that are or may impact this site or occurrence.",
+                    "exportable": true,
+                    "fieldname": "disturb",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Disturbances",
+                    "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "nodeid": "bffb3b10-0340-11eb-9978-02e99e44e93e",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
@@ -1958,24 +1977,6 @@
                 },
                 {
                     "config": null,
-                    "datatype": "string",
-                    "description": "State the disturbances that are or may impact this site or occurrence.",
-                    "exportable": true,
-                    "fieldname": "disturb",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "is_collector": false,
-                    "isrequired": false,
-                    "issearchable": true,
-                    "istopnode": false,
-                    "name": "Disturbances",
-                    "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "nodeid": "bffb3b10-0340-11eb-9978-02e99e44e93e",
-                    "ontologyclass": null,
-                    "parentproperty": null,
-                    "sortorder": 0
-                },
-                {
-                    "config": null,
                     "datatype": "number",
                     "description": null,
                     "exportable": true,
@@ -2365,7 +2366,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "c399914f6 2020-12-11 15:30:34 -0800",
+        "git hash": "b2e8aaed7 2020-12-18 17:36:09 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
