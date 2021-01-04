@@ -32,7 +32,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": "",
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Species Detection",
                     "nodegroup_id": "7d43e3c6-3be9-11eb-8a94-acde48001122",
                     "sortorder": 2,
@@ -64,7 +64,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Legacy Info",
                     "nodegroup_id": "de039646-29fd-11eb-a8a3-aae9fe8789ac",
                     "sortorder": 4,
@@ -107,7 +107,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Source Document",
                     "nodegroup_id": "7d53b920-17f1-11eb-96d7-acde48001122",
                     "sortorder": 0,
@@ -139,7 +139,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Comments",
                     "nodegroup_id": "2b25c27e-29fd-11eb-a8a3-aae9fe8789ac",
                     "sortorder": 3,
@@ -191,7 +191,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Source Location",
                     "nodegroup_id": "f7c974a0-29f4-11eb-8487-aae9fe8789ac",
                     "sortorder": 1,
@@ -229,95 +229,19 @@
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
                 {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "card_id": "de03cbc0-29fd-11eb-a8a3-aae9fe8789ac",
                     "config": {
-                        "defaultValue": "",
-                        "label": "Document Title",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
+                        "acceptedFiles": "",
+                        "label": "Legacy Files",
+                        "maxFilesize": "200",
+                        "rerender": true
                     },
-                    "id": "65b94434-189a-11eb-96d7-acde48001122",
-                    "label": "Document Title",
-                    "node_id": "e7a370fe-186e-11eb-96d7-acde48001122",
-                    "sortorder": 0,
+                    "id": "21cd704f-40b7-11eb-a2e2-73ab08a728ea",
+                    "label": "Legacy Files",
+                    "node_id": "ff83c39a-37f9-11eb-a206-acde48001122",
+                    "sortorder": null,
                     "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Document Author",
-                        "maxLength": null,
-                        "placeholder": "Enter text",
-                        "uneditable": false,
-                        "width": "100%"
-                    },
-                    "id": "4dfd660a-2b90-11eb-ba08-aae9fe8789ac",
-                    "label": "Document Author",
-                    "node_id": "dc1a61a2-186e-11eb-96d7-acde48001122",
-                    "sortorder": 1,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Affiliations",
-                        "options": [],
-                        "placeholder": "Select an option"
-                    },
-                    "id": "73f7f674-4d9e-11eb-87eb-aae9fe8789ac",
-                    "label": "Affiliations",
-                    "node_id": "60fa50e4-4d9e-11eb-87eb-aae9fe8789ac",
-                    "sortorder": 2,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
-                },
-                {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Source Type",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "65ba4582-189a-11eb-96d7-acde48001122",
-                    "label": "Source Type",
-                    "node_id": "832ee978-17f1-11eb-96d7-acde48001122",
-                    "sortorder": 3,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
-                },
-                {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Source Date",
-                        "placeholder": ""
-                    },
-                    "id": "74c138b8-3e71-11eb-a64c-acde48001122",
-                    "label": "Source Date",
-                    "node_id": "4ac9c714-3e71-11eb-a64c-acde48001122",
-                    "sortorder": 4,
-                    "visible": true,
-                    "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
-                },
-                {
-                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "Received Date",
-                        "placeholder": ""
-                    },
-                    "id": "74c1b5a4-3e71-11eb-a64c-acde48001122",
-                    "label": "Received Date",
-                    "node_id": "5b6a3b4e-3e71-11eb-a64c-acde48001122",
-                    "sortorder": 5,
-                    "visible": true,
-                    "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 },
                 {
                     "card_id": "de03cbc0-29fd-11eb-a8a3-aae9fe8789ac",
@@ -369,21 +293,6 @@
                     "sortorder": null,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
-                },
-                {
-                    "card_id": "de03cbc0-29fd-11eb-a8a3-aae9fe8789ac",
-                    "config": {
-                        "acceptedFiles": "",
-                        "label": "Legacy Files",
-                        "maxFilesize": "200",
-                        "rerender": true
-                    },
-                    "id": "21cd704f-40b7-11eb-a2e2-73ab08a728ea",
-                    "label": "Legacy Files",
-                    "node_id": "ff83c39a-37f9-11eb-a206-acde48001122",
-                    "sortorder": null,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 },
                 {
                     "card_id": "2b25ef1a-29fd-11eb-a8a3-aae9fe8789ac",
@@ -476,6 +385,97 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Document Title",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "65b94434-189a-11eb-96d7-acde48001122",
+                    "label": "Document Title",
+                    "node_id": "e7a370fe-186e-11eb-96d7-acde48001122",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Document Author",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "4dfd660a-2b90-11eb-ba08-aae9fe8789ac",
+                    "label": "Document Author",
+                    "node_id": "dc1a61a2-186e-11eb-96d7-acde48001122",
+                    "sortorder": 1,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Affiliation(s)",
+                        "options": [],
+                        "placeholder": "Select one or more options"
+                    },
+                    "id": "73f7f674-4d9e-11eb-87eb-aae9fe8789ac",
+                    "label": "Affiliation(s)",
+                    "node_id": "60fa50e4-4d9e-11eb-87eb-aae9fe8789ac",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Source Type",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "65ba4582-189a-11eb-96d7-acde48001122",
+                    "label": "Source Type",
+                    "node_id": "832ee978-17f1-11eb-96d7-acde48001122",
+                    "sortorder": 3,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Source Date",
+                        "placeholder": ""
+                    },
+                    "id": "74c138b8-3e71-11eb-a64c-acde48001122",
+                    "label": "Source Date",
+                    "node_id": "4ac9c714-3e71-11eb-a64c-acde48001122",
+                    "sortorder": 4,
+                    "visible": true,
+                    "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
+                },
+                {
+                    "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Received Date",
+                        "placeholder": ""
+                    },
+                    "id": "74c1b5a4-3e71-11eb-a64c-acde48001122",
+                    "label": "Received Date",
+                    "node_id": "5b6a3b4e-3e71-11eb-a64c-acde48001122",
+                    "sortorder": 5,
+                    "visible": true,
+                    "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
                 {
                     "card_id": "7d53ef94-17f1-11eb-96d7-acde48001122",
@@ -775,12 +775,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "52954d0c-17f1-11eb-96d7-acde48001122",
-                    "id": "7d8bd49a-4d9d-11eb-a46d-aae9fe8789ac"
+                    "id": "a60f61fa-4eb2-11eb-907f-aae9fe8789ac"
                 }
             ],
             "graphid": "52954d0c-17f1-11eb-96d7-acde48001122",
             "iconclass": "fa fa-book",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -1367,7 +1367,7 @@
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Affiliations",
+                    "name": "Affiliation(s)",
                     "nodegroup_id": "7d53b920-17f1-11eb-96d7-acde48001122",
                     "nodeid": "60fa50e4-4d9e-11eb-87eb-aae9fe8789ac",
                     "ontologyclass": null,
@@ -1403,7 +1403,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "c399914f6 2020-12-11 15:30:34 -0800",
+        "git hash": "b2e8aaed7 2020-12-18 17:36:09 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
