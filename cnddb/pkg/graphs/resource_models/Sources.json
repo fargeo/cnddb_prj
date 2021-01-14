@@ -460,6 +460,20 @@
                     "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
                 {
+                    "card_id": "bf3c9530-4eb7-11eb-986c-aae9fe8789ac",
+                    "config": {
+                        "defaultValue": "3ea77fcc-c05e-4fc5-b460-bd463d5b04ec",
+                        "label": "CNDDB Source Status",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "bf3c9792-4eb7-11eb-986c-aae9fe8789ac",
+                    "label": "CNDDB Source Status",
+                    "node_id": "bf3c930a-4eb7-11eb-986c-aae9fe8789ac",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000017"
+                },
+                {
                     "card_id": "f7c9c676-29f4-11eb-8487-aae9fe8789ac",
                     "config": {
                         "defaultValue": "",
@@ -533,20 +547,6 @@
                     "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000007"
-                },
-                {
-                    "card_id": "bf3c9530-4eb7-11eb-986c-aae9fe8789ac",
-                    "config": {
-                        "defaultValue": "",
-                        "label": "CNDDB Source Status",
-                        "placeholder": "Select an option"
-                    },
-                    "id": "bf3c9792-4eb7-11eb-986c-aae9fe8789ac",
-                    "label": "CNDDB Source Status",
-                    "node_id": "bf3c930a-4eb7-11eb-986c-aae9fe8789ac",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000015"
                 },
                 {
                     "card_id": "bf3c9530-4eb7-11eb-986c-aae9fe8789ac",
@@ -1590,7 +1590,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "b2e8aaed7 2020-12-18 17:36:09 -0800",
+        "git hash": "7f4f13598 2021-01-13 13:11:25 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
