@@ -5,6 +5,38 @@
             "cards": [
                 {
                     "active": true,
+                    "cardid": "65848870-2f60-11eb-b618-acde48001122",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "65848870-2f60-11eb-b618-acde48001122",
+                            "constraintid": "64f1d403-abff-4320-a025-dacb146cb2f1",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "65848870-2f60-11eb-b618-acde48001122",
+                            "constraintid": "b18e620f-67c1-4e50-9e9e-36b7359c7924",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Images",
+                    "nodegroup_id": "65841f5c-2f60-11eb-b618-acde48001122",
+                    "sortorder": 6,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "b959d86e-033f-11eb-9978-02e99e44e93e",
                     "component_id": "3c103484-22d1-4ca9-a9f3-eb3902d567ac",
                     "config": {
@@ -38,7 +70,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Location",
                     "nodegroup_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "sortorder": 1,
@@ -70,7 +102,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Info",
                     "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
                     "sortorder": 0,
@@ -102,7 +134,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Habitat",
                     "nodegroup_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
                     "sortorder": 4,
@@ -134,7 +166,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "CNDDB Status",
                     "nodegroup_id": "115fbea2-3e76-11eb-a64c-acde48001122",
                     "sortorder": null,
@@ -160,7 +192,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Animal Observation",
                     "nodegroup_id": "fd0dd2a4-3be1-11eb-8a94-acde48001122",
                     "sortorder": 2,
@@ -194,38 +226,6 @@
                 },
                 {
                     "active": true,
-                    "cardid": "65848870-2f60-11eb-b618-acde48001122",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "65848870-2f60-11eb-b618-acde48001122",
-                            "constraintid": "64f1d403-abff-4320-a025-dacb146cb2f1",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "65848870-2f60-11eb-b618-acde48001122",
-                            "constraintid": "b18e620f-67c1-4e50-9e9e-36b7359c7924",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": true,
-                    "name": "Images",
-                    "nodegroup_id": "65841f5c-2f60-11eb-b618-acde48001122",
-                    "sortorder": 6,
-                    "visible": true
-                },
-                {
-                    "active": true,
                     "cardid": "40417048-0341-11eb-9978-02e99e44e93e",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -250,7 +250,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "General Comments",
                     "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
                     "sortorder": 5,
@@ -849,6 +849,15 @@
             "edges": [
                 {
                     "description": null,
+                    "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
+                    "edgeid": "12bd77bc-04fd-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "12bd77bb-04fd-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
                     "domainnode_id": "b959d86c-033f-11eb-9978-02e99e44e93e",
                     "edgeid": "e9f6767f-033f-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -972,15 +981,6 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
-                    "edgeid": "12bd77bc-04fd-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "12bd77bb-04fd-11eb-9978-02e99e44e93e"
                 },
                 {
                     "description": null,
@@ -1209,12 +1209,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "id": "81175cc0-4eb4-11eb-adfa-aae9fe8789ac"
+                    "id": "b72aab2e-6808-11eb-95ac-0c4de9ce7b44"
                 }
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
             "iconclass": "fa fa-binoculars",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -2359,7 +2359,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "7f4f13598 2021-01-13 13:11:25 -0800",
+        "git hash": "7f61e5c5f 2021-02-03 17:01:28 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
