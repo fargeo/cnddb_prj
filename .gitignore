@@ -1,5 +1,4 @@
 *.pyc
-.yarnrc
 *.sublime*
 .DS_Store
 arches.log
