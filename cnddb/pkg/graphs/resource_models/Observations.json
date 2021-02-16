@@ -5,6 +5,38 @@
             "cards": [
                 {
                     "active": true,
+                    "cardid": "40417048-0341-11eb-9978-02e99e44e93e",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
+                            "constraintid": "03b22388-50cf-4d03-ac17-4db2696364e2",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
+                            "constraintid": "de8df941-adf1-45c9-80ad-8e4ce41a7267",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "General Comments",
+                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
+                    "sortorder": 5,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "65848870-2f60-11eb-b618-acde48001122",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -222,38 +254,6 @@
                     "name": "Plant Observation",
                     "nodegroup_id": "347a10fe-3be2-11eb-8a94-acde48001122",
                     "sortorder": 3,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "40417048-0341-11eb-9978-02e99e44e93e",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
-                            "constraintid": "03b22388-50cf-4d03-ac17-4db2696364e2",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "40417048-0341-11eb-9978-02e99e44e93e",
-                            "constraintid": "de8df941-adf1-45c9-80ad-8e4ce41a7267",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
-                    "cssclass": null,
-                    "description": "Other comments about the observation or detection which would be useful in evaluating the occurrence or which would provide additional relevant information. Suggestions include explanations of negative data, survey effort, study design, disposition, relocation, or conservation concerns.",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": false,
-                    "name": "General Comments",
-                    "nodegroup_id": "40417046-0341-11eb-9978-02e99e44e93e",
-                    "sortorder": 5,
                     "visible": true
                 }
             ],
@@ -849,6 +849,15 @@
             "edges": [
                 {
                     "description": null,
+                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
+                    "edgeid": "a9cb687f-0340-11eb-9978-02e99e44e93e",
+                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
+                },
+                {
+                    "description": null,
                     "domainnode_id": "0da1fe5e-04fd-11eb-9978-02e99e44e93e",
                     "edgeid": "12bd77bc-04fd-11eb-9978-02e99e44e93e",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -972,15 +981,6 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "084ba470-050a-11eb-9978-02e99e44e93e"
-                },
-                {
-                    "description": null,
-                    "domainnode_id": "9b047be6-0340-11eb-9978-02e99e44e93e",
-                    "edgeid": "a9cb687f-0340-11eb-9978-02e99e44e93e",
-                    "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "name": null,
-                    "ontologyproperty": null,
-                    "rangenode_id": "a9cb687e-0340-11eb-9978-02e99e44e93e"
                 },
                 {
                     "description": null,
@@ -1209,7 +1209,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "d41455df-033e-11eb-9978-02e99e44e93e",
-                    "id": "b72aab2e-6808-11eb-95ac-0c4de9ce7b44"
+                    "id": "62087d12-680b-11eb-97c7-0c4de9ce7b44"
                 }
             ],
             "graphid": "d41455df-033e-11eb-9978-02e99e44e93e",
@@ -2359,7 +2359,7 @@
     ],
     "metadata": {
         "db": "PostgreSQL 12.1 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit",
-        "git hash": "7f61e5c5f 2021-02-03 17:01:28 -0800",
+        "git hash": "e7e66b35a 2021-02-10 20:13:49 -0800",
         "os": "Darwin",
         "os version": "19.6.0"
     }
