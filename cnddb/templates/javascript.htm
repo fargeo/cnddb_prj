@@ -1,0 +1,10 @@
+{% extends "javascript.htm" %}
+
+{% load staticfiles %}
+{% load l10n %}
+{% load i18n %}
+
+{% block urls %}
+    api_external_resource_data_validation: "{% url 'api_external_resource_data_validation' %}",
+    api_external_resource_creation: function(graphid){return "{% url 'api_external_resource_creation' 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' %}".replace('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', graphid)},
+{% endblock urls %}

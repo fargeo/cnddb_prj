@@ -90,7 +90,9 @@ define([
             */ 
             self.tile._cachedFileData = self.fileData();
 
-            params.fileData(self.fileData());
+            if (params.fileData) {
+                params.fileData(self.fileData());
+            }
         });
 
         this.dropzoneOptions = {
