@@ -1,6 +1,6 @@
 {
-    "OBSERVATIONS_GRAPH_ID": "d41455df-033e-11eb-9978-02e99e44e93e",
-    "OBSERVATIONS_CSV_COLUMN_NAME_TO_NODE_IDS": {
+    "GRAPH_ID": "d41455df-033e-11eb-9978-02e99e44e93e",
+    "CSV_COLUMN_NAMES_TO_NODE_IDS": {
         "ObservationDate*": { 
             "node_id": "d7628ae4-3f2f-11eb-a2e2-73ab08a728ea",
             "nodegroup_id": "f56cd124-04fc-11eb-9978-02e99e44e93e",
