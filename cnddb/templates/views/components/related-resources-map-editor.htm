@@ -1,0 +1,6 @@
+{% extends "views/components/related-resources-map-editor.htm" %}
+{% load i18n %}
+
+{% block additional_content %}
+    <external-resource-data-preview params="{fileData: self.fileData, loading: self.loading, tile: self.tile, widgets: self.widgets}" ></external-resource-data-preview>
+{% endblock additional_content %}
