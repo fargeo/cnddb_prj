@@ -208,3 +208,4 @@ class ExternalResourceDataCreation(APIBase):
                     for message in formatted:
                         print(message)
             return JSONResponse({"error": "resource data could not be saved: %s" % e}, status=500, reason=e)
+            
