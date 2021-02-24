@@ -119,7 +119,7 @@ define([
     ko.components.register('external-resource-data-preview-map', {
         viewModel: viewModel,
         template: {
-            require: 'text!templates/views/components/cards/external-resource-data-preview-map.htm'
+            require: 'text!templates/views/components/cards/related-resources-map.htm'
         }
     });
 
