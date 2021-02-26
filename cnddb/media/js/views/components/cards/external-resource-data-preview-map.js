@@ -25,6 +25,8 @@ define([
         this.draw = params.draw;
         this.map = ko.observable(params.map);
 
+        this.additionalRelatedResourceContent = ko.observable(true);
+
         this.fileData = ko.observable();
         this.fileData.subscribe(function(fileData) {
             if (!self.draw) {
