@@ -1,4 +1,4 @@
-# Welcome to the Arches Project!
+# This contains code for an application based on Arches version 5.2.x
 
 Arches is a new, open-source, web-based, geospatial information system for cultural heritage inventory and management. Arches is purpose-built for the international cultural heritage field, and it is designed to record all types of immovable heritage, including archaeological sites, buildings and other historic structures, landscapes, and heritage ensembles or districts.
 
