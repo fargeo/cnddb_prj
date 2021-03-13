@@ -15,61 +15,77 @@
         
         <div class="col-xs-12 dropzone" data-bind="dropzone: dropzoneOptions">
             <div 
-                class="file-select-window" 
-                style="min-width: unset;"
-                data-bind="visible: addedFiles().length === 0"
+                style="
+                    border: 1px dashed #bbb;
+                    border-radius: 6px;
+                "
+                data-bind="
+                    visible: addedFiles().length === 0
+                "
+            >
+            <div 
+                class="fileinput-button dz-clickable" 
+                style="
+                    cursor: pointer;
+                "
+                data-bind="css: uniqueidClass"
             >
                 <div 
-                    class="bord-top pad-ver file-select"
-                    style="padding: 5px 10px 20px 10px;"
+                    class="pad-ver file-select"
+                    style="padding: 5px 10px"
                 >
                     <div style="padding: 5px;">
-                        <h4>{% trans "Drag & Drop files onto this panel" %}</h4>
-                    </div>
+                        <h3>
+                            {% trans "Drag files here to add" %}
+                        </h3>
 
-                    <div class="separator">{% trans "or" %}</div>
+                        <div style="font-weight: lighter;">
+                            {% trans "( or click to manually select a file )" %}
+                        </div>
 
-                    <button 
-                        type="button" 
-                        class="btn btn btn-file-select fileinput-button dz-clickable" 
-                        style="
-                            margin: unset;
-                            margin-top: 15px;
-                        "
-                        data-bind="css: uniqueidClass, disable: disabled"
-                    >
-                        <i class="fa fa-file"></i>
-                        <span>{% trans "Select Files" %}</span>
-                    </button>
-                </div>
-                <div 
-                    class="file-upload-footer"
-                    style="
-                        flex-direction: column;
-                        padding: 10px 20px;
-                    "
-                >
-                    <div
-                        style="
-                            padding-bottom: 5px;
-                            width: 100%;
-                        "
-                    >
-                        <span>{% trans "Allowed document formats:" %}</span>
-                        <span data-bind="text: (acceptedFiles() || 'Any')"></span>
-                    </div>
-                    <div style="width: 100%;">
-                        <span>{% trans "Maximum file size:" %}</span>
-                        <span data-bind="text: maxFilesize() + 'MB'"></span>
+                        <div 
+                            style="
+                                margin-top: 18px;
+                                border-top: 1px solid #ddd;
+                            "
+                        >
+                            <div
+                                style="
+                                    font-weight: lighter;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 8px;
+                                    padding: 0 4px;
+                                "
+                            >
+
+                                <div>
+                                    <span>{% trans "Allowed formats:" %}</span>
+                                    <span data-bind="text: (acceptedFiles() || 'Any')"></span>
+                                </div>
+                                
+                                <div>
+                                    <span>{% trans "Maximum size:" %}</span>
+                                    <span data-bind="text: maxFilesize() + 'MB'"></span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+            </div>
+            
             </div>
 
             <!-- 
                 note that data-bind=visible must be in place (instead of ko if:) as DZ instantiates only once;
                 elements with its class name must exist at time of init 
             -->
-            <div data-bind="visible: addedFiles().length > 0">
+            <div
+                data-bind="visible: addedFiles().length > 0"
+            >
+
                 <div
                     style="
                         display: flex;
@@ -148,8 +164,14 @@
                         <span>{% trans "Remove all files" %}</span>
                     </button>
                 </div>
+
+                <div 
+                    class="dz-previews" 
+                    data-bind="
+                        css: uniqueidClass
+                    "
+                >
             </div>
-            <div class="dz-previews" data-bind="css: uniqueidClass">
             <!-- ko if: !filter() -->
                 <!-- ko foreach: addedFiles() -->
                     <div 
