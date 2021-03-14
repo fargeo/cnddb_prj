@@ -28,7 +28,7 @@ define([
         params.configKeys = ['acceptedFiles', 'maxFilesize', 'maxFiles'];
         FileWidgetViewModel.apply(this, [params]);
 
-        this.acceptedFiles = ko.observableArray(['.csv']);
+        this.acceptedFiles = ko.observable('.csv');
         this.maxFilesize = ko.observable(4);
 
         this.unique_id = uuid.generate();

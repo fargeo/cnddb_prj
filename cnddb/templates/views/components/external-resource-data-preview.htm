@@ -52,6 +52,7 @@
                             <div
                                 style="
                                     font-weight: lighter;
+                                    font-size: 12px;
                                     display: flex;
                                     justify-content: space-between;
                                     margin-top: 8px;
@@ -80,12 +81,16 @@
 
             <!-- 
                 note that data-bind=visible must be in place (instead of ko if:) as DZ instantiates only once;
-                elements with its class name must exist at time of init 
+                elements it depends on must exist at time of init 
             -->
-            <div
-                data-bind="visible: addedFiles().length > 0"
+            <div 
+                style="border: unset;"
+                class="dz-previews" 
+                data-bind="{
+                    visible: addedFiles().length > 0,
+                    css: uniqueidClass,
+                }"
             >
-
                 <div
                     style="
                         display: flex;
@@ -108,30 +113,30 @@
                     </div>
                 </div>
 
-                    <!--ko if: addedFiles().length > 1-->
-                    <input 
-                        data-bind="textInput: filter" 
-                        type="text" placeholder="{% trans 'find a file...' %}" 
-                        class="file-upload-filter"
-                        style="
-                            width:100%;
-                            margin-bottom: 6px;
-                        "
-                    >
-                    <!-- /ko -->
-    
-                    <!-- Clear Search -->
-                    <div 
-                        style="
-                            position: absolute;
-                            top: 44px;
-                            left: 320px;
-                            cursor: pointer;
-                        " 
-                        data-bind="visible: filter().length > 0, click: function() { filter(''); }"
-                    >
-                        <i class="fa fa-times-circle"></i>
-                    </div>
+                <!--ko if: addedFiles().length > 1-->
+                <input 
+                    data-bind="textInput: filter" 
+                    type="text" placeholder="{% trans 'find a file...' %}" 
+                    class="file-upload-filter"
+                    style="
+                        width:100%;
+                        margin-bottom: 6px;
+                    "
+                >
+                <!-- /ko -->
+
+                <!-- Clear Search -->
+                <div 
+                    style="
+                        position: absolute;
+                        top: 44px;
+                        left: 320px;
+                        cursor: pointer;
+                    " 
+                    data-bind="visible: filter().length > 0, click: function() { filter(''); }"
+                >
+                    <i class="fa fa-times-circle"></i>
+                </div>
 
                 <div 
                     style="
@@ -166,85 +171,141 @@
                 </div>
 
                 <div 
-                    class="dz-previews" 
-                    data-bind="
-                        css: uniqueidClass
-                    "
-                >
-            </div>
-            <!-- ko if: !filter() -->
-                <!-- ko foreach: addedFiles() -->
-                    <div 
-                        class="file-upload-card"
-                        style="width: fit-content;"
+
+                    data-bind=""
+                ></div>
+
+                <!-- ko if: addedFiles().length > 0 -->
+                    <!-- ko if: !filter() -->
+                    <table
+                        style="
+                            display: flex;
+                            overflow: hidden;
+                            border: 1px solid #D3E5F4;
+                            border-bottom: unset;
+                        "
                     >
-                        <div 
-                            class="media-body"
-                            style="width: 100%;"
+                        <tbody
+                            style="overflow: scroll;"
+                            data-bind="foreach: addedFiles"
                         >
-                            <div style="display: flex;">
-                                <div 
-                                    class="media-left"
-                                    style="margin-top: 6px;"
-                                >
-                                    <button 
-                                        class="btn btn-xs btn-danger btn-file-cancel"
-                                        data-bind="click: $parent.removeFile"
+                            <tr class="file-upload-card">
+                                <td>
+                                    <div class="media-body">
+                                        <div style="display: flex;">
+                                            <div
+                                                style="
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin-left: 8px;
+                                                "
+                                            >
+                                                <button 
+                                                    class="btn btn-xs btn-danger btn-file-cancel"
+                                                    data-bind="click: $parent.removeFile"
+                                                >
+                                                    <i class="ion ion-close"></i>
+                                                </button>
+                                            </div>
+    
+                                            <div class="file-upload-card-detail">
+                                                <div
+                                                    style="padding: 0 8px;"
+                                                >
+                                                    <span 
+                                                        style="white-space: nowrap;"
+                                                        data-bind="text: name"
+                                                    ></span>
+    
+                                                    <!-- ko if: $data.error -->
+                                                    <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
+                                                    <!-- /ko -->
+
+                                                    <span 
+                                                        style="
+                                                            font-weight: lighter;
+                                                        "
+                                                        class="text-sm" 
+                                                        data-bind="html: $parent.formatSize($data)"
+                                                    >
+                                                    </span>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /ko -->
+
+                    <!-- ko if: filter() -->
+                    <table
+                        style="
+                            display: flex;
+                            overflow: hidden;
+                        "
+                    >
+                        <tbody
+                            style="overflow: scroll;"
+                            data-bind="foreach: filteredList"
+                        >
+                            <tr>
+                                <td>
+                                    <div 
+                                        class="file-upload-card"
+                                        style="width: fit-content;"
+                                        data-bind="css: { active: true }"
                                     >
-                                        <i class="ion ion-close"></i>
-                                    </button>
-                                </div>
+                                            <div 
+                                                class="media-body"
+                                                style="width: 100%;"
+                                            >
+                                                <div style="display: flex;">
+                                                    <div 
+                                                        class="media-left"
+                                                        style="margin-top: 6px;"
+                                                    >
+                                                        <button 
+                                                            class="btn btn-xs btn-danger btn-file-cancel"
+                                                            data-bind="click: $parent.removeFile"
+                                                        >
+                                                            <i class="ion ion-close"></i>
+                                                        </button>
+                                                    </div>
+            
+                                                    <div class="media-body file-upload-card-detail">
+                                                        <div>
+                                                            <span 
+                                                                data-bind="text: name"
+                                                            ></span>
+            
+                                                            <!-- ko if: $data.error -->
+                                                            <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
+                                                            <!-- /ko -->
 
-                                <div class="media-body file-upload-card-detail">
-                                    <div class="media-left">
-                                        <span 
-                                            class="text-main mar-no text-overflow" 
-                                            style="padding-right: 25px;"
-                                            data-bind="text: name"
-                                        ></span>
-
-                                        <!-- ko if: $data.error -->
-                                        <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
-                                        <!-- /ko -->
-                                    </div>
-
-                                    <div class="text-sm" data-bind="html: $parent.formatSize($data)"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                                            <span 
+                                                                style="
+                                                                    margin: 0 5px;
+                                                                    font-weight: lighter;
+                                                                "
+                                                                class="text-sm" 
+                                                                data-bind="html: $parent.formatSize($data)"
+                                                            >
+                                                            </span>
+                                                        </div>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /ko -->
                 <!-- /ko -->
-            <!-- /ko -->
-            <!-- ko if: filter() -->
-                <!-- ko foreach: filteredList() -->
-                <div class="file-upload-card">
-                    <div class="media-body">
-                        <div class="media-block">
-                            <div class="media-left">
-                                <span><i class="fa fa-file fa-lg"></i></span>
-                            </div>
-                            <div class="media-body file-upload-card-detail">
-                                <div class="media-left">
-                                    <span class="text-main mar-no text-overflow" data-bind="text: name"></span>
-                                    <!-- ko if: $data.error -->
-                                    <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
-                                    <!-- /ko -->
-                                    <span class="text-sm"><a data-bind="attr: {href: ko.unwrap(url) ? url : content, download: name}, click: function(){return ko.unwrap(url) ? true : false}, clickBubble: false"><span data-bind="text: ko.unwrap(url) ? '{% trans "Download" %}' : '{% trans "Unsaved" %}'"></span></a></span>
-                                </div>
-                                <div class="file-upload-card-detail-right">
-                                    <div class="media-right" data-bind="click: $parent.removeFile">
-                                        <button class="btn btn-xs btn-danger btn-file-cancel"><i class="ion ion-close"></i></button>
-                                    </div>
-                                    <div class="">
-                                        <span class="text-sm" data-bind="html: $parent.formatSize($data)"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /ko -->
-            <!-- /ko -->
             </div>
         </div>
 
