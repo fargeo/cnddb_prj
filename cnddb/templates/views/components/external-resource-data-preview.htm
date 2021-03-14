@@ -176,7 +176,6 @@
                 ></div>
 
                 <!-- ko if: addedFiles().length > 0 -->
-                    <!-- ko if: !filter() -->
                     <table
                         style="
                             display: flex;
@@ -187,7 +186,7 @@
                     >
                         <tbody
                             style="overflow: scroll;"
-                            data-bind="foreach: addedFiles"
+                            data-bind="foreach: filter() ? filteredList : addedFiles"
                         >
                             <tr class="file-upload-card">
                                 <td>
@@ -238,73 +237,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!-- /ko -->
-
-                    <!-- ko if: filter() -->
-                    <table
-                        style="
-                            display: flex;
-                            overflow: hidden;
-                        "
-                    >
-                        <tbody
-                            style="overflow: scroll;"
-                            data-bind="foreach: filteredList"
-                        >
-                            <tr>
-                                <td>
-                                    <div 
-                                        class="file-upload-card"
-                                        style="width: fit-content;"
-                                        data-bind="css: { active: true }"
-                                    >
-                                            <div 
-                                                class="media-body"
-                                                style="width: 100%;"
-                                            >
-                                                <div style="display: flex;">
-                                                    <div 
-                                                        class="media-left"
-                                                        style="margin-top: 6px;"
-                                                    >
-                                                        <button 
-                                                            class="btn btn-xs btn-danger btn-file-cancel"
-                                                            data-bind="click: $parent.removeFile"
-                                                        >
-                                                            <i class="ion ion-close"></i>
-                                                        </button>
-                                                    </div>
-            
-                                                    <div class="media-body file-upload-card-detail">
-                                                        <div>
-                                                            <span 
-                                                                data-bind="text: name"
-                                                            ></span>
-            
-                                                            <!-- ko if: $data.error -->
-                                                            <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
-                                                            <!-- /ko -->
-
-                                                            <span 
-                                                                style="
-                                                                    margin: 0 5px;
-                                                                    font-weight: lighter;
-                                                                "
-                                                                class="text-sm" 
-                                                                data-bind="html: $parent.formatSize($data)"
-                                                            >
-                                                            </span>
-                                                        </div>
-            
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- /ko -->
                 <!-- /ko -->
             </div>
         </div>
