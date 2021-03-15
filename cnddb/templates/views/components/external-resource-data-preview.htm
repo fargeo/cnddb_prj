@@ -182,6 +182,7 @@
                             overflow: hidden;
                             border: 1px solid #D3E5F4;
                             border-bottom: unset;
+                            max-height: 150px;
                         "
                     >
                         <tbody
@@ -260,58 +261,73 @@
                     padding-bottom: 14px;
                 "
             >
-                <table>
-                    <thead>
-                        <tr> 
-                            <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
-                            <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
-                                <th 
-                                    scope="column" 
-                                    data-bind="text: key"
-                                    style="
-                                        padding: 0px 10px;
-                                    "
-                                ></th>
-                                <!-- /ko -->
-                            <!-- /ko -->
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <table
+                    style="
+                        display: flex;
+                        border-top: 1px solid #ddd;
+                    "
+                >
+                    <tbody
+                        style="overflow: hidden;"
+                    >
                         <!-- ko foreach: uncreatedResourceData() -->
-
                                 <tr
-                                    data-bind="{
-                                        style: { backgroundColor: !_.isEmpty(ko.unwrap($data['errors'])) ? 'lightcoral' : 'white'  },
+                                    style="
+                                        display: flex;
+                                        border: 1px solid #ddd;
+                                        border-top: unset;
+                                        white-space: nowrap;
+                                    "
+                                    data-bind="style: { 
+                                        backgroundColor: !_.isEmpty(ko.unwrap($data['errors'])) ? 'lightcoral' : 'white'
                                     }"
                                 >
                                     <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
                                         <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
-                                        <td
-                                            style="padding: 5px"
-                                        >
-                                            <div>
-                                                <span data-bind="{text:(function(){
-                                                    var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-                                                    return $parent['row_data'][nodeId];
-                                                })()}"></span>
-                                            </div>
-                                        </td>
+                                            <td 
+                                                style="
+                                                    display: flex;
+                                                    align-items: center;
+                                                    border-right: 1px solid #ddd;
+                                                    overflow: scroll;
+                                                    flex: 1;
+                                                "
+                                            >
+                                                <span
+                                                    style="padding: 0 8px"
+                                                    data-bind="{
+                                                        text:(function(){
+                                                        var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+                                                        return $parent['row_data'][nodeId];
+                                                    })()}"
+                                                ></span>
+                                            </td>
                                         <!-- /ko -->
                                     <!-- /ko -->
                                     <td
-                                        style="padding: 5px;"
+                                        style="
+                                            display: flex;
+                                            border-right: 1px solid #ddd;
+                                        "
                                     >
-                                        <div
-                                            style="display: flex;"
+                                        <button 
+                                            class="btn btn-link"
+                                            data-bind="click: function() { $parents[1].bar($data) }"
                                         >
-                                            <button 
-                                                class="btn btn-link"
-                                                data-bind="click: function() { $parent.deleteResourceDatum($data.row_id) }"
-                                            >
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </div>
+                                            <i style="margin-right: 3px;" class="fa fa-eye"></i>
+                                            <span>{% trans "View" %}</span>
+                                        </button>
+                                    </td>
+                                    <td
+                                        style="display: flex;"
+                                    >
+                                        <button 
+                                            class="btn btn-link"
+                                            data-bind="click: function() { $parent.deleteResourceDatum($data.row_id) }"
+                                        >
+                                            <i style="margin-right: 3px;" class="fa fa-trash"></i>
+                                            <span>{% trans "Delete" %}</span>
+                                        </button>
                                     </td>
                                 </tr>
 

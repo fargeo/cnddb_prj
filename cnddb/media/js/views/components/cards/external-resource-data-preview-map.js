@@ -38,6 +38,54 @@ define([
             self.updateMap(fileData)
         });
 
+        this.bar = function(baz) {
+            if (self.popup) {
+                self.popup.remove()
+                self.popup = undefined;
+            }
+
+            var map = self.map();
+            
+            map.fitBounds(
+                geojsonExtent(baz.location_data),
+                { 
+                    padding: { top: 120, right: 540, bottom: 120, left: 120 },
+                    linear: true,
+                }
+            )
+
+            map.once("moveend", function() {
+                var feature = _.find(
+                    map.queryRenderedFeatures(),
+                    function(feature) { return feature.properties.id === baz.row_id; }
+                );
+    
+                if (feature) {
+                    feature.id = feature.properties.id;
+    
+                    self.popup = new mapboxgl.Popup()
+                        .setLngLat(baz.location_data.features[0].geometry.coordinates)
+                        .setHTML(popupTemplate)
+                        .addTo(map);
+                    ko.applyBindingsToDescendants(
+                        baz,
+                        self.popup._content
+                    );
+    
+                    if (map.getStyle()) {
+                        map.setFeatureState(feature, { selected: true });
+                    }
+    
+                    self.popup.on('close', function() {
+                        if (map.getStyle()) map.setFeatureState(feature, { selected: false });
+                        self.popup = undefined;
+                    });
+                }
+            })
+
+
+        };
+
         this.updateMap = function(fileData) {
             if (self.draw) {
                 self.draw.deleteAll();
