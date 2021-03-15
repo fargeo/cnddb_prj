@@ -62,7 +62,11 @@ define([
     
                 if (feature) {
                     feature.id = feature.properties.id;
-    
+
+                    self.draw.changeMode('simple_select', {
+                        featureIds: [feature.id]
+                    });
+
                     self.popup = new mapboxgl.Popup()
                         .setLngLat(baz.location_data.features[0].geometry.coordinates)
                         .setHTML(popupTemplate)

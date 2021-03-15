@@ -45,6 +45,11 @@ define([
             return widget.datatype.datatype = 'resource-instance-list';
         })
 
+        this.selectedResourceData = ko.observable(); 
+        this.selectedResourceData.subscribe(function(foo) {
+            console.log(foo)
+        });
+
         this.uncreatedResourceData = ko.pureComputed(function() {
             return self.fileData().reduce(function(acc, fileDatum) {
                 fileDatum.data.forEach(function(resourceData) {

@@ -220,17 +220,7 @@
                                                     <!-- ko if: $data.error -->
                                                     <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
                                                     <!-- /ko -->
-
-                                                    <span 
-                                                        style="
-                                                            font-weight: lighter;
-                                                        "
-                                                        class="text-sm" 
-                                                        data-bind="html: $parent.formatSize($data)"
-                                                    >
-                                                    </span>
                                                 </div>
-    
                                             </div>
                                         </div>
                                     </div>
@@ -277,11 +267,41 @@
                                         border: 1px solid #ddd;
                                         border-top: unset;
                                         white-space: nowrap;
+                                        cursor: pointer
                                     "
-                                    data-bind="style: { 
-                                        backgroundColor: !_.isEmpty(ko.unwrap($data['errors'])) ? 'lightcoral' : 'white'
-                                    }"
+                                    data-bind="
+                                        style: { 
+                                            backgroundColor: (function(){
+                                                if (
+                                                    $parent.selectedResourceData() === $data.row_id
+                                                    && !_.isEmpty(ko.unwrap($data['errors']))
+                                                ) {
+                                                    return 'purple'
+                                                }
+                                                else if ($parent.selectedResourceData() === $data.row_id) {
+                                                    return 'blue'
+                                                }
+                                                else if (!_.isEmpty(ko.unwrap($data['errors']))) {
+                                                    return 'red'
+                                                }
+                                            })(),
+                                            color: ( $parent.selectedResourceData() === $data.row_id || !_.isEmpty(ko.unwrap($data['errors'])) )  && 'white',  
+                                        },
+                                        click: function() { $parents[1].bar($data); $parent.selectedResourceData($data.row_id) },
+                                    "
                                 >
+                                    <td 
+                                        style="
+                                            display: flex;
+                                            align-items: center;
+                                            padding-left: 8px;
+                                        "
+                                        data-bind="
+                                            visible: !_.isEmpty(ko.unwrap($data['errors']))
+                                        "
+                                    >
+                                        <i class="fa fa-exclamation-circle"></i>
+                                    </td>
                                     <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
                                         <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
                                             <td 
@@ -297,27 +317,14 @@
                                                     style="padding: 0 8px"
                                                     data-bind="{
                                                         text:(function(){
-                                                        var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-                                                        return $parent['row_data'][nodeId];
-                                                    })()}"
+                                                            var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+                                                            return $parent['row_data'][nodeId];
+                                                        })()
+                                                    }"
                                                 ></span>
                                             </td>
                                         <!-- /ko -->
                                     <!-- /ko -->
-                                    <td
-                                        style="
-                                            display: flex;
-                                            border-right: 1px solid #ddd;
-                                        "
-                                    >
-                                        <button 
-                                            class="btn btn-link"
-                                            data-bind="click: function() { $parents[1].bar($data) }"
-                                        >
-                                            <i style="margin-right: 3px;" class="fa fa-eye"></i>
-                                            <span>{% trans "View" %}</span>
-                                        </button>
-                                    </td>
                                     <td
                                         style="display: flex;"
                                     >
