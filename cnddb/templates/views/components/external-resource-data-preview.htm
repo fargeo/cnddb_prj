@@ -287,7 +287,21 @@
                                             })(),
                                             color: ( $parent.selectedResourceData() === $data.row_id || !_.isEmpty(ko.unwrap($data['errors'])) )  && 'white',  
                                         },
-                                        click: function() { $parents[1].bar($data); $parent.selectedResourceData($data.row_id) },
+                                        click: function() { 
+                                            
+                                            if ($parent.selectedResourceData() === $data.row_id) {
+                                                $parent.selectedResourceData(null); 
+
+                                                if ($parents[1].popup) {
+                                                    $parents[1].popup.remove()
+                                                    $parents[1].draw.changeMode('simple_select')
+                                                }
+                                            }
+                                            else {
+                                                $parents[1].selectData($data); 
+                                                $parent.selectedResourceData($data.row_id);
+                                            }
+                                        },
                                     "
                                 >
                                     <td 
