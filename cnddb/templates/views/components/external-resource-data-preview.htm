@@ -35,9 +35,9 @@
                     style="padding: 5px 10px"
                 >
                     <div style="padding: 5px;">
-                        <h3>
-                            {% trans "Drag files here to add" %}
-                        </h3>
+                        <h3
+                            data-bind="text: `Drag '${RESOURCE_NAME}' Resource files here` "
+                        ></h3>
 
                         <div style="font-weight: lighter;">
                             {% trans "( or click to manually select a file )" %}

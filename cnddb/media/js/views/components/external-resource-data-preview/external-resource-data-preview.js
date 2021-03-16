@@ -11,6 +11,7 @@ define([
     $.getJSON(`${arches.urls.media}js/views/components/external-resource-data-preview/CSV_COLUMN_INFORMATION.json`, function(columnInformation) {
         GRAPH_ID = columnInformation['GRAPH_ID'];
         CSV_COLUMN_NAMES_TO_NODE_IDS = columnInformation['CSV_COLUMN_NAMES_TO_NODE_IDS'];
+        RESOURCE_NAME = columnInformation['RESOURCE_NAME']
     })
 
     /**
@@ -46,9 +47,6 @@ define([
         })
 
         this.selectedResourceData = ko.observable(); 
-        this.selectedResourceData.subscribe(function(foo) {
-            console.log(foo)
-        });
 
         this.uncreatedResourceData = ko.pureComputed(function() {
             return self.fileData().reduce(function(acc, fileDatum) {
@@ -160,6 +158,7 @@ define([
                 dataType: "json",
                 url: arches.urls.graph_nodes(GRAPH_ID),
                 success: function (response) {
+                    console.log("AAAAAAAAA", response)
                     self.resourceModelNodeData(response);
                     params.loading(false);
                 }

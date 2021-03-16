@@ -1,4 +1,5 @@
 {
+    "RESOURCE_NAME": "Observation",
     "GRAPH_ID": "d41455df-033e-11eb-9978-02e99e44e93e",
     "CSV_COLUMN_NAMES_TO_NODE_IDS": {
         "ObservationDate*": { 
