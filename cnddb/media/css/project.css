@@ -8,10 +8,10 @@
 
 .uncreated-resource-row {
     display: flex;
-    border: 1px solid #ddd;
     border-top: unset;
     white-space: nowrap;
-    cursor: pointer
+    cursor: pointer;
+    border-bottom: 1px solid #D3E5F4;
 }
 
 .uncreated-resource-row:nth-child(odd) {
@@ -48,8 +48,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #D3E5F4;
+    border-bottom: unset;
 }
 
 .uncreated-resource-row-popup:nth-child(odd) {
     background: #F5FAFE;
+}
+.uncreated-resource-row-popup:last-child {
+    border-bottom: 1px solid #D3E5F4;
 }

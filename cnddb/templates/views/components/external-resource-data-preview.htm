@@ -246,7 +246,7 @@
                 max-height: 200px;
                 overflow-y: scroll;
                 width: 100%;
-                border-top: 1px solid #ddd;
+                border: 1px solid #ddd;
             "
         >
             <div
@@ -257,7 +257,10 @@
             >
                 <table style="display: flex;">
                     <tbody
-                        style="overflow: hidden;"
+                        style="
+                            overflow: hidden;
+                            width: 100%;
+                        "
                         data-bind="foreach: uncreatedResourceData()"
                     >
                         <tr

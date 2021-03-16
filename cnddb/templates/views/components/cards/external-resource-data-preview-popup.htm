@@ -44,31 +44,41 @@
                 >
                     <tr
                         class="uncreated-resource-row-popup"
-                        data-toggle="collapse" 
-                        data-target="#errorsCollapse"
-                        data-bind="style: {
-                            backgroundColor: (function() {
+                        data-bind="
+                            attr: (function() {
                                 var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-        
+            
                                 if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
-                                    return 'red';
+                                    return { 
+                                        'data-target': '.errorsCollapse',
+                                        'data-toggle': 'collapse'
+                                    }
                                 }
                             })(),
-                            cursor: (function() {
-                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-        
-                                if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
-                                    return 'pointer';
-                                }
-                            })(),
-                            color: (function() {
-                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-        
-                                if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
-                                    return 'white';
-                                }
-                            })(),
-                        }"
+                            style: {
+                                backgroundColor: (function() {
+                                    var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+            
+                                    if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
+                                        return 'red';
+                                    }
+                                })(),
+                                cursor: (function() {
+                                    var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+            
+                                    if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
+                                        return 'pointer';
+                                    }
+                                })(),
+                                color: (function() {
+                                    var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+            
+                                    if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
+                                        return 'white';
+                                    }
+                                })(),
+                            }
+                        "
                     >   
                         <td>
                             <div
@@ -112,8 +122,7 @@
                             <!-- ko if: $parent.errors && ko.unwrap($parent.errors)[CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id']] -->
                             <div 
                                 style="padding-top: 8px"
-                                id="errorsCollapse"
-                                class="collapse" 
+                                class="collapse errorsCollapse" 
                             >
                                 <div style="padding-left: 20px;">
                                     <ul>
