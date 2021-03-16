@@ -99,14 +99,11 @@ define([
                 map.fitBounds(
                     geojsonExtent(uncreatedResourceData.location_data),
                     { 
-                        padding: { top: 120, right: 540, bottom: 120, left: 120 },
+                        padding: { top: 20, right: 560, bottom: 240, left: 120 },
                         linear: true,
                     }
                 )
             }
-
-
-
         };
 
         this.updateMap = function(fileData) {
@@ -131,7 +128,7 @@ define([
                     self.map().fitBounds(
                         bounds, 
                         { 
-                            padding: { top: 120, right: 540, bottom: 120, left: 120 },
+                            padding: { top: 20, right: 560, bottom: 240, left: 120 },
                             linear: true,
                         }
                     );

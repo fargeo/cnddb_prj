@@ -235,141 +235,119 @@
 
         <!-- ko if: ko.unwrap(uncreatedResourceData).length > 0-->
         <div
-            style="padding-top: 12px;"
+            class="control-label widget-input-label"
+            style="padding: 5px 0;"
         >
-            <div
-                class="control-label widget-input-label"
-                style="padding-bottom: 5px;"
-            >
-                {% trans "Resource Preview" %}
-            </div>
-    
+            {% trans "Resource Preview" %}
+        </div>
+
+        <div
+            style="
+                max-height: 200px;
+                overflow-y: scroll;
+                width: 100%;
+                border-top: 1px solid #ddd;
+            "
+        >
             <div
                 style="
                     width: 100%;
                     overflow-x: scroll;
-                    padding-bottom: 14px;
                 "
             >
-                <table
-                    style="
-                        display: flex;
-                        border-top: 1px solid #ddd;
-                    "
-                >
+                <table style="display: flex;">
                     <tbody
                         style="overflow: hidden;"
+                        data-bind="foreach: uncreatedResourceData()"
                     >
-                        <!-- ko foreach: uncreatedResourceData() -->
-                                <tr
-                                    style="
-                                        display: flex;
-                                        border: 1px solid #ddd;
-                                        border-top: unset;
-                                        white-space: nowrap;
-                                        cursor: pointer
-                                    "
-                                    data-bind="
-                                        style: { 
-                                            backgroundColor: (function(){
-                                                if (
-                                                    $parent.selectedResourceData() === $data.row_id
-                                                    && !_.isEmpty(ko.unwrap($data['errors']))
-                                                ) {
-                                                    return 'purple'
-                                                }
-                                                else if ($parent.selectedResourceData() === $data.row_id) {
-                                                    return 'blue'
-                                                }
-                                                else if (!_.isEmpty(ko.unwrap($data['errors']))) {
-                                                    return 'red'
-                                                }
-                                            })(),
-                                            color: ( $parent.selectedResourceData() === $data.row_id || !_.isEmpty(ko.unwrap($data['errors'])) )  && 'white',  
-                                        },
-                                        click: function() { 
-                                            
-                                            if ($parent.selectedResourceData() === $data.row_id) {
-                                                $parent.selectedResourceData(null); 
+                        <tr
+                            class="uncreated-resource-row"
+                            data-bind="
+                                css: { 
+                                    'is-selected': $parent.selectedResourceData() === $data.row_id ,
+                                    'has-errors': !_.isEmpty(ko.unwrap($data['errors'])),
+                                    'selected-with-errors': $parent.selectedResourceData() === $data.row_id && !_.isEmpty(ko.unwrap($data['errors'])),
+                                },
+                                click: function() { 
+                                    if ($parent.selectedResourceData() === $data.row_id) {
+                                        $parent.selectedResourceData(null); 
 
-                                                if ($parents[1].popup) {
-                                                    $parents[1].popup.remove()
-                                                    $parents[1].draw.changeMode('simple_select')
-                                                }
-                                            }
-                                            else {
-                                                $parents[1].selectData($data); 
-                                                $parent.selectedResourceData($data.row_id);
-                                            }
-                                        },
+                                        if ($parents[1].popup) {
+                                            $parents[1].popup.remove()
+                                            $parents[1].draw.changeMode('simple_select')
+                                        }
+                                    }
+                                    else {
+                                        $parents[1].selectData($data); 
+                                        $parent.selectedResourceData($data.row_id);
+                                    }
+                                },
+                            "
+                        >
+                            <td
+                                style="display: flex;"
+                            >
+                                <button 
+                                    class="btn btn-link external-resource-data-preview-delete-feature"
+                                    data-bind="
+                                        click: function() { $parent.deleteResourceDatum($data.row_id) }
                                     "
                                 >
-                                    <td 
-                                        style="
-                                            display: flex;
-                                            align-items: center;
-                                            padding-left: 8px;
-                                        "
-                                        data-bind="
-                                            visible: !_.isEmpty(ko.unwrap($data['errors']))
-                                        "
-                                    >
-                                        <i class="fa fa-exclamation-circle"></i>
-                                    </td>
-                                    <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
-                                        <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
-                                            <td 
-                                                style="
-                                                    display: flex;
-                                                    align-items: center;
-                                                    border-right: 1px solid #ddd;
-                                                    overflow: scroll;
-                                                    flex: 1;
-                                                "
-                                            >
-                                                <span
-                                                    style="padding: 0 8px"
-                                                    data-bind="{
-                                                        text:(function(){
-                                                            var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-                                                            return $parent['row_data'][nodeId];
-                                                        })()
-                                                    }"
-                                                ></span>
-                                            </td>
-                                        <!-- /ko -->
-                                    <!-- /ko -->
-                                    <td
-                                        style="display: flex;"
-                                    >
-                                        <button 
-                                            class="btn btn-link"
-                                            data-bind="click: function() { $parent.deleteResourceDatum($data.row_id) }"
-                                        >
-                                            <i style="margin-right: 3px;" class="fa fa-trash"></i>
-                                            <span>{% trans "Delete" %}</span>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                        <!-- /ko -->
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                            <td 
+                                style="
+                                    display: flex;
+                                    align-items: center;
+                                    padding-left: 8px;
+                                "
+                                data-bind="
+                                    visible: !_.isEmpty(ko.unwrap($data['errors']))
+                                "
+                            >
+                                <i class="fa fa-exclamation-circle"></i>
+                            </td>
+                            <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
+                                <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
+                                <td 
+                                    style="
+                                        display: flex;
+                                        align-items: center;
+                                        overflow: scroll;
+                                        flex: 1;
+                                    "
+                                >
+                                    <span
+                                        style="padding: 0 8px"
+                                        data-bind="{
+                                            text:(function(){
+                                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+                                                return $parent['row_data'][nodeId];
+                                            })()
+                                        }"
+                                    ></span>
+                                </td>
+                                <!-- /ko -->
+                            <!-- /ko -->
+                        </tr>
                     </tbody>
                 </table>
             </div>
-
-            <button 
-                class="btn btn-success"
-                data-bind="{
-                    click: createResources,
-                    enable: !resourceDataHasErrors(),
-                }"
-            >
-                {% trans 'Create Resources' %}
-            </button>
         </div>
+
+        <button 
+            style="margin-top: 5px;"
+            class="btn btn-success"
+            data-bind="{
+                click: createResources,
+                enable: !resourceDataHasErrors(),
+            }"
+        >
+            {% trans 'Create Resources' %}
+        </button>
         <!-- /ko -->
     </div>
-
 </div>
 
 <template id="file-widget-dz-preview"><span></span></template>

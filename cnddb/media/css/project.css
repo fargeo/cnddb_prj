@@ -1,6 +1,55 @@
-/* .file-preview th,td {
-    border: 1px solid #ddd;
-} */
 .file-preview .media-body {
     width: unset;
+}
+
+.external-resource-data-preview-delete-feature:hover {
+    color: red;
+}
+
+.uncreated-resource-row {
+    display: flex;
+    border: 1px solid #ddd;
+    border-top: unset;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+.uncreated-resource-row:nth-child(odd) {
+    background: #F5FAFE;
+}
+
+.uncreated-resource-row:hover {
+    background-color: lightblue;
+}
+
+.is-selected {
+    background-color: lightblue;
+}
+
+.has-errors {
+    background-color: indianred !important;
+    color: white;
+}
+
+.has-errors:hover {
+    filter: brightness(150%)
+}
+
+.selected-with-errors {
+    background-color: red !important;
+}
+.selected-with-errors:hover {
+    filter: brightness(150%);
+}
+
+.uncreated-resource-row-popup {
+    min-height: 40px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uncreated-resource-row-popup:nth-child(odd) {
+    background: #F5FAFE;
 }

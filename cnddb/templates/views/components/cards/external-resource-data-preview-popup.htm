@@ -1,53 +1,121 @@
 {% load i18n %}
 {% load template_tags %}
 
-{% block body %}
-    <div
-        style="height: 300px; overflow: scroll;"
+{% block header %}
+    <div 
+        class="hover-feature-title-bar"
     >
-        <table>
-            <tbody>
+        <div class="hover-feature-title">
+            <span class="hover-feature-nav-left disabled"><i class="fa fa-angle-left"></i></span>
+
                 <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
-                <tr
-                    data-bind="style: {backgroundColor: (function() {
-                        var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-
-                        if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
-                            return 'lightcoral';
-                        }
-
-                        return 'white';
-                    })()}"
-                >   
-                    <td>
-                        <span data-bind="text: key"></span>
-                    </td>
-                    <td>
-                        <span data-bind="
-                            text: (function() {
+                    <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
+                        <span 
+                            data-bind="text:(function(){
                                 var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-                                var data = $parent['row_data'][nodeId];
-                                
-                                /* hack to format location */
-                                if (data instanceof Object) {
-                                    if (CSV_COLUMN_NAMES_TO_NODE_IDS[key]['args'].includes('x')) {
-                                        return data['features'][0]['geometry']['coordinates'][1];
-                                    }
-                                    if (CSV_COLUMN_NAMES_TO_NODE_IDS[key]['args'].includes('y')) {
-                                        return data['features'][0]['geometry']['coordinates'][0];
-                                    }
-                                }
+                                return $parent['row_data'][nodeId];
+                            })()"
+                        ></span>
+                    <!-- /ko -->
+                <!-- /ko -->
 
-                                return data;
-                            })()
-                        "></span>
-                        <!-- ko if: $parent.errors && ko.unwrap($parent.errors)[CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id']] -->
-                        <span>
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#errorsCollapse" aria-expanded="false" aria-controls="errorsCollapse">
-                                <i class="fa fa-question-circle"></i>
-                            </button>
-                            <div class="collapse" id="errorsCollapse">
-                                <div class="card card-body">
+            <span class="hover-feature-nav-right disabled"><i class="fa fa-angle-right"></i></span>
+        </div>
+    </div>
+{% endblock header %}
+
+{% block body %}
+    <div 
+        style="
+            height: 350px;
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+        "
+        class="hover-feature-body"
+    >
+            <table>
+                <tbody
+                    style="
+                        display: flex;
+                        flex-direction: column;
+                    "
+                    data-bind="foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' }"
+                >
+                    <tr
+                        class="uncreated-resource-row-popup"
+                        data-toggle="collapse" 
+                        data-target="#errorsCollapse"
+                        data-bind="style: {
+                            backgroundColor: (function() {
+                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+        
+                                if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
+                                    return 'red';
+                                }
+                            })(),
+                            cursor: (function() {
+                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+        
+                                if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
+                                    return 'pointer';
+                                }
+                            })(),
+                            color: (function() {
+                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+        
+                                if ($parent.errors && ko.unwrap($parent.errors)[nodeId]) {
+                                    return 'white';
+                                }
+                            })(),
+                        }"
+                    >   
+                        <td>
+                            <div
+                                style="
+                                    display: flex;
+                                    align-items: center;
+                                "
+                            >
+                                <!-- ko if: $parent.errors && ko.unwrap($parent.errors)[CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id']] -->
+                                <i style="margin-right: 6px" class="fa fa-exclamation-circle"></i>
+                                <!-- /ko -->
+
+                                <span data-bind="text: key"></span>
+                            </div>
+                        </td>
+                        <td
+                            style="
+                                text-align: end;
+                                max-width: 200px;
+                                overflow: scroll;
+                            "
+                        >
+                            <span data-bind="
+                                text: (function() {
+                                    var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+                                    var data = $parent['row_data'][nodeId];
+                                    
+                                    /* hack to format location */
+                                    if (data instanceof Object) {
+                                        if (CSV_COLUMN_NAMES_TO_NODE_IDS[key]['args'].includes('x')) {
+                                            return data['features'][0]['geometry']['coordinates'][1];
+                                        }
+                                        if (CSV_COLUMN_NAMES_TO_NODE_IDS[key]['args'].includes('y')) {
+                                            return data['features'][0]['geometry']['coordinates'][0];
+                                        }
+                                    }
+
+                                    return data;
+                                })()
+                            "></span>
+                            <!-- ko if: $parent.errors && ko.unwrap($parent.errors)[CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id']] -->
+                            <div 
+                                style="padding-top: 8px"
+                                id="errorsCollapse"
+                                class="collapse" 
+                            >
+                                <div style="padding-left: 20px;">
                                     <ul>
                                         <!-- ko foreach: ko.unwrap($parent.errors)[CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id']]['errors'] -->
                                             <li data-bind="text: $data.message"></li>
@@ -55,12 +123,10 @@
                                     </ul>
                                 </div>
                             </div>
-                        </span>
-                        <!-- /ko -->
-                    </td>
-                </tr>
-                <!-- /ko -->
-            </tbody>
-        </table>
+                            <!-- /ko -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 {% endblock body %}
