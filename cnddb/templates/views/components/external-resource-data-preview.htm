@@ -3,6 +3,7 @@
 
 {% block form %}
 <div class="row widget-wrapper file-preview">
+    <div style="display: none;" data-bind="text: $data.pageVm($root)"></div>
     <div 
         class="form-group"
         style="display: flex; flex-direction: column;"
@@ -15,61 +16,82 @@
         
         <div class="col-xs-12 dropzone" data-bind="dropzone: dropzoneOptions">
             <div 
-                class="file-select-window" 
-                style="min-width: unset;"
-                data-bind="visible: addedFiles().length === 0"
+                style="
+                    border: 1px dashed #bbb;
+                    border-radius: 6px;
+                "
+                data-bind="
+                    visible: addedFiles().length === 0
+                "
+            >
+            <div 
+                class="fileinput-button dz-clickable" 
+                style="
+                    cursor: pointer;
+                "
+                data-bind="css: uniqueidClass"
             >
                 <div 
-                    class="bord-top pad-ver file-select"
-                    style="padding: 5px 10px 20px 10px;"
+                    class="pad-ver file-select"
+                    style="padding: 5px 10px"
                 >
                     <div style="padding: 5px;">
-                        <h4>{% trans "Drag & Drop files onto this panel" %}</h4>
-                    </div>
+                        <h3
+                            data-bind="text: `Drag '${RESOURCE_NAME}' Resource files here` "
+                        ></h3>
 
-                    <div class="separator">{% trans "or" %}</div>
+                        <div style="font-weight: lighter;">
+                            {% trans "( or click to manually select a file )" %}
+                        </div>
 
-                    <button 
-                        type="button" 
-                        class="btn btn btn-file-select fileinput-button dz-clickable" 
-                        style="
-                            margin: unset;
-                            margin-top: 15px;
-                        "
-                        data-bind="css: uniqueidClass, disable: disabled"
-                    >
-                        <i class="fa fa-file"></i>
-                        <span>{% trans "Select Files" %}</span>
-                    </button>
-                </div>
-                <div 
-                    class="file-upload-footer"
-                    style="
-                        flex-direction: column;
-                        padding: 10px 20px;
-                    "
-                >
-                    <div
-                        style="
-                            padding-bottom: 5px;
-                            width: 100%;
-                        "
-                    >
-                        <span>{% trans "Allowed document formats:" %}</span>
-                        <span data-bind="text: (acceptedFiles() || 'Any')"></span>
-                    </div>
-                    <div style="width: 100%;">
-                        <span>{% trans "Maximum file size:" %}</span>
-                        <span data-bind="text: maxFilesize() + 'MB'"></span>
+                        <div 
+                            style="
+                                margin-top: 18px;
+                                border-top: 1px solid #ddd;
+                            "
+                        >
+                            <div
+                                style="
+                                    font-weight: lighter;
+                                    font-size: 12px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 8px;
+                                    padding: 0 4px;
+                                "
+                            >
+
+                                <div>
+                                    <span>{% trans "Allowed formats:" %}</span>
+                                    <span data-bind="text: (acceptedFiles() || 'Any')"></span>
+                                </div>
+                                
+                                <div>
+                                    <span>{% trans "Maximum size:" %}</span>
+                                    <span data-bind="text: maxFilesize() + 'MB'"></span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+            </div>
+            
             </div>
 
             <!-- 
                 note that data-bind=visible must be in place (instead of ko if:) as DZ instantiates only once;
-                elements with its class name must exist at time of init 
+                elements it depends on must exist at time of init 
             -->
-            <div data-bind="visible: addedFiles().length > 0">
+            <div 
+                style="border: unset;"
+                class="dz-previews" 
+                data-bind="{
+                    visible: addedFiles().length > 0,
+                    css: uniqueidClass,
+                }"
+            >
                 <div
                     style="
                         display: flex;
@@ -92,30 +114,30 @@
                     </div>
                 </div>
 
-                    <!--ko if: addedFiles().length > 1-->
-                    <input 
-                        data-bind="textInput: filter" 
-                        type="text" placeholder="{% trans 'find a file...' %}" 
-                        class="file-upload-filter"
-                        style="
-                            width:100%;
-                            margin-bottom: 6px;
-                        "
-                    >
-                    <!-- /ko -->
-    
-                    <!-- Clear Search -->
-                    <div 
-                        style="
-                            position: absolute;
-                            top: 44px;
-                            left: 320px;
-                            cursor: pointer;
-                        " 
-                        data-bind="visible: filter().length > 0, click: function() { filter(''); }"
-                    >
-                        <i class="fa fa-times-circle"></i>
-                    </div>
+                <!--ko if: addedFiles().length > 1-->
+                <input 
+                    data-bind="textInput: filter" 
+                    type="text" placeholder="{% trans 'find a file...' %}" 
+                    class="file-upload-filter"
+                    style="
+                        width:100%;
+                        margin-bottom: 6px;
+                    "
+                >
+                <!-- /ko -->
+
+                <!-- Clear Search -->
+                <div 
+                    style="
+                        position: absolute;
+                        top: 44px;
+                        left: 320px;
+                        cursor: pointer;
+                    " 
+                    data-bind="visible: filter().length > 0, click: function() { filter(''); }"
+                >
+                    <i class="fa fa-times-circle"></i>
+                </div>
 
                 <div 
                     style="
@@ -148,176 +170,188 @@
                         <span>{% trans "Remove all files" %}</span>
                     </button>
                 </div>
-            </div>
-            <div class="dz-previews" data-bind="css: uniqueidClass">
-            <!-- ko if: !filter() -->
-                <!-- ko foreach: addedFiles() -->
-                    <div 
-                        class="file-upload-card"
-                        style="width: fit-content;"
+
+                <div 
+
+                    data-bind=""
+                ></div>
+
+                <!-- ko if: addedFiles().length > 0 -->
+                    <table
+                        style="
+                            display: flex;
+                            overflow: hidden;
+                            border: 1px solid #D3E5F4;
+                            border-bottom: unset;
+                            max-height: 150px;
+                        "
                     >
-                        <div 
-                            class="media-body"
-                            style="width: 100%;"
+                        <tbody
+                            style="overflow: scroll;"
+                            data-bind="foreach: filter() ? filteredList : addedFiles"
                         >
-                            <div style="display: flex;">
-                                <div 
-                                    class="media-left"
-                                    style="margin-top: 6px;"
-                                >
-                                    <button 
-                                        class="btn btn-xs btn-danger btn-file-cancel"
-                                        data-bind="click: $parent.removeFile"
-                                    >
-                                        <i class="ion ion-close"></i>
-                                    </button>
-                                </div>
-
-                                <div class="media-body file-upload-card-detail">
-                                    <div class="media-left">
-                                        <span 
-                                            class="text-main mar-no text-overflow" 
-                                            style="padding-right: 25px;"
-                                            data-bind="text: name"
-                                        ></span>
-
-                                        <!-- ko if: $data.error -->
-                                        <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
-                                        <!-- /ko -->
+                            <tr class="file-upload-card">
+                                <td>
+                                    <div class="media-body">
+                                        <div style="display: flex;">
+                                            <div
+                                                style="
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin-left: 8px;
+                                                "
+                                            >
+                                                <button 
+                                                    class="btn btn-xs btn-danger btn-file-cancel"
+                                                    data-bind="click: $parent.removeFile"
+                                                >
+                                                    <i class="ion ion-close"></i>
+                                                </button>
+                                            </div>
+    
+                                            <div class="file-upload-card-detail">
+                                                <div
+                                                    style="padding: 0 8px;"
+                                                >
+                                                    <span 
+                                                        style="white-space: nowrap;"
+                                                        data-bind="text: name"
+                                                    ></span>
+    
+                                                    <!-- ko if: $data.error -->
+                                                    <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
+                                                    <!-- /ko -->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="text-sm" data-bind="html: $parent.formatSize($data)"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 <!-- /ko -->
-            <!-- /ko -->
-            <!-- ko if: filter() -->
-                <!-- ko foreach: filteredList() -->
-                <div class="file-upload-card">
-                    <div class="media-body">
-                        <div class="media-block">
-                            <div class="media-left">
-                                <span><i class="fa fa-file fa-lg"></i></span>
-                            </div>
-                            <div class="media-body file-upload-card-detail">
-                                <div class="media-left">
-                                    <span class="text-main mar-no text-overflow" data-bind="text: name"></span>
-                                    <!-- ko if: $data.error -->
-                                    <span class="dz-error text-danger text-sm" data-bind="text: '{% trans "error" %}'"></span>
-                                    <!-- /ko -->
-                                    <span class="text-sm"><a data-bind="attr: {href: ko.unwrap(url) ? url : content, download: name}, click: function(){return ko.unwrap(url) ? true : false}, clickBubble: false"><span data-bind="text: ko.unwrap(url) ? '{% trans "Download" %}' : '{% trans "Unsaved" %}'"></span></a></span>
-                                </div>
-                                <div class="file-upload-card-detail-right">
-                                    <div class="media-right" data-bind="click: $parent.removeFile">
-                                        <button class="btn btn-xs btn-danger btn-file-cancel"><i class="ion ion-close"></i></button>
-                                    </div>
-                                    <div class="">
-                                        <span class="text-sm" data-bind="html: $parent.formatSize($data)"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /ko -->
-            <!-- /ko -->
             </div>
         </div>
 
 
         <!-- ko if: ko.unwrap(uncreatedResourceData).length > 0-->
         <div
-            style="padding-top: 12px;"
+            class="control-label widget-input-label"
+            style="padding: 5px 0;"
         >
-            <div
-                class="control-label widget-input-label"
-                style="padding-bottom: 5px;"
-            >
-                {% trans "Resource Preview" %}
-            </div>
-    
+            {% trans "Resource Preview" %}
+        </div>
+
+        <div
+            style="
+                max-height: 200px;
+                overflow-y: scroll;
+                width: 100%;
+                border: 1px solid #ddd;
+            "
+        >
             <div
                 style="
                     width: 100%;
                     overflow-x: scroll;
-                    padding-bottom: 14px;
                 "
             >
-                <table>
-                    <thead>
-                        <tr> 
-                            <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
-                            <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
-                                <th 
-                                    scope="column" 
-                                    data-bind="text: key"
-                                    style="
-                                        padding: 0px 10px;
+                <table style="display: flex;">
+                    <tbody
+                        style="
+                            overflow: hidden;
+                            width: 100%;
+                        "
+                        data-bind="foreach: uncreatedResourceData()"
+                    >
+                        <tr
+                            class="uncreated-resource-row"
+                            data-bind="
+                                css: { 
+                                    'is-selected': $parent.selectedResourceData() === $data.row_id ,
+                                    'has-errors': !_.isEmpty(ko.unwrap($data['errors'])),
+                                    'selected-with-errors': $parent.selectedResourceData() === $data.row_id && !_.isEmpty(ko.unwrap($data['errors'])),
+                                },
+                                click: function() { 
+                                    if ($parent.selectedResourceData() === $data.row_id) {
+                                        $parent.selectedResourceData(null); 
+
+                                        if ($parents[1].popup) {
+                                            $parents[1].popup.remove()
+                                            $parents[1].draw.changeMode('simple_select')
+                                        }
+                                    }
+                                    else {
+                                        $parents[1].selectData($data); 
+                                        $parent.selectedResourceData($data.row_id);
+                                    }
+                                },
+                            "
+                        >
+                            <td
+                                style="display: flex;"
+                            >
+                                <button 
+                                    class="btn btn-link external-resource-data-preview-delete-feature"
+                                    data-bind="
+                                        click: function() { $parent.deleteResourceDatum($data.row_id) }
                                     "
-                                ></th>
+                                >
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                            <td 
+                                style="
+                                    display: flex;
+                                    align-items: center;
+                                    padding-left: 8px;
+                                "
+                                data-bind="
+                                    visible: !_.isEmpty(ko.unwrap($data['errors']))
+                                "
+                            >
+                                <i class="fa fa-exclamation-circle"></i>
+                            </td>
+                            <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
+                                <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
+                                <td 
+                                    style="
+                                        display: flex;
+                                        align-items: center;
+                                        overflow: scroll;
+                                        flex: 1;
+                                    "
+                                >
+                                    <span
+                                        style="padding: 0 8px"
+                                        data-bind="{
+                                            text:(function(){
+                                                var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
+                                                return $parent['row_data'][nodeId];
+                                            })()
+                                        }"
+                                    ></span>
+                                </td>
                                 <!-- /ko -->
                             <!-- /ko -->
-                            <th></th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <!-- ko foreach: uncreatedResourceData() -->
-
-                                <tr
-                                    data-bind="{
-                                        style: { backgroundColor: !_.isEmpty(ko.unwrap($data['errors'])) ? 'lightcoral' : 'white'  },
-                                    }"
-                                >
-                                    <!-- ko foreach: { data: Object.keys(CSV_COLUMN_NAMES_TO_NODE_IDS), as: 'key' } -->
-                                        <!-- ko if: CSV_COLUMN_NAMES_TO_NODE_IDS[key]['visible'] -->
-                                        <td
-                                            style="padding: 5px"
-                                        >
-                                            <div>
-                                                <span data-bind="{text:(function(){
-                                                    var nodeId = CSV_COLUMN_NAMES_TO_NODE_IDS[key]['node_id'];
-                                                    return $parent['row_data'][nodeId];
-                                                })()}"></span>
-                                            </div>
-                                        </td>
-                                        <!-- /ko -->
-                                    <!-- /ko -->
-                                    <td
-                                        style="padding: 5px;"
-                                    >
-                                        <div
-                                            style="display: flex;"
-                                        >
-                                            <button 
-                                                class="btn btn-link"
-                                                data-bind="click: function() { $parent.deleteResourceDatum($data.row_id) }"
-                                            >
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                        <!-- /ko -->
                     </tbody>
                 </table>
             </div>
-
-            <button 
-                class="btn btn-success"
-                data-bind="{
-                    click: createResources,
-                    enable: !resourceDataHasErrors(),
-                }"
-            >
-                {% trans 'Create Resources' %}
-            </button>
         </div>
+
+        <button 
+            style="margin-top: 5px;"
+            class="btn btn-success"
+            data-bind="{
+                click: createResources,
+                enable: !resourceDataHasErrors(),
+            }"
+        >
+            {% trans 'Create Resources' %}
+        </button>
         <!-- /ko -->
     </div>
-
 </div>
 
 <template id="file-widget-dz-preview"><span></span></template>

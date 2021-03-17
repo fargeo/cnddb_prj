@@ -6,11 +6,13 @@ define([
     'dropzone',
     'uuid',
     'viewmodels/file-widget',
+    'viewmodels/alert',
     'bindings/dropzone',
-], function($, ko, _, arches, Dropzone, uuid, FileWidgetViewModel) {
+], function($, ko, _, arches, Dropzone, uuid, FileWidgetViewModel, AlertViewModel) {
     $.getJSON(`${arches.urls.media}js/views/components/external-resource-data-preview/CSV_COLUMN_INFORMATION.json`, function(columnInformation) {
         GRAPH_ID = columnInformation['GRAPH_ID'];
         CSV_COLUMN_NAMES_TO_NODE_IDS = columnInformation['CSV_COLUMN_NAMES_TO_NODE_IDS'];
+        RESOURCE_NAME = columnInformation['RESOURCE_NAME']
     })
 
     /**
@@ -36,6 +38,14 @@ define([
             return "unique_id_" + self.unique_id;
         });
 
+        this.pageVm = ko.observable();
+        this.alert = params.alert || ko.observable();
+        this.alert.subscribe(function(alert) {
+            if (self.pageVm()) {
+                self.pageVm().alert(alert)
+            }
+        })
+
         this.filter = ko.observable("");
         this.uploadMultiple = ko.observable(true);
 
@@ -44,6 +54,8 @@ define([
         this.widget = params.widgets.find(function(widget) {
             return widget.datatype.datatype = 'resource-instance-list';
         })
+
+        this.selectedResourceData = ko.observable(); 
 
         this.uncreatedResourceData = ko.pureComputed(function() {
             return self.fileData().reduce(function(acc, fileDatum) {
@@ -143,22 +155,7 @@ define([
                 self.fileData(ko.unwrap(params.tile._cachedFileData))
             }
 
-            this.fetchResourceModelNodeData();
-
             params.loading(false);
-        };
-
-        this.fetchResourceModelNodeData = function() {
-            params.loading(true);
-
-            $.ajax({
-                dataType: "json",
-                url: arches.urls.graph_nodes(GRAPH_ID),
-                success: function (response) {
-                    self.resourceModelNodeData(response);
-                    params.loading(false);
-                }
-            });
         };
 
         this.parseCSVFile = function(file) {
@@ -189,6 +186,10 @@ define([
                     response['created_resources'] = {};
 
                     self.fileData.push(response);
+                    params.loading(false);
+                },
+                error: function(response) {
+                    self.alert(new AlertViewModel('ep-alert-red', response.statusText, response.responseText ))
                     params.loading(false);
                 }
             });

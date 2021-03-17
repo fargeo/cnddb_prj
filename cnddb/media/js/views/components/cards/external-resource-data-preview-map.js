@@ -25,6 +25,8 @@ define([
         this.draw = params.draw;
         this.map = ko.observable(params.map);
 
+        this.alert = ko.observable();
+
         this.additionalRelatedResourceContent = ko.observable(true);
 
         this.fileData = ko.observable();
@@ -37,6 +39,74 @@ define([
             }
             self.updateMap(fileData)
         });
+
+        this.selectData = function(uncreatedResourceData) {
+            if (self.popup) {
+                self.popup.remove()
+                self.popup = undefined;
+            }
+
+            var map = self.map();
+            
+            var feature = _.find(
+                map.queryRenderedFeatures(),
+                function(feature) { return feature.properties.id === uncreatedResourceData.row_id; }
+            );
+
+            var selectData = function(feature) {
+                feature.id = feature.properties.id;
+        
+                self.draw.changeMode('simple_select', {
+                    featureIds: [feature.id]
+                });
+
+                self.popup = new mapboxgl.Popup()
+                    .setLngLat(uncreatedResourceData.location_data.features[0].geometry.coordinates)
+                    .setHTML(popupTemplate)
+                    .addTo(map);
+                ko.applyBindingsToDescendants(
+                    uncreatedResourceData,
+                    self.popup._content
+                );
+
+                if (map.getStyle()) {
+                    map.setFeatureState(feature, { selected: true });
+                }
+
+                self.popup.on('close', function() {
+                    if (map.getStyle()) map.setFeatureState(feature, { selected: false });
+                    self.popup = undefined;
+                });
+            };
+
+            if (feature) {
+                selectData(feature)
+            }
+            else {
+                /* feature not in viewport */ 
+                self.loading(true);
+
+                /* fitBounds can be considered async, so we need a listener */ 
+                map.once("moveend", function() {
+                    var feature = _.find(
+                        map.queryRenderedFeatures(),
+                        function(feature) { return feature.properties.id === uncreatedResourceData.row_id; }
+                    );
+
+                    if (feature) { selectData(feature); }
+
+                    self.loading(false);
+                });
+
+                map.fitBounds(
+                    geojsonExtent(uncreatedResourceData.location_data),
+                    { 
+                        padding: { top: 20, right: 560, bottom: 240, left: 120 },
+                        linear: true,
+                    }
+                )
+            }
+        };
 
         this.updateMap = function(fileData) {
             if (self.draw) {
@@ -60,7 +130,7 @@ define([
                     self.map().fitBounds(
                         bounds, 
                         { 
-                            padding: { top: 120, right: 540, bottom: 120, left: 120 },
+                            padding: { top: 20, right: 560, bottom: 240, left: 120 },
                             linear: true,
                         }
                     );
