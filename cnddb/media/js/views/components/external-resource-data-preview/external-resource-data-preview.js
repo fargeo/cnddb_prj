@@ -107,6 +107,8 @@ define([
             }
         });
 
+        this.relatedResources = params.relatedResources || ko.observableArray();
+
         this.dropzoneOptions = {
             url: "arches.urls.root",
             dictDefaultMessage: '',

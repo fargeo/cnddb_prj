@@ -5,15 +5,12 @@ define([
     'knockout-mapping',
     'mapbox-gl',
     'geojson-extent',
-    'viewmodels/card-component',
-    'viewmodels/map-editor',
-    'viewmodels/map-filter',
     'views/components/cards/related-resources-map',
-    'views/components/cards/select-related-feature-layers',
     'text!templates/views/components/cards/external-resource-data-preview-popup.htm',
+    'text!templates/views/components/cards/related-resources-map-popup.htm',
     'views/components/external-resource-data-preview/external-resource-data-preview',
 
-], function($, arches, ko, koMapping, mapboxgl, geojsonExtent, CardComponentViewModel, MapEditorViewModel, MapFilterViewModel, RelatedResourcesMapCard, selectFeatureLayersFactory, popupTemplate) {
+], function($, arches, ko, koMapping, mapboxgl, geojsonExtent, RelatedResourcesMapCard, externalDataPreviewPopupTemplate, genericPopupTemplate) {
     /* 
         Used to connect the external-resource-data-preview component 
         with the related-resources-map-card
@@ -38,10 +35,7 @@ define([
                     self.map(params.map);
                 }
 
-                if (self.fileData()) {
-                    self.updateMap(self.fileData())
-                }
-                else {
+                if (!_.isEmpty(self.relatedResourceGeometries())) {
                     var bounds = new mapboxgl.LngLatBounds();
 
                     self.draw.deleteAll();
@@ -59,6 +53,9 @@ define([
                         }
                     );
                 }
+                else if (self.fileData()) {
+                    self.updateMap(self.fileData());
+                }
             }
         });
 
@@ -66,7 +63,7 @@ define([
 
         this.map = ko.observable(params.map);
         self.map.subscribe(function(map) {
-            self.loading(false)
+            self.loading(false);
 
             map.on('click', function(e) {
                 var hoverFeature = _.find(
@@ -74,16 +71,28 @@ define([
                     function(feature) { return feature.properties.id; }
                 );
 
-                if (hoverFeature && ko.unwrap(self.fileData)) {
+                if (hoverFeature && hoverFeature.properties.id) {
                     hoverFeature.id = hoverFeature.properties.id;
 
-                    var featureData = self.fileData().reduce(function(acc, fileDatum) {
-                        acc = fileDatum.data.find(function(parsedRow) {
-                            return parsedRow.row_id === hoverFeature.id;
-                        });
+                    var featureData;
+                    var popupTemplate;
 
-                        return acc;
-                    }, null)
+                    if (self.relatedResources().length) {
+                        popupTemplate = genericPopupTemplate;
+
+                        hoverFeature.properties.resourceinstanceid = hoverFeature.properties.id;
+                        featureData = self.getPopupData(hoverFeature);
+                    }
+                    else if (self.fileData().length) {
+                        popupTemplate = externalDataPreviewPopupTemplate;
+
+                        featureData = self.fileData().reduce(function(acc, fileDatum) {
+                            acc = fileDatum.data.find(function(parsedRow) {
+                                return parsedRow.row_id === hoverFeature.id;
+                            });
+                            return acc;
+                        }, null);
+                    }
 
                     if (featureData) {
                         self.popup = new mapboxgl.Popup()
@@ -94,16 +103,16 @@ define([
                             featureData,
                             self.popup._content
                         );
-    
-                        if (map.getStyle()) {
-                            map.setFeatureState(hoverFeature, { selected: true });
-                        }
-    
-                        self.popup.on('close', function() {
-                            if (map.getStyle()) map.setFeatureState(hoverFeature, { selected: false });
-                            self.popup = undefined;
-                        });
                     }
+
+                    if (map.getStyle()) {
+                        map.setFeatureState(hoverFeature, { selected: true });
+                    }
+
+                    self.popup.on('close', function() {
+                        if (map.getStyle()) map.setFeatureState(hoverFeature, { selected: false });
+                        self.popup = undefined;
+                    });
                 }
             });
         });
@@ -114,6 +123,8 @@ define([
                     var relatedResourceGeometries = self.relatedResourceGeometries();
     
                     previouslySavedRelatedResources.forEach(function(previouslySavedRelatedResource) {
+                        previouslySavedRelatedResource.geometries[0].geom.features[0]['id'] = previouslySavedRelatedResource.resourceinstanceid;
+
                         relatedResourceGeometries[previouslySavedRelatedResource.resourceinstanceid] = previouslySavedRelatedResource.geometries[0].geom;
                     });
     
@@ -144,7 +155,7 @@ define([
 
                 self.popup = new mapboxgl.Popup()
                     .setLngLat(uncreatedResourceData.location_data.features[0].geometry.coordinates)
-                    .setHTML(popupTemplate)
+                    .setHTML(externalDataPreviewPopupTemplate)
                     .addTo(map);
                 ko.applyBindingsToDescendants(
                     uncreatedResourceData,
