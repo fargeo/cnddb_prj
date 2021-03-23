@@ -3,6 +3,6 @@
 
 {% block additional_content %}
     <!-- ko if: ko.unwrap($data.additionalRelatedResourceContent) -->
-    <external-resource-data-preview params="{fileData: self.fileData, loading: self.loading, tile: self.tile, widgets: self.widgets}" ></external-resource-data-preview>
+    <external-resource-data-preview params="{fileData: self.fileData, relatedResources: self.relatedResources, loading: self.loading, tile: self.tile, widgets: self.widgets}" ></external-resource-data-preview>
     <!-- /ko -->
 {% endblock additional_content %}

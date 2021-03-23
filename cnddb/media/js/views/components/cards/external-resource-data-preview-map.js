@@ -5,15 +5,12 @@ define([
     'knockout-mapping',
     'mapbox-gl',
     'geojson-extent',
-    'viewmodels/card-component',
-    'viewmodels/map-editor',
-    'viewmodels/map-filter',
     'views/components/cards/related-resources-map',
-    'views/components/cards/select-related-feature-layers',
     'text!templates/views/components/cards/external-resource-data-preview-popup.htm',
+    'text!templates/views/components/cards/related-resources-map-popup.htm',
     'views/components/external-resource-data-preview/external-resource-data-preview',
 
-], function($, arches, ko, koMapping, mapboxgl, geojsonExtent, CardComponentViewModel, MapEditorViewModel, MapFilterViewModel, RelatedResourcesMapCard, selectFeatureLayersFactory, popupTemplate) {
+], function($, arches, ko, koMapping, mapboxgl, geojsonExtent, RelatedResourcesMapCard, externalDataPreviewPopupTemplate, genericPopupTemplate) {
     /* 
         Used to connect the external-resource-data-preview component 
         with the related-resources-map-card
@@ -22,23 +19,119 @@ define([
         var self = this;
         ko.utils.extend(self, new RelatedResourcesMapCard(params));
 
-        this.draw = params.draw;
-        this.map = ko.observable(params.map);
-
-        this.alert = ko.observable();
-
         this.additionalRelatedResourceContent = ko.observable(true);
+        this.alert = ko.observable();
 
         this.fileData = ko.observable();
         this.fileData.subscribe(function(fileData) {
-            if (!self.draw) {
-                self.draw = params.draw;
-            }
-            if (!ko.unwrap(self.map)) {
-                self.map(params.map);
-            }
             self.updateMap(fileData)
         });
+
+        this.drawAvailable.subscribe(function(isDrawAvailable) {
+            if (isDrawAvailable) {
+                self.draw = params.draw;
+
+                if (!ko.unwrap(self.map)) {
+                    self.map(params.map);
+                }
+
+                if (!_.isEmpty(self.relatedResourceGeometries())) {
+                    var bounds = new mapboxgl.LngLatBounds();
+
+                    self.draw.deleteAll();
+        
+                    Object.values(self.relatedResourceGeometries()).forEach(function(geometry) {
+                        self.draw.add(geometry.features[0]);
+                        bounds.extend(geometry.features[0].geometry.coordinates);
+                    });
+
+                    self.map().fitBounds(
+                        bounds, 
+                        { 
+                            padding: { top: 20, right: 560, bottom: 240, left: 120 },
+                            linear: true,
+                        }
+                    );
+                }
+                else if (self.fileData()) {
+                    self.updateMap(self.fileData());
+                }
+            }
+        });
+
+        this.relatedResourceGeometries = ko.observable({});
+
+        this.map = ko.observable(params.map);
+        self.map.subscribe(function(map) {
+            self.loading(false);
+
+            map.on('click', function(e) {
+                var hoverFeature = _.find(
+                    map.queryRenderedFeatures(e.point),
+                    function(feature) { return feature.properties.id; }
+                );
+
+                if (hoverFeature && hoverFeature.properties.id) {
+                    hoverFeature.id = hoverFeature.properties.id;
+
+                    var featureData;
+                    var popupTemplate;
+
+                    if (self.relatedResources().length) {
+                        popupTemplate = genericPopupTemplate;
+
+                        hoverFeature.properties.resourceinstanceid = hoverFeature.properties.id;
+                        featureData = self.getPopupData(hoverFeature);
+                    }
+                    else if (self.fileData().length) {
+                        popupTemplate = externalDataPreviewPopupTemplate;
+
+                        featureData = self.fileData().reduce(function(acc, fileDatum) {
+                            acc = fileDatum.data.find(function(parsedRow) {
+                                return parsedRow.row_id === hoverFeature.id;
+                            });
+                            return acc;
+                        }, null);
+                    }
+
+                    if (featureData) {
+                        self.popup = new mapboxgl.Popup()
+                            .setLngLat(e.lngLat)
+                            .setHTML(popupTemplate)
+                            .addTo(map);
+                        ko.applyBindingsToDescendants(
+                            featureData,
+                            self.popup._content
+                        );
+                    }
+
+                    if (map.getStyle()) {
+                        map.setFeatureState(hoverFeature, { selected: true });
+                    }
+
+                    self.popup.on('close', function() {
+                        if (map.getStyle()) map.setFeatureState(hoverFeature, { selected: false });
+                        self.popup = undefined;
+                    });
+                }
+            });
+        });
+
+        this.initialize = function() {
+            self.relatedResources.subscribe(function(previouslySavedRelatedResources) {
+                if (previouslySavedRelatedResources.length) {
+                    var relatedResourceGeometries = self.relatedResourceGeometries();
+    
+                    previouslySavedRelatedResources.forEach(function(previouslySavedRelatedResource) {
+                        previouslySavedRelatedResource.geometries[0].geom.features[0]['id'] = previouslySavedRelatedResource.resourceinstanceid;
+
+                        relatedResourceGeometries[previouslySavedRelatedResource.resourceinstanceid] = previouslySavedRelatedResource.geometries[0].geom;
+                    });
+    
+                    self.relatedResourceGeometries(relatedResourceGeometries);
+                }
+            });
+        };
 
         this.selectData = function(uncreatedResourceData) {
             if (self.popup) {
@@ -62,7 +155,7 @@ define([
 
                 self.popup = new mapboxgl.Popup()
                     .setLngLat(uncreatedResourceData.location_data.features[0].geometry.coordinates)
-                    .setHTML(popupTemplate)
+                    .setHTML(externalDataPreviewPopupTemplate)
                     .addTo(map);
                 ko.applyBindingsToDescendants(
                     uncreatedResourceData,
@@ -110,9 +203,9 @@ define([
 
         this.updateMap = function(fileData) {
             if (self.draw) {
-                self.draw.deleteAll();
-
                 var bounds = new mapboxgl.LngLatBounds();
+
+                self.draw.deleteAll();
         
                 fileData.forEach(function(fileDatum) {
                     fileDatum.data.forEach(function(parsedRow) {
@@ -126,66 +219,17 @@ define([
                     });
                 });
     
-                if (fileData.length) {
-                    self.map().fitBounds(
-                        bounds, 
-                        { 
-                            padding: { top: 20, right: 560, bottom: 240, left: 120 },
-                            linear: true,
-                        }
-                    );
-                }
-            }
-        }
-
-        self.map.subscribe(function(map) {
-            if (!self.draw && params.draw) {
-                self.draw = params.draw;
-            }
-
-            if (self.fileData()) {
-                self.updateMap(self.fileData())
-            }
-
-            map.on('click', function(e) {
-                var hoverFeature = _.find(
-                    map.queryRenderedFeatures(e.point),
-                    function(feature) { return feature.properties.id; }
-                );
-
-                if (hoverFeature) {
-                    hoverFeature.id = hoverFeature.properties.id;
-
-                    var featureData = self.fileData().reduce(function(acc, fileDatum) {
-                        acc = fileDatum.data.find(function(parsedRow) {
-                            return parsedRow.row_id === hoverFeature.id;
-                        });
-
-                        return acc;
-                    }, null)
-
-                    if (featureData) {
-                        self.popup = new mapboxgl.Popup()
-                            .setLngLat(e.lngLat)
-                            .setHTML(popupTemplate)
-                            .addTo(map);
-                        ko.applyBindingsToDescendants(
-                            featureData,
-                            self.popup._content
-                        );
-    
-                        if (map.getStyle()) {
-                            map.setFeatureState(hoverFeature, { selected: true });
-                        }
-    
-                        self.popup.on('close', function() {
-                            if (map.getStyle()) map.setFeatureState(hoverFeature, { selected: false });
-                            self.popup = undefined;
-                        });
+                self.map().fitBounds(
+                    bounds, 
+                    { 
+                        padding: { top: 20, right: 560, bottom: 240, left: 120 },
+                        linear: true,
                     }
-                }
-            });
-        });
+                );
+            }
+        };
+
+        this.initialize();
     }
 
     ko.components.register('external-resource-data-preview-map', {
